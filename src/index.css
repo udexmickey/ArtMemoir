@@ -13,8 +13,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary);
-  width: 1440px;
-  height: 4540px;
+  max-width: 1440px;
+  max-height: 4540px;
 }
 
 

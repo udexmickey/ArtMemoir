@@ -1,13 +1,24 @@
 .headerNav{
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    margin: 40px 4%;
+
+
 
     .nav-list-container{
+        margin: auto 20%;
         .nav-list{
             display: flex;
             text-decoration: none;
             margin: 0px 20px;
             list-style: none;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            justify-content: center;
+            align-items: center;
 
             a{
                 justify-content: space-between;
