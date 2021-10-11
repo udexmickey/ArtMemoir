@@ -1,0 +1,28 @@
+
+html {
+  --primary: #000000;
+  --secondary:  #BABABA;
+  --text: #606060;
+  --accent: #FF0000;
+  --background: #FFFFFF;
+  --button:  #CF1D1D;
+
+}
+
+html[data-theme="light-dark"] {
+  --primary: #fff;
+  --secondary:  #BABABA;
+  --text: #606060;
+  --accent: #FF0000;
+  --background: #FFFFFF;
+  --button:  #CF1D1D;
+}
+
+html[data-theme="dark"] {
+  --primary: #000000;
+  --secondary:  #BABABA;
+  --text: #606060;
+  --accent: #FF0000;
+  --background: #FFFFFF;
+  --button:  #CF1D1D;
+}

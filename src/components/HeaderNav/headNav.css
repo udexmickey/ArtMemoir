@@ -1,0 +1,30 @@
+.headerNav {
+  background-color: #acacac;
+  color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerNav .nav-list-container .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: red;
+  text-decoration: none;
+  margin: 0px 20px;
+  list-style: none;
+}
+
+.headerNav .nav-list-container .nav-list a {
+  color: red;
+  text-decoration: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0px 20px;
+}
+/*# sourceMappingURL=headNav.css.map */

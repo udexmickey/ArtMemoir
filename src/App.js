@@ -1,9 +1,30 @@
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Partners from './pages/Partners';
+import Team from './pages/Team';
+import WhitePaper from './pages/WhitePaper';
+import PageNotForm from './pages/PageNotForm';
+import HeaderNav from "./components/HeaderNav";
+
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      
+      <Router>
+        <HeaderNav />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/partners" component={Partners} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/team" component={Team} />
+            <Route exact path="/whitepaper" component={WhitePaper} />
+            <Route component={PageNotForm} />
+
+          </Switch>
+      </Router>
     </div>
   );
 }
