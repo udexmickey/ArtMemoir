@@ -38,9 +38,11 @@
             margin-bottom: 6%;
             box-sizing: border-box;
             border-radius: 3px;
+            
 
             #newsletter{
                 &::placeholder{
+                    opacity: 0.6;
                 }
                 width: 393px;
                 height: 42px;
@@ -50,6 +52,7 @@
                 color: var(--primary);
                 font-size: 18px;
                 border: transparent;
+               
             }
             .newsletter-btn{
                 width: 121px;
