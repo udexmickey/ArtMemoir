@@ -26,3 +26,14 @@ html[data-theme="dark"] {
   --background: #FFFFFF;
   --button:  #CF1D1D;
 }
+
+.App{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+}

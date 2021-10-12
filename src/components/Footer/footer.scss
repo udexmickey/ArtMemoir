@@ -1,0 +1,115 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem; 
+    // left: 50;
+    // right: 25rem;
+    // margin: auto 50%;
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        // border: lawngreen solid 1px;
+        text-align: center;
+        box-sizing: border-box;
+
+        .footer-img{
+            line-height: 4;
+        }
+
+        .footer-title{
+            line-height: 22px;
+            margin-bottom: 4%;
+        }
+
+        .footer-form{
+            line-height: 2;
+            .newsletter-label{
+                line-height: 22px;
+                color: var(--background);
+            }
+        }
+
+        .value-btn-box{
+            padding: 0px;
+            margin-bottom: 6%;
+            box-sizing: border-box;
+            border-radius: 3px;
+
+            #newsletter{
+                &::placeholder{
+                }
+                width: 393px;
+                height: 42px;
+                background: var(--background);
+                padding-left: 10px;
+                padding-right: 20px;
+                color: var(--primary);
+                font-size: 18px;
+                border: transparent;
+            }
+            .newsletter-btn{
+                width: 121px;
+                height: 46px;
+                background: var(--button);
+                color: var(--background);
+                line-height: 22px;
+                font-size: 16px;
+                border: transparent;
+            }
+        }
+
+        .footer-list{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            ul{
+                li{
+                    width: 241px;
+                    height: 41px;
+                    background: rgba(#BABABA, 0.1);
+                    margin: 6% 4% auto 1%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 1rem;
+                    font-size: 18px;
+                    line-height: 25px;
+    
+                    // a{
+                    //     opacity: 1;
+                    // }
+    
+                }
+                margin-bottom: 8%;
+            }
+        }
+
+        .footer-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 6% auto;
+                ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                    li{
+                        margin-right: 2.8rem;
+                    }
+            }
+        }
+
+        .footer-copyright{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+           
+}

@@ -9,6 +9,7 @@ import PageNotForm from './pages/PageNotForm';
 import HeaderNav from "./components/HeaderNav";
 
 import './App.scss';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route component={PageNotForm} />
 
           </Switch>
+        
+        <Footer />
       </Router>
     </div>
   );
