@@ -26,7 +26,8 @@ export default function Footer() {
                                 Sign up for our newsletter <br />
                                 <div className="value-btn-box">
                                     <input type="email" name="newsletter" placeholder='Your Email' id="newsletter" />
-                                    <input type="button" value="Sign up" className="newsletter-btn"/>
+                                    {/* <input type="button" value="Sign up" className="newsletter-btn"/> */}
+                                    <button className="newsletter-btn" type="submit">Sign Up</button>
                                 </div>
                             </label>
                         </form>
@@ -65,9 +66,9 @@ export default function Footer() {
                             <li>
                                 <Linkedin />
                             </li>
-                            {/* <li>
+                            <li>
                                 <Reddit />
-                           </li>    */}
+                           </li>   
                             <li>
                                 <Facebook />
                             </li>
