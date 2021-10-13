@@ -1,11 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Twitter from '../../assets/Svg/Twitter';
-import Telegram from '../../assets/Svg/Telegram';
-import Instagram from '../../assets/Svg/Instagram';
-import Linkedin from '../../assets/Svg/Linkedin';
-import Facebook from '../../assets/Svg/Facebook';
-import Reddit from '../../assets/Svg/Reddit';
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import IconList from '../../components/IconList/IconList';
 import flowerLeft from '../../assets/Images/flower-left.png'
 import flowerRight from '../../assets/Images/flowerRight.png'
 import './contact.scss'
@@ -49,28 +44,7 @@ export default function Contact() {
                     </div>
 
                     <div className="contact-icons">
-                            <div>
-                            <ul>
-                                <li>
-                                    <Twitter />
-                                </li>
-                                <li>
-                                    <Telegram />
-                                </li>
-                                <li> 
-                                    <Instagram />
-                                </li>
-                                <li>
-                                    <Linkedin />
-                                </li>
-                                <li>
-                                    <Reddit />
-                            </li>   
-                                <li>
-                                    <Facebook />
-                                </li>
-                            </ul>
-                            </div>
+                        <IconList />
                         </div>
                 </div>
             </div>

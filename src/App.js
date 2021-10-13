@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -25,7 +25,6 @@ function App() {
             <Route component={PageNotForm} />
 
           </Switch>
-        
         <Footer />
       </Router>
     </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom";
-import styled from "styled-components";
 import logo from '../../../src/assets/Images/logo.png'
 
 import './headNav.scss'
