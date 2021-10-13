@@ -5,11 +5,11 @@ import Instagram from '../../assets/Svg/Instagram';
 import Linkedin from '../../assets/Svg/Linkedin';
 import Facebook from '../../assets/Svg/Facebook';
 import Reddit from '../../assets/Svg/Reddit';
-
+import './iconList.scss'
 export default function IconList() {
     return (
-        <div>
-            <div>
+        <div className='iconlist'>
+            <div className='list-icons'>
                 <ul>
                     <li>
                         <Twitter />

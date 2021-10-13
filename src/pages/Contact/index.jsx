@@ -3,6 +3,7 @@ import React from 'react'
 import IconList from '../../components/IconList/IconList';
 import flowerLeft from '../../assets/Images/flower-left.png'
 import flowerRight from '../../assets/Images/flowerRight.png'
+import HeadBadge from '../../components/HeaderBadge';
 import './contact.scss'
 
 export default function Contact() {
@@ -17,7 +18,7 @@ export default function Contact() {
 
                 <div className="contact-holder-container">
                     <div className="contact-title-container">
-                        <div className="contact-title">Contact us</div>
+                        <HeadBadge name='Contact us' />
                     </div>
                     <div className="contact-text">Leave us a message</div>
                     <div className="contact-form">
@@ -45,7 +46,7 @@ export default function Contact() {
 
                     <div className="contact-icons">
                         <IconList />
-                        </div>
+                    </div>
                 </div>
             </div>
             <div className="right-flower">
