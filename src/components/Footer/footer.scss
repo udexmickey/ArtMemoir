@@ -6,6 +6,9 @@
     // left: 50;
     // right: 25rem;
     // margin: auto 50%;
+    // .footer-container{
+    //     max-width: 100%;
+    // }
 
     footer{
         display: flex;
@@ -52,6 +55,7 @@
                 color: var(--primary);
                 font-size: 18px;
                 border: transparent;
+                margin-bottom: 1rem;
                
             }
             .newsletter-btn{

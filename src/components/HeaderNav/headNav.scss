@@ -1,13 +1,21 @@
 .headerNav{
     display: flex;
-    // justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin: 40px 4%;
-    width: 100%;
+    // width: 100%;
 
 
 
     .nav-list-container{
-        margin: auto 20%;
+        margin: auto 22rem auto 0px;
+        .memu-list-display{
+            font-size: 30px;
+            transition: 0.45;
+        }
+        .nav-burger-icon{
+            display: none;
+        }
         .nav-list{
             display: flex;
             text-decoration: none;
@@ -17,6 +25,7 @@
             line-height: 25px;
             justify-content: center;
             align-items: center;
+            // display: none;
 
             a{
                 justify-content: space-between;
@@ -34,3 +43,4 @@
         }
     }
 }
+

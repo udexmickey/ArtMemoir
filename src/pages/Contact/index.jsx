@@ -7,6 +7,10 @@ import HeadBadge from '../../components/HeaderBadge';
 import './contact.scss'
 
 export default function Contact() {
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log('Hello how may i help you.');
+      }
     return (
         <div className='contact'>
             <div className="left-flower">
@@ -22,7 +26,7 @@ export default function Contact() {
                     </div>
                     <div className="contact-text">Leave us a message</div>
                     <div className="contact-form">
-                        <form action="" method="post">
+                        <form action="" method="post" onSubmit={handleSubmit}>
                             <div className="contact-form-title">
                                 {/* Leave us a message */}
                                 <div className="group-form">

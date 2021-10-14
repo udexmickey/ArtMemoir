@@ -9,10 +9,14 @@ import Linkedin from "./../../assets/Svg/Linkedin"
 import Reddit from "./../../assets/Svg/Reddit"
 import Facebook from "./../../assets/Svg/Facebook"
 export default function Footer() {
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log('You just Sign up for our newsletter');
+      }
     return (
         <div className='footer'>
             <footer>
-                <div>
+                <div className='footer-container'>
                     <div className="footer-img">
                         <img src={logo} alt=" "/>
                     </div>
@@ -21,7 +25,7 @@ export default function Footer() {
                         about its cultures through NFTs
                     </div>
                     <div className="footer-form">
-                        <form action="newsletter" method="post">
+                        <form action="newsletter" method="post" onSubmit={handleSubmit}>
                             <label htmlFor="newsletter" className='newsletter-label'>
                                 Sign up for our newsletter <br />
                                 <div className="value-btn-box">
