@@ -41,7 +41,6 @@
             margin-bottom: 6%;
             box-sizing: border-box;
             border-radius: 3px;
-            
 
             #newsletter{
                 &::placeholder{
@@ -52,10 +51,11 @@
                 background: var(--background);
                 padding-left: 10px;
                 padding-right: 20px;
-                color: var(--primary);
+                color: var(--primary, 0.1);
                 font-size: 18px;
                 border: transparent;
                 margin-bottom: 1rem;
+
                
             }
             .newsletter-btn{

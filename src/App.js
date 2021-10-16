@@ -7,7 +7,7 @@ import Team from './pages/Team';
 import WhitePaper from './pages/WhitePaper';
 import PageNotForm from './pages/PageNotForm';
 import HeaderNav from "./components/HeaderNav";
-
+import Blog from "./pages/Blog";
 import './App.scss';
 import Footer from "./components/Footer";
 
@@ -22,6 +22,7 @@ function App() {
             <Route exact path="/contact" component={Contact} />
             <Route exact path="/team" component={Team} />
             <Route exact path="/whitepaper" component={WhitePaper} />
+            <Route exact path="/blog" component={Blog} />
             <Route component={PageNotForm} />
 
           </Switch>

@@ -45,6 +45,9 @@ export default function HeaderNav() {
                     <li>
                         <NavLink activeClassName='is-active' to="/whitepaper">WhitePaper</NavLink>
                     </li>
+                    <li>
+                        <NavLink activeClassName='is-active' to="/blog">Blog</NavLink>
+                    </li>
                 </ul>
             </div>
         </div>

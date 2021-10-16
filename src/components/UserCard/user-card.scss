@@ -1,0 +1,27 @@
+.user-card-container{
+        .user-details{
+            // :nth-child(1){
+            //     color: red;
+            //     margin-right: 3rem;
+            // }
+
+            .name{
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 44px;
+            }
+
+            .message{
+                width: 561px;
+                height: 75px;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        // .user-details:nth-child(1){
+            
+        // }
+}

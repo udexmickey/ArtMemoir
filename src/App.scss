@@ -37,6 +37,12 @@ html[data-theme="dark"] {
   min-height: 100vh;
   position: relative;
 }
+
+input, textarea{
+    &:focus{
+      outline: none;
+  }
+}
 @media screen and (max-width : 910px) {
   .App{
     margin: 0;
@@ -54,7 +60,9 @@ html[data-theme="dark"] {
       
 
       .nav-burger-icon{
-        display: block;
+        display: flex;
+        // display: block;
+        margin-left: auto;
       }
 
       .nav-list{
@@ -70,8 +78,9 @@ html[data-theme="dark"] {
   }
 }
 
-  @media screen and (max-width : 470px) {
+  @media screen and (max-width : 480px) {
     .App{
+      max-width: 480px;
     box-sizing: border-box;
     .headerNav{
       display: flex;
@@ -117,3 +126,8 @@ html[data-theme="dark"] {
     }
   }
 }
+
+// div#root {
+// 	max-width: 480px;
+// 	margin: 0 auto;
+// }

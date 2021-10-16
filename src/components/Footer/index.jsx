@@ -44,6 +44,7 @@ export default function Footer() {
                                 <li><Link to='/partners'>Our Partners</Link></li>
                                 <li><Link to='/team'>Our Team</Link></li>
                                 <li><Link to='/whitepaper'>Whitepaper</Link></li>
+                                <li><Link to='/blog'>Blog</Link></li>
                             </ul>
                         </div>
                         <div className="footer-service">
@@ -53,6 +54,7 @@ export default function Footer() {
                                 <li><Link to='#'>Collection NFTs</Link></li>
                                 <li><Link to='#'>GameFI</Link></li>
                                 <li><Link to='#'>Real Estate</Link></li>
+                                <li><Link to='#'>Harmonic Studio</Link></li>
                             </ul>
                         </div>
                     </div>
