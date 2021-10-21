@@ -6,10 +6,13 @@ import Persons from './Persons';
 import './team.scss'
 
 export default function Team() {
-    function TeamMembers(person) {
+    function TeamMembers(person, idx) {
+        console.log(idx)
         return(
             <UserCard
+                id={person.id}
                 key={person.id}
+                idx={idx}
                 avatar={person.avatar} 
                 name={person.name}
                 role={person.role}
@@ -23,7 +26,9 @@ export default function Team() {
         <div className='teams'>
             <HeadBadge name='Our Team' />
             <div className="our-team-container">
-                {Persons.map(TeamMembers)}
+                <div>{Persons.map((data, idx) => {
+                    return TeamMembers(data, idx)
+                })}</div>
             </div>
         </div>
     )

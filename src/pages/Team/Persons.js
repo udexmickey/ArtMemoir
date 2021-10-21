@@ -2,25 +2,38 @@
 const Persons = [
     {
         id : '1',
-        name : 'Harmony Elendu',
+        name : 'Rehamzy Omezurike',
         role : 'CEO / Co-Founder',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEpOB50Gf-839DMNoHRlYYBAWP0TN73RHsGg&usqp=CAU'
+        avatar : ''
     },
     {
         id : '2',
-        name : 'Favour Kachi',
-        role : 'Head of Design',
+        name : 'Gabito Dento',
+        role : 'Co-founder',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEpOB50Gf-839DMNoHRlYYBAWP0TN73RHsGg&usqp=CAU'
+        avatar : ''
     },
     {
         id : '3',
-        name : 'Ada Micheal',
-        role : 'Head of Marketing',
+        name : 'Jimmy Friday',
+        role : 'Head of Design',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEpOB50Gf-839DMNoHRlYYBAWP0TN73RHsGg&usqp=CAU'
+        avatar : ''
     },
-
+    {
+        id : '4',
+        name : 'Darlington Elendu',
+        role : 'Product Manager',
+        message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
+        avatar : ''
+    },
+    {
+        id : '5',
+        name : 'Mary Jane',
+        role : 'Head of Contents and Communications',
+        message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
+        avatar : ''
+    },
 ]
 export default Persons;
