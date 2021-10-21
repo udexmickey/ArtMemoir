@@ -15,7 +15,8 @@ export default function HeaderNav() {
 
 
     return (
-        <div className='headerNav'>
+        <div className="headnav-container">
+            <div className='headerNav'>
             <div className='nav-logo'>
                 <Link to='/' exact={true}>
                     <img src={logo} alt="" srcset="" /> 
@@ -50,6 +51,7 @@ export default function HeaderNav() {
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     )
 }

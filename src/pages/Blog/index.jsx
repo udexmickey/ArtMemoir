@@ -4,6 +4,7 @@ import Background from '../../assets/Images/blogBacground.png'
 
 import "./blogs.scss"
 import Blogs from './blogsData';
+import ButtonDirections from '../../components/ButtonDirections/btn-directions';
 
 export default function Blog() {
     const blogposts = Blogs.map( 
@@ -49,6 +50,7 @@ export default function Blog() {
                     {blogposts }
                 </div>
             </div>
+            <ButtonDirections />
         </div>
     )
 }
