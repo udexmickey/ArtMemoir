@@ -1,20 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from "react-router-dom";
-import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import logo from '../../../src/assets/Images/logo.png'
 
 import './headNav.scss'
 export default function HeaderNav() {
+    const [showMenu, setShowMenu ] = useState(false);
+
+    const openMenu = () => {
+        return setShowMenu(!showMenu);
+    }
+
 
     return (
-        <div className='headerNav'>
+        <div className="headnav-container">
+            <div className='headerNav'>
             <div className='nav-logo'>
                 <Link to='/' exact={true}>
                     <img src={logo} alt="" srcset="" /> 
                 </Link>
             </div>
             <div className="nav-list-container">
-                <ul className='nav-list'>
+                <div className="nav-burger-icon">
+                    <FontAwesomeIcon 
+                        icon={faBars} 
+                        onClick = { openMenu }
+                        size="400px"
+                        className={`memu-list-display`}
+                    />
+                </div>
+                
+                <ul className={`nav-list `}>
                     <li >
                         
                         <NavLink activeClassName='is-active' to="/contact">Contact Us</NavLink>     
@@ -28,8 +46,12 @@ export default function HeaderNav() {
                     <li>
                         <NavLink activeClassName='is-active' to="/whitepaper">WhitePaper</NavLink>
                     </li>
+                    <li>
+                        <NavLink activeClassName='is-active' to="/blog">Blog</NavLink>
+                    </li>
                 </ul>
             </div>
+        </div>
         </div>
     )
 }

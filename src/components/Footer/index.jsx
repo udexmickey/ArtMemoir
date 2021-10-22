@@ -9,10 +9,14 @@ import Linkedin from "./../../assets/Svg/Linkedin"
 import Reddit from "./../../assets/Svg/Reddit"
 import Facebook from "./../../assets/Svg/Facebook"
 export default function Footer() {
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log('You just Sign up for our newsletter');
+      }
     return (
         <div className='footer'>
             <footer>
-                <div>
+                <div className='footer-container'>
                     <div className="footer-img">
                         <img src={logo} alt=" "/>
                     </div>
@@ -21,12 +25,13 @@ export default function Footer() {
                         about its cultures through NFTs
                     </div>
                     <div className="footer-form">
-                        <form action="newsletter" method="post">
+                        <form action="newsletter" method="post" onSubmit={handleSubmit}>
                             <label htmlFor="newsletter" className='newsletter-label'>
                                 Sign up for our newsletter <br />
                                 <div className="value-btn-box">
                                     <input type="email" name="newsletter" placeholder='Your Email' id="newsletter" />
-                                    <input type="button" value="Sign up" className="newsletter-btn"/>
+                                    {/* <input type="button" value="Sign up" className="newsletter-btn"/> */}
+                                    <button className="newsletter-btn" type="submit">Sign Up</button>
                                 </div>
                             </label>
                         </form>
@@ -39,6 +44,7 @@ export default function Footer() {
                                 <li><Link to='/partners'>Our Partners</Link></li>
                                 <li><Link to='/team'>Our Team</Link></li>
                                 <li><Link to='/whitepaper'>Whitepaper</Link></li>
+                                <li><Link to='/blog'>Blog</Link></li>
                             </ul>
                         </div>
                         <div className="footer-service">
@@ -48,6 +54,7 @@ export default function Footer() {
                                 <li><Link to='#'>Collection NFTs</Link></li>
                                 <li><Link to='#'>GameFI</Link></li>
                                 <li><Link to='#'>Real Estate</Link></li>
+                                <li><Link to='#'>Harmonic Studio</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -65,9 +72,9 @@ export default function Footer() {
                             <li>
                                 <Linkedin />
                             </li>
-                            {/* <li>
+                            <li>
                                 <Reddit />
-                           </li>    */}
+                           </li>   
                             <li>
                                 <Facebook />
                             </li>

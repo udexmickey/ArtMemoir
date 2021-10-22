@@ -32,8 +32,102 @@ html[data-theme="dark"] {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  
+  margin: 0;
   max-width: 100%;
   min-height: 100vh;
   position: relative;
 }
+
+input, textarea{
+    &:focus{
+      outline: none;
+  }
+}
+@media screen and (max-width : 910px) {
+  .App{
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    .headerNav{
+
+      .nav-list-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+      }
+      
+
+      .nav-burger-icon{
+        display: flex;
+        // display: block;
+        margin-left: auto;
+      }
+
+      .nav-list{
+          display: none;
+      }
+    }
+    .contact{
+  
+        .right-flower, .left-flower{
+          display: none;
+      }
+    }
+  }
+}
+
+  @media screen and (max-width : 480px) {
+    .App{
+      max-width: 480px;
+    box-sizing: border-box;
+    .headerNav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px;
+
+      .nav-list-container{
+        margin: auto auto auto 10rem;
+        width: 400px;
+
+      }
+    }
+    .footer{
+      width: 400px;
+
+      #newsletter {
+        width: 80%;
+      }
+  
+      .footer-list li {
+        width: 100%;
+        padding: 0px 20px;
+        height: 41px;
+        background: rgba(186, 186, 186, 0.1);
+      }
+    }
+    .contact{  
+      position: relative;
+  
+        .right-flower{
+          position: absolute;
+          top: 50px;
+          right: 1px;
+          width: fit-content;
+          display: none;
+      }
+      .left-flower{
+          position: absolute;
+          // width: 100%;
+          display: none;
+      }
+    }
+  }
+}
+
+// div#root {
+// 	max-width: 480px;
+// 	margin: 0 auto;
+// }

@@ -1,0 +1,25 @@
+.btn-direction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+    .arrow-left, .arrow-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 96px;
+        height: 96px;
+        border: 1px solid #FF0000;
+        box-sizing: border-box;   
+        cursor: pointer;
+    }
+
+    .arrow-left{
+        margin-right: 1rem;
+    }
+    .arrow-right{
+        background: #CF1D1D;
+        // color: white;
+    }
+}

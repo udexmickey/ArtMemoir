@@ -13,7 +13,7 @@ body {
   background-color: var(--primary);
   color: var(--secondary);
   max-width: 1440px;
-  /* max-height: 4540px; */
+  max-height: 4540px;
 }
 
 

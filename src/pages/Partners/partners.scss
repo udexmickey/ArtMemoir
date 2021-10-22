@@ -1,0 +1,41 @@
+.our-partners{
+    position: relative;
+    .background-flower{
+        position: absolute;
+        left: 30rem;
+        right: 35rem;
+        top: 12rem;
+    }
+    .our-partners-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6rem ;
+        margin-bottom: 2rem;
+
+        .partner-card{
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 660px;
+            height: 235px;
+            background: rgba(186, 186, 186, 0.1);
+            border: 1px solid rgba(186, 186, 186, 0.1);
+            box-sizing: border-box;
+            border-radius: 11px;
+            margin-bottom: 2rem;
+
+            hr{
+                margin: 10px auto;
+                // width: 561px;
+            }
+
+            img{
+                // display: none;
+                width: 72px;
+                height: 28px;
+            }
+        }
+    }
+}
