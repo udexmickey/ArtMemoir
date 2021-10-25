@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import HeadBadge from '../../components/HeaderBadge';
 import './whitepaper.scss'
 import ButtonDirections from '../../components/ButtonDirections/btn-directions';
@@ -6,6 +6,7 @@ import ButtonDirections from '../../components/ButtonDirections/btn-directions';
 import DropDowns from '../../components/DropDowns/DropDown';
 
 export default function WhitePaper() {
+    const [selected, setSelected] = useState("Overview");
     return (
         <div className='whitePaper'>
             <div className="whitepaper-badge">
@@ -13,8 +14,9 @@ export default function WhitePaper() {
             </div>
             <div className="whitepaper-holder">
                 <div className="">
-                    <div className="whitepaper-title">ART MEMOIR </div>
-                    <div><DropDowns /></div>
+                    <div className="whitepaper-title">
+                        <DropDowns selected={selected} setSelected={setSelected} />
+                    </div>
                     
                     <div className="whitepaper-content-holder">
                         <div className="whitepaper-content">
