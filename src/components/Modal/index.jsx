@@ -6,12 +6,8 @@ export default function CustomModal({ modalStyle, className, noClose, children, 
 
     useEffect(
         () => {
-            if (show) {
-                modalRef.current.classList.add('visible');
-            }
-            else {
-                modalRef.current.classList.remove('visible');
-            }
+            show ? modalRef.current.classList.add('visible')
+               : modalRef.current.classList.remove('visible');
         },
         [show]
     );
