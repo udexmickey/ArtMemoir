@@ -1,21 +1,33 @@
-.iconlist{
+.iconlist {
+  .list-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
 
-    .list-icons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      li {
         box-sizing: border-box;
-        width: 100%;
-            ul{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-sizing: border-box;
-            
-                li{
-                    box-sizing: border-box;
-                    margin-right: 2rem;
-                }
-        }
+        margin-right: 2rem;
+      }
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .iconlist {
+    width: 100%;
+    .list-icons {
+      ul {
+        width: 100%;
+        border: 2px solid red;
+        justify-content: space-around;
+      }
+    }
+  }
 }
