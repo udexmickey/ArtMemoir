@@ -3,7 +3,7 @@ const Blogs = [
         id : '1',
         name : 'Halloween Colors For Delightfully Spooky Designs',
         message : 'Did you know Halloween is actually short for “All Hallows’ evening”? It is widely celebrated ...',
-        avatar : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png',
+        avatar : '../../assets/Images/blogimage.png',
          btn: 'Read More',
         link: 'blog'
     }},
@@ -12,7 +12,7 @@ const Blogs = [
             id : '2',
             name : 'In Color: The 7 Greatest Color Trends of 2021',
             message : 'Introducing Color Trends 2021 by Simplified. Met Gala, New York Fashion Week, Paris Fashion Week ...',
-            avatar : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png',
+            avatar : '../../assets/Images/blogimage.png',
              btn: 'Read More',
             link: 'blog'
         }

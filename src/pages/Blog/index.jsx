@@ -5,24 +5,22 @@ import Background from '../../assets/Images/blogBacground.png'
 import "./blogs.scss"
 import Blogs from './blogsData';
 import ButtonDirections from '../../components/ButtonDirections/btn-directions';
-import Carousel from '../../components/Carousel';
 
 export default function Blog() {
     const blogposts = Blogs.map( 
-        (blog) => {
+        function BlogCard(blog) {
            return ( 
                 <div className="blog-card">
-                    {/* <UserCard 
-                        key={blog.id}
-                        avatar={blog.avatar} 
-                        name={blog.name}
-                        role={blog.role}
+                    <UserCard 
+                        key={blog.player.id}
+                        avatar={blog.player.avatar} 
+                        name={blog.player.name}
+                        role={blog.player.role}
                         className={``}
-                        message={blog.message}
-                        btn={blog.btn}
-                        link={blog.link}
-                    /> */}
-                    helllo
+                        message={blog.player.message}
+                        btn={blog.player.btn}
+                        link={blog.player.link}
+                    />
                 </div>
 
             )
@@ -53,7 +51,6 @@ export default function Blog() {
                 </div>
             </div>
             <ButtonDirections />
-            <Carousel />
         </div>
     )
 }
