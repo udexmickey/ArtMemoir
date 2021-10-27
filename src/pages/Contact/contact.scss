@@ -5,13 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // width: 66.65%;
-        // height: 800px;
-        // width: 960px;
-        // height: 837px;
-        // border: lawngreen solid 1px;
         margin: 15% 17% 10%;
-        // margin: auto 25%;
         background: rgba(#BABABA, 0.1);
         box-sizing: border-box;
 
@@ -27,8 +21,6 @@
                 font-size: 24px;
                 line-height: 33px;
                 margin: 0rem auto 3rem;
-                // height: 33px;
-                // border: lawngreen solid 1px;
             }
 
             .contact-form{
@@ -44,10 +36,10 @@
                 }
 
                 input, textarea{
-                    border: 1px solid rgba(186, 186, 186, 0.24);
+                    border: 1px solid rgba(186, 186, 186, 0.24) !important;
                     box-sizing: border-box;
-                    border-radius: 5px;
-                    background: rgba(#fff, 0.25);
+                    border-radius: 5px !important;
+                    background: rgba(#fff, 0.25) !important;
                     width: 660px;
                     color: rgba(#fff, 0.8);
                     padding: 0px 20px;

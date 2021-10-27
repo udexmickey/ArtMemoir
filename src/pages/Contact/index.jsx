@@ -5,8 +5,25 @@ import flowerLeft from '../../assets/Images/flower-left.png'
 import flowerRight from '../../assets/Images/flowerRight.png'
 import HeadBadge from '../../components/HeaderBadge';
 import './contact.scss'
+import InputForm from '../../components/Input';
+import ContactFormDataInput from './contactformdata';
 
 export default function Contact() {
+    const dashboardData = ContactFormDataInput.map( 
+        function inputData(data){
+            return (
+                <InputForm 
+                    title={data.title}
+                    type={data.type}
+                    name={data.name}
+                    id={data.id} 
+                    key={data.key}
+                    placeholder={data.placeholder}
+                />
+            )
+        }
+     )
+
     function handleSubmit(e) {
         e.preventDefault();
         console.log('Hello how may i help you.');
@@ -29,13 +46,16 @@ export default function Contact() {
                         <form action="" method="post" onSubmit={handleSubmit}>
                             <div className="contact-form-title">
                                 {/* Leave us a message */}
-                                <div className="group-form">
+                                {/* <div className="group-form">
                                     <label htmlFor="fName">Full name</label>
                                     <input type="text" name="contact-fName" id="fName" placeholder='John Doe' />
                                 </div> 
                                 <div className="group-form">
                                     <label htmlFor="contact-email">Email address</label>
                                     <input type="email" name="contact-email" id="contact-email" placeholder='example@email.com' />
+                                </div> */}
+                                 <div className="group-form">
+                                    {dashboardData}
                                 </div>
                                 <div className="group-form">
                                     <label htmlFor="info-message">Message</label>
