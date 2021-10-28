@@ -119,35 +119,53 @@
 
 @media only screen and (max-width: 600px) {
   .footer {
-    margin-top: 2rem;
+    margin-top: 3rem;
 
     footer {
-      .footer-title {
-        font-size: 2rem;
-      }
-      .footer-form {
-        margin-bottom: 2.5rem;
+      height: auto;
 
-        label {
+      .footer-container {
+        width: 100%;
+
+        .footer-title {
           font-size: 2rem;
         }
 
-        form {
-          .value-btn-box {
-            margin-top: 2rem;
+        .footer-form {
+          margin-bottom: 2.5rem;
 
-            #newsletter {
-              width: 100%;
-              margin: 0 1rem 1rem 1rem;
+          label {
+            font-size: 2rem;
+          }
+
+          form {
+            .value-btn-box {
+              margin-top: 2rem;
+
+              #newsletter {
+                width: 100%;
+                margin: 0 1rem 1rem 1rem;
+              }
             }
           }
         }
-      }
 
-      .footer-copyright {
-        flex-direction: column;
-        div {
-          margin-bottom: 1rem;
+        .footer-list {
+          width: 100%;
+          justify-content: space-evenly;
+
+          .footer-list-title {
+            font-size: 2rem;
+          }
+        }
+
+        .footer-copyright {
+          margin-top: 2rem;
+
+          flex-direction: column;
+          div {
+            margin-bottom: 1rem;
+          }
         }
       }
     }

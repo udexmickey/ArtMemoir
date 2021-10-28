@@ -2,12 +2,7 @@ import React from 'react';
 import logo from '../../../src/assets/Images/logo.png';
 import { Link } from 'react-router-dom';
 import './footer.scss';
-import Twitter from './../../assets/Svg/Twitter';
-import Telegram from './../../assets/Svg/Telegram';
-import Instagram from './../../assets/Svg/Instagram';
-import Linkedin from './../../assets/Svg/Linkedin';
-import Reddit from './../../assets/Svg/Reddit';
-import Facebook from './../../assets/Svg/Facebook';
+import IconList from '../IconList/IconList';
 export default function Footer() {
   function handleSubmit(e) {
     e.preventDefault();
@@ -45,7 +40,7 @@ export default function Footer() {
           </div>
           <div className="footer-list">
             <div className="footer-menu">
-              Menu
+              <span className="footer-list-title">Menu</span>
               <ul>
                 <li>
                   <Link to="/contact">Contact us</Link>
@@ -65,7 +60,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="footer-service">
-              Service
+              <span className="footer-list-title">Service</span>
               <ul>
                 <li>
                   <Link to="#">Single NFTs</Link>
@@ -85,28 +80,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div className="footer-icons">
-            <ul>
-              <li>
-                <Twitter />
-              </li>
-              <li>
-                <Telegram />
-              </li>
-              <li>
-                <Instagram />
-              </li>
-              <li>
-                <Linkedin />
-              </li>
-              <li>
-                <Reddit />
-              </li>
-              <li>
-                <Facebook />
-              </li>
-            </ul>
-          </div>
+          <IconList />
           <div className="footer-copyright">
             <div className="copy-text">© ArtMemoir. All rights reserved</div>
             <div className="terms">

@@ -9,22 +9,21 @@
 body {
   margin: 0px;
   padding: 0px;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary);
   color: var(--secondary);
-  max-width: 1440px;
-  max-height: 4540px;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
-a, Link, li{
+a,
+Link,
+li {
   list-style: none;
   text-decoration: none;
   cursor: pointer;
