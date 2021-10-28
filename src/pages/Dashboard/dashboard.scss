@@ -1,0 +1,72 @@
+.dashboard{
+    position: relative;
+
+    .headbadge-title{
+        width: 268px;
+        height: 82px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+
+    .dashboard-holder{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+
+
+        input, textarea{
+            width: 475px;
+            height: 44px;
+            background: #242424;
+            border: 1px solid rgba(186, 186, 186, 0.24);
+            box-sizing: border-box;
+            border-radius: 5px;
+            color: rgba(#fff, 0.8);
+            z-index: 9999;
+            padding: 10px;
+            &:focus{
+                outline: white !important;
+            }
+        }
+
+        textarea{
+            height: 251px;
+            padding-top: 20px;
+
+        }
+
+        label{
+            color: var(--background);
+            font-size: 18px;
+            line-height: 25px;
+            opacity: 0.7;
+        }
+
+        .send-image{
+            margin-right: 4rem;
+            // width: 360px;
+            height: 360px;
+        }
+    }
+
+
+
+
+    .right-flower, .left-flower{
+        position: absolute;
+        height: 50px;
+        img{
+            height: 800px;
+        }
+    }
+    .right-flower{
+        top: 50px;
+        right: 1px;
+        width: fit-content;
+    }
+    .left-flower{
+        // width: 100%;
+    }
+}

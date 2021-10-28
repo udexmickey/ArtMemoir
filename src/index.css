@@ -30,3 +30,11 @@ a, Link, li{
   cursor: pointer;
   color: var(--button);
 }
+
+label{
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--background);
+  margin: 5% 0px 1%;
+}

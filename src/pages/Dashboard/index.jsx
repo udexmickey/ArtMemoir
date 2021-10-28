@@ -1,7 +1,11 @@
 import DashboardFormDataInput from './dashboardformdata'
 import React from 'react'
 import InputForm from '../../components/Input'
-
+import flowerLeft from '../../assets/Images/flower-left.png'
+import flowerRight from '../../assets/Images/flowerRight.png'
+import './dashboard.scss'
+import HeadBadge from '../../components/HeaderBadge'
+import Button from '../../components/Button'
 export default function Dashboard() {
    const dashboardData = DashboardFormDataInput.map( 
         function inputData(data){
@@ -11,6 +15,7 @@ export default function Dashboard() {
                     type={data.type}
                     name={data.name}
                     id={data.id} 
+                    className={data.className}
                     key={data.key}
                     placeholder={data.placeholder}
                 />
@@ -19,21 +24,36 @@ export default function Dashboard() {
      )
 
     return (
-        <div>
+        <div className='dashboard'>
+            <HeadBadge name="Send Email" />
+             <div className="left-flower">
+                <img src={flowerLeft} alt="" srcset="" />
+            </div>
             
-            {/* <InputForm /> */}
-            <div className="contact-form-title">
-                {/* Leave us a message */}
-                <div className="group-form">
-                    {dashboardData}
-                </div>
-                <div className="group-form">
-                    <label htmlFor="info-message">Message</label>
-                    <textarea name="request-message" id="info-message" placeholder='Hello there, How may we help you' cols="30" rows="10"></textarea>
-                </div>
-                <div className="group-form group-form-button">
-                    <button type="submit"> Send </button>
-                </div>
+            <div className="dashboard-holder">
+                {/* <div className=""> */}
+                    <div className="group-form">
+                        {dashboardData}
+
+                    </div>
+                    <div className="">
+                        <div className="group-form">
+                        <label htmlFor="message">Title</label>
+                            <input type="text" src="img_submit.gif" placeholder='example@email.com' id="send-email" name="send-email" />
+                        </div>
+                        <div className="group-form">
+                            <label htmlFor="message">Body</label>
+                            <textarea name="message" id="message" placeholder='' cols="40" rows="20"></textarea>
+                        </div>
+                        <div className="group-form group-form-button">
+                            {/* <button > Send </button> */}
+                            <Button title='Send' />
+                        </div>
+                    </div>
+                {/* </div> */}
+            </div>
+            <div className="right-flower">
+                <img src={flowerRight} alt="" srcset="" />
             </div>
         </div>
     )

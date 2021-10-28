@@ -18,6 +18,7 @@ export default function Contact() {
                     name={data.name}
                     id={data.id} 
                     key={data.key}
+                    htmlFor={data.htmlFor}
                     placeholder={data.placeholder}
                 />
             )
@@ -31,7 +32,6 @@ export default function Contact() {
     return (
         <div className='contact'>
             <div className="left-flower">
-                {/* <FlowerRight /> */}
                 <img src={flowerLeft} alt="" srcset="" />
             </div>
 
@@ -46,17 +46,7 @@ export default function Contact() {
                         <form action="" method="post" onSubmit={handleSubmit}>
                             <div className="contact-form-title">
                                 {/* Leave us a message */}
-                                {/* <div className="group-form">
-                                    <label htmlFor="fName">Full name</label>
-                                    <input type="text" name="contact-fName" id="fName" placeholder='John Doe' />
-                                </div> 
-                                <div className="group-form">
-                                    <label htmlFor="contact-email">Email address</label>
-                                    <input type="email" name="contact-email" id="contact-email" placeholder='example@email.com' />
-                                </div> */}
-                                 <div className="group-form">
                                     {dashboardData}
-                                </div>
                                 <div className="group-form">
                                     <label htmlFor="info-message">Message</label>
                                     <textarea name="request-message" id="info-message" placeholder='Hello there, How may we help you' cols="30" rows="10"></textarea>

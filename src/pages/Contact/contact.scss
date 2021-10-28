@@ -15,6 +15,7 @@
             box-sizing: border-box;
             position: relative;
             padding: 1rem;
+            top: 50px;
             .contact-text{
                 text-align: center;
                 font-weight: normal;
@@ -27,13 +28,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                label{
-                    display: block;
-                    font-size: 18px;
-                    line-height: 25px;
-                    color: var(--background);
-                    margin: 5% 0px 1%;
-                }
 
                 input, textarea{
                     border: 1px solid rgba(186, 186, 186, 0.24) !important;
