@@ -12,14 +12,14 @@ export default function Blog() {
            return ( 
                 <div className="blog-card">
                     <UserCard 
-                        key={blog.id}
-                        avatar={blog.avatar} 
-                        name={blog.name}
-                        role={blog.role}
+                        key={blog.player.id}
+                        avatar={blog.player.avatar} 
+                        name={blog.player.name}
+                        role={blog.player.role}
                         className={``}
-                        message={blog.message}
-                        btn={blog.btn}
-                        link={blog.link}
+                        message={blog.player.message}
+                        btn={blog.player.btn}
+                        link={blog.player.link}
                     />
                 </div>
 
