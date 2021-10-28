@@ -1,0 +1,16 @@
+.showcase {
+  position: relative;
+  margin-top: 6rem;
+
+  .showcase-container {
+    display: flex;
+    margin-left: 40px;
+
+    div {
+      .showcase-img {
+        width: 400px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
