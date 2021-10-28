@@ -10,7 +10,7 @@ import HeaderNav from './components/HeaderNav';
 import Blog from './pages/Blog';
 import './App.scss';
 import Footer from './components/Footer';
-
+import Dashboard from './pages/Dashboard';
 function App() {
   return (
     <div className="App">
@@ -23,6 +23,7 @@ function App() {
           <Route exact path="/team" component={Team} />
           <Route exact path="/whitepaper" component={WhitePaper} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/dashboard" component={Dashboard} />
           <Route component={PageNotForm} />
         </Switch>
         <Footer />
