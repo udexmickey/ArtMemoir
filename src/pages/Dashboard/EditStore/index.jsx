@@ -1,21 +1,19 @@
-import DashboardFormDataInput from './dashboardformdata'
-import InputForm from '../../components/Input'
-import flowerLeft from '../../assets/Images/flower-left.png'
-import flowerRight from '../../assets/Images/flowerRight.png'
-import './dashboard.scss'
-import HeadBadge from '../../components/HeaderBadge'
-import Button from '../../components/Button'
-import UploadAndDisplayImage from '../../components/UploadImage/index'
+import DashboardFormDataInput from '../dashboardformdata'
+import InputForm from '../../../components/Input'
+import flowerLeft from '../../../assets/Images/flower-left.png'
+import flowerRight from '../../../assets/Images/flowerRight.png'
+import HeadBadge from '../../../components/HeaderBadge'
+import Button from '../../../components/Button'
+import UploadAndDisplayImage from '../../../components/UploadImage/index'
 
+export default function BlogPost() {
 
-export default function Dashboard() {
-    
     const badgeButton = {
         background : '#CF1D1D'
     }
 
-   const dashboardData = DashboardFormDataInput.map( 
-        (data) => {
+    const dashboardData = DashboardFormDataInput.map( 
+        function inputData(data){
             return (
                 <InputForm 
                     title={data.title}
@@ -32,17 +30,17 @@ export default function Dashboard() {
 
     return (
         <div className='dashboard'>
-            <HeadBadge name="Send Email" style={badgeButton}/>
+            <HeadBadge name="Edit store data" style={badgeButton}/>
              <div className="left-flower">
                 <img src={flowerLeft} alt="" srcset="" />
             </div>
             
             <div className="dashboard-holder">
-                {/* <div className=""> */}
                     <div className="group-form upload-image">
                         <UploadAndDisplayImage />
                     </div>
                     <div className="">
+
                         {dashboardData}
 
                         <div className="group-form">

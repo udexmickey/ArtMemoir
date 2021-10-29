@@ -19,7 +19,7 @@ const DashboardFormDataInput = [
         name:"send-email",
         id:"send-email",
         className: 'send-email',
-        placeholder:'example@email.com',
+        // placeholder:'example@email.com',
         key: 2,
     },
 ]
