@@ -2,16 +2,16 @@
 
 const ContactFormDataInput = [
     {
-        // type:Image,
         title: 'Full name',
         type:"text", 
         name:"contact-fName",
         id:"fName",
         placeholder:'John Doe',
         key: 1,
+        htmlFor:"fName"
     },
     {
-        // type:text,
+        htmlFor:"email",
         title: 'Email address',
         type:"email", 
         name:"contact-email",
@@ -19,14 +19,6 @@ const ContactFormDataInput = [
         placeholder:'example@email.com',
         key: 2,
     },
-    // {
-    //     type:text,
-    //     key: 3,
-    // },
-    // {
-    //     type:Link,
-    //     key: 4,
-    // }
 ]
 
 export default ContactFormDataInput;
