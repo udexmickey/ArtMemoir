@@ -1,6 +1,6 @@
 .dashboard{
     position: relative;
-
+    
     .headbadge-title{
         width: 268px;
         height: 82px;
@@ -33,6 +33,7 @@
 
         textarea{
             height: 251px;
+            width: 475px;
             padding-top: 20px;
 
         }
@@ -44,10 +45,21 @@
             opacity: 0.7;
         }
 
+        .upload-image{
+            // width: 360px;
+            height: 420px;
+            margin-right: 5%;
+ 
+        }
+
         .send-image{
             margin-right: 4rem;
-            // width: 360px;
+            width: 360px;
             height: 360px;
+        }
+        button{
+            margin: auto;
+            margin-top: 4rem;
         }
     }
 
@@ -57,7 +69,9 @@
     .right-flower, .left-flower{
         position: absolute;
         height: 50px;
+        // display: none;
         img{
+            z-index: -2;
             height: 800px;
         }
     }
@@ -66,7 +80,7 @@
         right: 1px;
         width: fit-content;
     }
-    .left-flower{
-        // width: 100%;
-    }
+    // .left-flower{
+    //     // width: 100%;
+    // }
 }

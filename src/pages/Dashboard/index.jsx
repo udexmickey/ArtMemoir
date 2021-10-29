@@ -6,6 +6,9 @@ import flowerRight from '../../assets/Images/flowerRight.png'
 import './dashboard.scss'
 import HeadBadge from '../../components/HeaderBadge'
 import Button from '../../components/Button'
+import UploadAndDisplayImage from '../../components/UploadImage/index'
+
+
 export default function Dashboard() {
    const dashboardData = DashboardFormDataInput.map( 
         function inputData(data){
@@ -32,21 +35,18 @@ export default function Dashboard() {
             
             <div className="dashboard-holder">
                 {/* <div className=""> */}
-                    <div className="group-form">
-                        {dashboardData}
-
+                    <div className="group-form upload-image">
+                        <UploadAndDisplayImage />
                     </div>
                     <div className="">
-                        <div className="group-form">
-                        <label htmlFor="message">Title</label>
-                            <input type="text" src="img_submit.gif" placeholder='example@email.com' id="send-email" name="send-email" />
-                        </div>
+
+                        {dashboardData}
+
                         <div className="group-form">
                             <label htmlFor="message">Body</label>
                             <textarea name="message" id="message" placeholder='' cols="40" rows="20"></textarea>
                         </div>
                         <div className="group-form group-form-button">
-                            {/* <button > Send </button> */}
                             <Button title='Send' />
                         </div>
                     </div>

@@ -6,10 +6,13 @@ export default function Button(props) {
         height: '59px',
         background: '#CF1D1D',
         borderRadius: '5px',
+        color: '#fff',
+        border: 'none',
+        outline: 'none',
     }
     return (
         <div>
-            <button type="submit" style={buttonSyle}>
+            <button type="submit" className={props.class} style={buttonSyle} onClick={props.onClick}>
                 {props.title}
             </button>
         </div>
