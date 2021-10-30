@@ -19,3 +19,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .user-card-container {
+    width: 90%;
+    margin: 0 auto;
+
+    .user-details {
+      padding: 2rem;
+
+      .message {
+        width: 100%;
+      }
+    }
+  }
+}
