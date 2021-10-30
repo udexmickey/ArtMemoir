@@ -17,7 +17,8 @@ export default function BlogPost() {
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
-        margin: 'auto 22%'
+        margin: 'auto 22%',
+        width: '300px',
     }
 
     const inputContainer = {
@@ -26,6 +27,9 @@ export default function BlogPost() {
     }
     const badgeButton = {
         background : '#606060'
+    }
+    const sizeHeadBadge = {
+        width: '300px',
     }
 
     const dashboardData = DashboardFormDataInput.map( 
@@ -50,12 +54,12 @@ export default function BlogPost() {
                 <ul style={flexContainer}>
                 <li>   
                     <NavLink activeClassName='is-active' to="/blogpost" >
-                        <HeadBadge name="Blog post" />
+                        <HeadBadge name="Blog post" style={sizeHeadBadge}/>
                     </NavLink> 
                 </li>
                 <li>
                     <NavLink activeClassName='is-active' to="/announcement">
-                        <HeadBadge name="Announcement" style={badgeButton} />
+                        <HeadBadge name="Announcement" style={badgeButton} style={sizeHeadBadge}/>
                     </NavLink>
                 </li>
                 </ul>

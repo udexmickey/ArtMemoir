@@ -16,8 +16,13 @@ export default function Announcement() {
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
-        margin: 'auto 22%'
+        margin: 'auto 22%',
+        
     }
+    const sizeHeadBadge = {
+        width: '300px',
+    }
+
     const badgeButton = {
         background : '#606060'
     }
@@ -44,12 +49,12 @@ export default function Announcement() {
                 <ul style={flexContainer}>
                 <li>   
                     <NavLink activeClassName='is-active' to="/blogpost">
-                        <HeadBadge name="Blog post" style={badgeButton}/>
+                        <HeadBadge name="Blog post" style={badgeButton } style={sizeHeadBadge}/>
                     </NavLink> 
                 </li>
                 <li>
                     <NavLink activeClassName='is-active' to="/announcement">
-                        <HeadBadge name="Announcement" />
+                        <HeadBadge name="Announcement" style={sizeHeadBadge} />
                     </NavLink>
                 </li>
                 </ul>

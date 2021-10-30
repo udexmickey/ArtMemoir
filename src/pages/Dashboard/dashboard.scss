@@ -2,7 +2,7 @@
     position: relative;
     
     .headbadge-title{
-        width: 300px;
+        // width: 300px;
         height: 82px;
         font-size: 32px;
         line-height: 28px;
@@ -77,7 +77,8 @@
     .right-flower, .left-flower{
         position: absolute;
         height: 50px;
-        // display: none;
+        opacity: 1;
+        z-index: -999;
         img{
             z-index: -2;
             height: 800px;
@@ -89,7 +90,26 @@
         right: 1px;
         width: fit-content;
     }
-    // .left-flower{
-    //     // width: 100%;
-    // }
+
+
+    .dashboard-card{
+        display: flex;
+        font-size: 22px;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a{
+            color: var(--secondary);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dashboard{
+        .dashboard-holder, .dashboard-card{
+            display: block;
+            margin: auto;
+        }
+    }
 }

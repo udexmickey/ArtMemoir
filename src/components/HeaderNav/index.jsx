@@ -57,6 +57,11 @@ export default function HeaderNav() {
                 Blog
               </NavLink>
             </li>
+            <li>
+              <NavLink activeClassName="is-active" to="/dashboard">
+                Dashboard
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
