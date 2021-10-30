@@ -1,25 +1,44 @@
-.headbadge-title-container{
+.headbadge-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto auto;
+
+  .headbadge-title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 6rem auto auto;
     box-sizing: border-box;
 
-    .headbadge-title{
-        font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        // width: 20%;
-        // height: 90px;
-        padding: 1% 5%;
-        background: var(--button);
-        box-shadow: 0px 20px 80px rgba(255, 0, 0, 0.08);
-        border-radius: 5px;
-        font-size: 300%;
-        line-height: 56px;
-        color: var(--background);
-
+    .headbadge-title {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // width: 20%;
+      // height: 90px;
+      padding: 1% 5%;
+      background: var(--button);
+      box-shadow: 0px 20px 80px rgba(255, 0, 0, 0.08);
+      border-radius: 5px;
+      font-size: 300%;
+      line-height: 56px;
+      color: var(--background);
     }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headbadge-title-container {
+    margin: 7rem auto auto;
+    .headbadge-title {
+      width: 300px;
+      height: 80px;
+      font-size: 40px;
+    }
+  }
 }

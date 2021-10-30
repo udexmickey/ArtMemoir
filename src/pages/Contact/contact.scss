@@ -1,104 +1,171 @@
-.contact{  
-    position: relative;
+.contact {
+  position: relative;
 
-    .contact-container{
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // width: 66.65%;
+    // height: 800px;
+    // width: 960px;
+    // height: 837px;
+    // border: lawngreen solid 1px;
+    margin: 15% 17% 10%;
+    // margin: auto 25%;
+    background: rgba(#bababa, 0.1);
+    box-sizing: border-box;
+
+    .contact-holder-container {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      position: relative;
+      padding: 1rem;
+      .contact-text {
+        text-align: center;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 33px;
+        margin: 0rem auto 3rem;
+        // height: 33px;
+        // border: lawngreen solid 1px;
+      }
+
+      .contact-form {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 15% 17% 10%;
-        background: rgba(#BABABA, 0.1);
-        box-sizing: border-box;
+        label {
+          display: block;
+          font-size: 18px;
+          line-height: 25px;
+          color: var(--background);
+          margin: 5% 0px 1%;
+        }
 
-        .contact-holder-container{
+        input,
+        textarea {
+          border: 1px solid rgba(186, 186, 186, 0.24);
+          box-sizing: border-box;
+          border-radius: 5px;
+          background: rgba(#fff, 0.25);
+          width: 660px;
+          color: rgba(#fff, 0.8);
+          padding: 0px 20px;
+          font-size: 16px;
+          // width: 100%;
+          z-index: 9999;
+          &:focus {
+            outline: white;
+          }
+        }
+
+        input {
+          height: 44px;
+        }
+
+        textarea {
+          height: 128px;
+          padding-top: 20px;
+        }
+        .group-form-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 5% 0px auto;
+          button {
+            width: 290px;
+            height: 49px;
+            border-radius: 5px;
+            font-size: 18px;
+            line-height: 25px;
+            color: var(--background);
+            background: var(--button);
+            border: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+      .contact-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 6% auto;
+        margin-left: 2rem;
+      }
+    }
+    .contact-title-container {
+      position: relative;
+      bottom: 170px;
+    }
+  }
+
+  .right-flower {
+    position: absolute;
+    top: 50px;
+    right: 1px;
+    width: fit-content;
+  }
+  .left-flower {
+    position: absolute;
+    // width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact {
+    .contact-container {
+      margin: 0;
+      padding-top: 4rem;
+
+      .contact-holder-container {
+        margin: 1rem;
+
+        .contact-title-container {
+          bottom: 80px;
+        }
+
+        .contact-text {
+          line-height: 40px;
+          font-size: 28px;
+        }
+
+        .contact-form {
+          display: block;
+
+          label {
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-bottom: 1rem;
+          }
+
+          input,
+          textarea {
             width: 100%;
-            height: 100%;
-            box-sizing: border-box;
-            position: relative;
-            padding: 1rem;
-            top: 50px;
-            .contact-text{
-                text-align: center;
-                font-weight: normal;
-                font-size: 24px;
-                line-height: 33px;
-                margin: 0rem auto 3rem;
+            padding: 2rem 1.5rem;
+            margin-bottom: 1rem;
+          }
+
+          .group-form-button {
+            button {
+              width: 70%;
+              margin: 1rem auto;
+              height: 60px;
+              font-size: 1.5rem;
+              font-weight: bold;
             }
-
-            .contact-form{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                input, textarea{
-                    border: 1px solid rgba(186, 186, 186, 0.24) !important;
-                    box-sizing: border-box;
-                    border-radius: 5px !important;
-                    background: rgba(#fff, 0.25) !important;
-                    width: 660px;
-                    color: rgba(#fff, 0.8);
-                    padding: 0px 20px;
-                    font-size: 16px;
-                    // width: 100%;
-                    z-index: 9999;
-                    &:focus{
-                        outline: white;
-                    }
-                }
-
-                input{
-                    height: 44px;
-                }
-
-                textarea{
-                    height: 128px;
-                    padding-top: 20px;
-                }
-                .group-form-button{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 5% 0px auto;
-                    button{
-                        width: 290px;
-                        height: 49px;
-                        border-radius: 5px;
-                        font-size: 18px;
-                        line-height: 25px;
-                        color: var(--background);
-                        background: var(--button);
-                        border: transparent;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                }
-
-            }
-
-            .contact-icons{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                
-                margin: 6% auto;
-                margin-left: 2rem;
-            }
+          }
         }
-        .contact-title-container{
-                position: relative;
-                bottom: 170px;
-        }
-        
-    }
 
-    .right-flower{
-        position: absolute;
-        top: 50px;
-        right: 1px;
-        width: fit-content;
+        .contact-icons {
+          margin-left: 0;
+          margin-top: 2rem;
+        }
+      }
     }
-    .left-flower{
-        position: absolute;
-        // width: 100%;
-    }
+  }
 }

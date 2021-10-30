@@ -1,21 +1,36 @@
-.user-card-container{
-        .user-details{
-            .name{
-                font-family: Open Sans;
-                font-style: normal;
-                font-weight: 600;
-                font-size: 32px;
-                line-height: 44px;
-            }
+.user-card-container {
+  .user-details {
+    .name {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 44px;
+    }
 
-            .message{
-                width: 561px;
-                height: 75px;
-                font-size: 18px;
-                line-height: 25px;
-            }
-            button{
-                display: none;
-            }
-        }
+    .message {
+      width: 561px;
+      height: 75px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    button {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .user-card-container {
+    width: 90%;
+    margin: 0 auto;
+
+    .user-details {
+      padding: 2rem;
+
+      .message {
+        width: 100%;
+      }
+    }
+  }
 }
