@@ -14,20 +14,18 @@ export default function Partners() {
         <img src={flowerLeft} alt="" srcset="" />
       </div>
       <div className="our-partners-container">
-        <div>
-          <UserCard
-            avatar={AfenBadge}
-            name={`Afen Group`}
-            className="partner-card"
-            message={`convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.`}
-          />
-          <UserCard
-            name={`Swirge Community`}
-            avatar={AfenBadge}
-            className="partner-card"
-            message={`convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.`}
-          />
-        </div>
+        <UserCard
+          avatar={AfenBadge}
+          name={`Afen Group`}
+          className="partner-card"
+          message={`convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.`}
+        />
+        <UserCard
+          name={`Swirge Community`}
+          avatar={AfenBadge}
+          className="partner-card"
+          message={`convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.`}
+        />
       </div>
     </div>
   );
