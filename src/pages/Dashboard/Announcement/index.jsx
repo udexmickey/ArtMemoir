@@ -16,10 +16,10 @@ export default function Announcement() {
         display: 'flex',
         justifyContent: 'space-around',
         alignItems: 'center',
-        margin: 'auto 25%'
+        margin: 'auto 22%'
     }
     const badgeButton = {
-        background : '#CF1D1D'
+        background : '#606060'
     }
 
     const dashboardData = DashboardFormDataInput.map( 
@@ -44,12 +44,12 @@ export default function Announcement() {
                 <ul style={flexContainer}>
                 <li>   
                     <NavLink activeClassName='is-active' to="/blogpost">
-                        <HeadBadge name="Blog post" />
+                        <HeadBadge name="Blog post" style={badgeButton}/>
                     </NavLink> 
                 </li>
                 <li>
                     <NavLink activeClassName='is-active' to="/announcement">
-                        <HeadBadge name="Announcement" style={badgeButton}/>
+                        <HeadBadge name="Announcement" />
                     </NavLink>
                 </li>
                 </ul>
