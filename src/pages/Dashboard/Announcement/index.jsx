@@ -1,21 +1,29 @@
-import DashboardFormDataInput from './dashboardformdata'
-import InputForm from '../../components/Input'
-import flowerLeft from '../../assets/Images/flower-left.png'
-import flowerRight from '../../assets/Images/flowerRight.png'
-import './dashboard.scss'
-import HeadBadge from '../../components/HeaderBadge'
-import Button from '../../components/Button'
-import UploadAndDisplayImage from '../../components/UploadImage/index'
+import DashboardFormDataInput from '../dashboardformdata'
+import InputForm from '../../../components/Input'
+import flowerLeft from '../../../assets/Images/flower-left.png'
+import flowerRight from '../../../assets/Images/flowerRight.png'
+import HeadBadge from '../../../components/HeaderBadge'
+import Button from '../../../components/Button'
+import UploadAndDisplayImage from '../../../components/UploadImage/index'
+import { NavLink } from "react-router-dom";
 
+export default function Announcement() {
 
-export default function Dashboard() {
-    
+    const badgeContainer = {
+        marginRight: '11rem'
+    }
+    const flexContainer = {
+        display: 'flex',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        margin: 'auto 25%'
+    }
     const badgeButton = {
         background : '#CF1D1D'
     }
 
-   const dashboardData = DashboardFormDataInput.map( 
-        (data) => {
+    const dashboardData = DashboardFormDataInput.map( 
+        function inputData(data){
             return (
                 <InputForm 
                     title={data.title}
@@ -32,17 +40,30 @@ export default function Dashboard() {
 
     return (
         <div className='dashboard'>
-            <HeadBadge name="Send Email" style={badgeButton}/>
+            <div className="" style={badgeContainer}>
+                <ul style={flexContainer}>
+                <li>   
+                    <NavLink activeClassName='is-active' to="/blogpost">
+                        <HeadBadge name="Blog post" />
+                    </NavLink> 
+                </li>
+                <li>
+                    <NavLink activeClassName='is-active' to="/announcement">
+                        <HeadBadge name="Announcement" style={badgeButton}/>
+                    </NavLink>
+                </li>
+                </ul>
+            </div>
              <div className="left-flower">
                 <img src={flowerLeft} alt="" srcset="" />
             </div>
             
             <div className="dashboard-holder">
-                {/* <div className=""> */}
                     <div className="group-form upload-image">
                         <UploadAndDisplayImage />
                     </div>
                     <div className="">
+
                         {dashboardData}
 
                         <div className="group-form">

@@ -7,6 +7,7 @@ import DropDowns from '../../components/DropDowns/DropDown';
 
 export default function WhitePaper() {
   const [selected, setSelected] = useState('Overview');
+
   return (
     <div className="whitePaper">
       <div className="whitepaper-badge">
@@ -20,62 +21,39 @@ export default function WhitePaper() {
 
           <div className="whitepaper-content-holder">
             <div className="whitepaper-content">
-              Viverra non dignissim iaculis amet. Malesuada accumsan, quis sed
-              ac. At malesuada feugiat in maecenas mauris egestas. Et mauris
-              turpis dignissim vulputate. Non venenatis dictum pellentesque
-              consequat. A egestas orci elementum, fermentum, lorem. Laoreet
-              odio pulvinar pellentesque sit etiam ac vitae. Ut vitae tempus,
-              sapien, nulla accumsan ut ante luctus diam. Porta enim auctor arcu
-              massa gravida at vestibulum. Amet, faucibus nunc sed at nunc arcu
-              nibh. Suspendisse tortor purus pellentesque non enim facilisi.
-              Felis scelerisque ultricies vel ut dui semper. Faucibus
-              pellentesque fermentum tempus, montes, pellentesque. Sed iaculis
-              donec sed phasellus sodales commodo sed. Maecenas pulvinar est ac
-              accumsan sit donec mattis pellentesque. Vitae dolor facilisis
-              tincidunt vulputate. Tincidunt vulputate aliquet faucibus ornare
-              neque. Nisi eu ac ut sed tristique. Enim facilisi eleifend
-              sagittis, turpis. Odio sit massa euismod platea non felis. Ipsum
-              suspendisse urna eget ac vitae. Mauris venenatis mus adipiscing
-              ultrices donec. Risus tellus enim viverra scelerisque venenatis
-              malesuada ipsum. Pulvinar blandit mi, interdum pellentesque in in
-              amet neque. Cursus gravida convallis netus eu lectus sed sociis.
-              Diam leo augue arcu varius at id risus adipiscing. Sit felis, orci
-              ante quam cras natoque vitae. Aliquet vestibulum ipsum quis
-              facilisi. Ullamcorper pellentesque consectetur elit nibh mi lorem.
-              Nibh nisl rhoncus, posuere pulvinar et. Tristique elit leo, non
-              integer dui, cras bibendum sagittis. Egestas placerat vitae
-              blandit viverra ultrices ac vel. Id aliquam scelerisque libero,
-              convallis mauris semper curabitur et non. Sit nulla cursus at orci
-              fermentum dolor. Ornare ornare lacinia convallis platea. Sed
-              viverra mus cursus urna, risus nunc, vestibulum velit. Urna turpis
-              proin quis at. Placerat eu posuere porttitor sit orci egestas
-              aliquam. Amet integer id suspendisse porttitor mi enim. A in
-              lobortis viverra consequat. Ultrices vitae sit gravida lacinia.
-              Leo duis scelerisque integer tincidunt consectetur id sagittis eu
-              pellentesque. Vitae sem sodales sollicitudin est nulla mauris.
-              Morbi tincidunt amet, pharetra tempor augue dignissim pellentesque
-              massa hac. Mattis nunc massa sed amet, enim. Dui cras imperdiet
-              malesuada etiam malesuada arcu. Elementum id id proin ac at urna.
-              Purus ut donec ante et orci rhoncus. Tellus phasellus facilisis
-              fames aenean nec mauris. Posuere lectus justo, neque rhoncus
-              sodales. Nibh scelerisque suspendisse mauris, mattis feugiat est
-              ut. Enim sed sed donec sed et congue adipiscing. Sollicitudin
-              velit, gravida ultrices cras at ac ipsum egestas libero. Ut
-              faucibus volutpat ultricies fermentum. Dolor aliquet senectus
-              venenatis eget amet id diam. Tempus blandit justo, vestibulum quam
-              laoreet. Tempus et lectus bibendum duis. Viverra gravida habitasse
-              dolor donec condimentum tincidunt lorem. In vitae bibendum amet,
-              elementum dolor, in quam magna purus. Pulvinar vitae, vitae
-              pellentesque ut non nunc. Non enim fringilla quam eget aliquam,
-              sit convallis pretium ullamcorper. Pharetra, dignissim ac quis
-              adipiscing consectetur nunc nunc, placerat. Convallis odio viverra
-              ipsum donec vitae cursus. Est morbi consectetur sit enim auctor
-              fermentum quis. Id tincidunt diam non nulla consequat. Cras risus,
-              tempor pharetra laoreet sed. Tincidunt rutrum eu diam eu ut
-              eleifend lobortis massa. Id diam massa, nisl augue vestibulum.
-              Integer morbi elementum nisl leo ut. Turpis et et nisl sapien.
-              Turpis in tempor non viverra. Purus leo pellentesque sollicitudin
-              id nulla at eu. Egestas ultricies integer ultrices enim id.
+              We are a group of artists and digital creators that creates arts
+              of various cultures, Tribes, and indifferent art spaces minted in
+              NFTs. Our Focus is on the Exploration of Art beyond just
+              beautification through NFTs. As great lovers of art and supporters
+              of artists. We are promoting various cultures/tribes of the world
+              through our arts, but not limited to popular tribes or cultures.
+              Our NFTs have been sectioned into single NFTs and Collection NFTs,
+              all of which have value to our Investors, Partners, Community, and
+              the World of Art globally. Having various artists at heart, our
+              single NFT is mainly to support the artists while our collection
+              NFTs are designed to give our investors and partners value that
+              can be used in real-time. These NFTs will be used as a medium of
+              transactions, stakes, shares, and lots more. Here art won’t just
+              be used only for beatifications and preserving the cultural
+              heritage of the people or the art they represent but will also be
+              used in real-time situations without being controlled by a
+              centralized organization or a third party, this will be achieved
+              through the use of Blockchain. ArtMemoir is a mix between a
+              blockchain startup and an art gallery. We provide physical,
+              tangible, immutable artwork on our platform to those looking for
+              cultural representation from around the world as well as help with
+              auctioning off some of the most popular pieces. We are your best
+              choice. In today's economy, it can often be difficult to find
+              someone or something that speaks to one's own heritage- ArtMemoir
+              ensures this experience with every item we sell. Providing an
+              opportunity for artists in all genres has been proven time and
+              again to be a way of celebrating life in its fullest sense while
+              at the same time helping spread and educate cultures across our
+              global society. In showcasing artists from all corners of the
+              globe, ArtMemoir offers the opportunity for collectors to amass a
+              diverse portfolio of artwork - while also supporting burgeoning
+              talent and enabling entrepreneurship in some of the neediest
+              economies. Copyright © 2021 - ArtMemoir
             </div>
           </div>
           <ButtonDirections />

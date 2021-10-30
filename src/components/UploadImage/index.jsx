@@ -2,6 +2,7 @@ import { BiCamera, IoClose } from "react-icons/all";
 import React, { useState } from "react";
 // import Button from "../Button";
 import './uploadImage.scss';
+
 const UploadAndDisplayImage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   

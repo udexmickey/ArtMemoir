@@ -6,6 +6,21 @@
         height: 82px;
         font-size: 32px;
         line-height: 38px;
+        display: flex;
+        font-size: 20px;
+        justify-content: space-around;
+        align-items: center;
+        background: #606060;
+        cursor: pointer;
+        // &:hover{
+        //     color: var(--secondary);
+        //     opacity: 0.8;
+        //     background-color: red;
+        // }
+        .is-active{
+            color: var(--accent);
+            
+          }
     }
 
 
@@ -47,15 +62,15 @@
 
         .upload-image{
             // width: 360px;
-            height: 420px;
+            // height: 420px;
             margin-right: 5%;
  
         }
 
         .send-image{
             margin-right: 4rem;
-            width: 360px;
-            height: 360px;
+            // width: 360px;
+            // height: 360px;
         }
         button{
             margin: auto;
@@ -73,6 +88,7 @@
         img{
             z-index: -2;
             height: 800px;
+            width: 300px;
         }
     }
     .right-flower{
