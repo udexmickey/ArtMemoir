@@ -15,6 +15,7 @@ import BlogPost from './pages/Dashboard/BlogPost';
 import Announcement from './pages/Dashboard/Announcement';
 import EditStore from './pages/Dashboard/EditStore';
 import UploadStore from './pages/Dashboard/UploadStore';
+import Dashboard from './pages/Dashboard';
 function App() {
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/team" component={Team} />
           <Route exact path="/whitepaper" component={WhitePaper} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/sendmail" component={SendMail} />
           <Route exact path="/blogpost" component={BlogPost} />
           <Route exact path="/announcement" component={Announcement} />

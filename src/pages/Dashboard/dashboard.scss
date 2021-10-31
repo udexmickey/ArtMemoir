@@ -2,31 +2,21 @@
     position: relative;
     
     .headbadge-title{
-        width: 268px;
+        // width: 300px;
         height: 82px;
         font-size: 32px;
-        line-height: 38px;
+        line-height: 28px;
         display: flex;
-        font-size: 20px;
+        font-size: 22px;
         justify-content: space-around;
         align-items: center;
-        background: #606060;
         cursor: pointer;
-        // &:hover{
-        //     color: var(--secondary);
-        //     opacity: 0.8;
-        //     background-color: red;
-        // }
-        .is-active{
-            color: var(--accent);
-            
-          }
     }
 
 
     .dashboard-holder{
         display: flex;
-        align-items: center;
+        // align-items: center;
         justify-content: center;
         margin: 2rem;
 
@@ -75,6 +65,9 @@
         button{
             margin: auto;
             margin-top: 4rem;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 30px;
         }
     }
 
@@ -84,7 +77,8 @@
     .right-flower, .left-flower{
         position: absolute;
         height: 50px;
-        // display: none;
+        opacity: 1;
+        z-index: -999;
         img{
             z-index: -2;
             height: 800px;
@@ -96,7 +90,26 @@
         right: 1px;
         width: fit-content;
     }
-    // .left-flower{
-    //     // width: 100%;
-    // }
+
+
+    .dashboard-card{
+        display: flex;
+        font-size: 22px;
+        justify-content: space-evenly;
+        align-items: center;
+
+        a{
+            color: var(--secondary);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dashboard{
+        .dashboard-holder, .dashboard-card{
+            display: block;
+            margin: auto;
+        }
+    }
 }
