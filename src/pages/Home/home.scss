@@ -18,3 +18,15 @@
     content: '';
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .home-container {
+    .showcase-text {
+      font-size: 5rem;
+    }
+
+    .divider {
+      display: none;
+    }
+  }
+}

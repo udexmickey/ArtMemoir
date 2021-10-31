@@ -18,6 +18,12 @@ const Showcase = () => {
         <div>
           <img className="showcase-img" src={pic3} alt="" />
         </div>
+        <div>
+          <img className="showcase-img" src={pic3} alt="" />
+        </div>
+        <div>
+          <img className="showcase-img" src={pic3} alt="" />
+        </div>
         {/* <div>
           <img className="showcase-img" src={pic4} alt="" />
         </div> */}

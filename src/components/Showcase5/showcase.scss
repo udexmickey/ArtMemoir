@@ -10,3 +10,12 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .roadmap-container {
+    margin-bottom: 7rem;
+    .roadmap-conatiner-inner {
+      width: 90%;
+    }
+  }
+}
