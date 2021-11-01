@@ -62,3 +62,48 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .showcase-container {
+    position: relative;
+
+    .left-container {
+      position: absolute;
+      z-index: -100;
+      width: 80%;
+    }
+
+    .right-container {
+      padding-bottom: 20rem;
+      z-index: 1000;
+      text-align: right;
+      width: 100%;
+      padding: 7rem 2rem;
+      background: rgba($color: #000000, $alpha: 0.7);
+
+      .right-container-heading {
+        font-size: 2.5rem;
+      }
+
+      .right-container-inner {
+        margin-top: 1rem;
+
+        .right-container-content {
+          margin-bottom: 6rem;
+
+          h1 {
+            font-size: 5rem;
+          }
+
+          p {
+            font-size: 1.7rem;
+          }
+
+          button {
+            padding: 1.5rem 2.6rem;
+          }
+        }
+      }
+    }
+  }
+}

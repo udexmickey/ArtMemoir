@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 6rem;
     margin-bottom: 2rem;
 
@@ -19,7 +20,8 @@
       align-items: center;
       justify-content: center;
       width: 660px;
-      height: 235px;
+      // height: 235px;
+      padding: 2rem 0;
       background: rgba(186, 186, 186, 0.1);
       border: 1px solid rgba(186, 186, 186, 0.1);
       box-sizing: border-box;
@@ -50,6 +52,7 @@
     .our-partners-container {
       .partner-card {
         width: 100%;
+        padding: 2rem 0 5rem 0;
       }
     }
   }
