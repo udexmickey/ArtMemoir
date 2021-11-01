@@ -16,7 +16,7 @@
     margin: auto;
 
     .whitepaper-title {
-      width: 298px;
+      // width: 498px;
       height: 156px;
       font-family: ' Raleway';
       font-style: normal;
@@ -29,7 +29,7 @@
       justify-content: center;
 
       .dropdown {
-        width: 400px;
+        // width: 400px;
         user-select: none;
         margin: auto;
         position: relative;
@@ -43,14 +43,16 @@
         align-items: center;
         cursor: pointer;
         justify-content: space-between;
-        font-size: 48px;
-        line-height: 56px;
+        font-size: 38px;
+        line-height: 26px;
         color: #606060;
-        width: 298px;
+        // width: 408px;
         height: 56px;
+        
 
         .dropdowns-icons {
-          margin-top: 20px;
+          margin-top: 5px;
+          margin-left: 2rem;
         }
       }
 
@@ -112,7 +114,7 @@
 
   /* width */
   ::-webkit-scrollbar {
-    width: 18px;
+    width: 10px;
     height: 10px;
   }
 
@@ -157,6 +159,11 @@
             width: 100%;
             left: 0;
             right: 0;
+            font-size: 18px;
+          }
+          .dropdown-btn {
+            justify-content: center;
+            font-size: 22px;
           }
         }
       }
@@ -164,10 +171,13 @@
       .whitepaper-content-holder {
         width: 100%;
         height: auto;
+       
 
         .whitepaper-content {
           width: 100%;
           height: auto;
+          font-size: 14px;
+          line-height: 160%;
         }
       }
     }
