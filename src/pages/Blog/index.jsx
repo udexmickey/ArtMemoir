@@ -30,7 +30,7 @@ export default function Blog() {
 
     return (
         <div className='blog-page'>
-            {/* <img src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
+            {/* <img src={Background} alt="" srcSet="" style={{width: '100%'}}  /> */}
             
             <div className="blog-badge" style={{background: `url(${Background})`, backgroundSize: '100%', width: '100%', backgroundRepeat: 'no-repeat'}}>
                 <div className="blog-heading-container">

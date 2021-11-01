@@ -32,7 +32,7 @@ export default function UploadStore() {
         <div className='dashboard'>
             <HeadBadge name="Upload store data" style={badgeButton}/>
              <div className="left-flower">
-                <img src={flowerLeft} alt="" srcset="" />
+                <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
             <div className="dashboard-holder">
@@ -65,7 +65,7 @@ export default function UploadStore() {
                 {/* </div> */}
             </div>
             <div className="right-flower">
-                <img src={flowerRight} alt="" srcset="" />
+                <img src={flowerRight} alt="" srcSet="" />
             </div>
         </div>
     )

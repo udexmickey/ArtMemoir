@@ -45,7 +45,7 @@ export default function SendEmail() {
         <div className='dashboard'>
             <HeadBadge name="Send Email" style={badgeButton}/>
              <div className="left-flower">
-                <img src={flowerLeft} alt="" srcset="" />
+                <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
             <div className="dashboard-holder">
@@ -67,7 +67,7 @@ export default function SendEmail() {
                 {/* </div> */}
             </div>
             <div className="right-flower">
-                <img src={flowerRight} alt="" srcset="" />
+                <img src={flowerRight} alt="" srcSet="" />
             </div>
         </div>
     )

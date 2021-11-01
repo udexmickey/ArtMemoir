@@ -11,7 +11,7 @@ export default function Dashboard() {
     const displayCards = DashboardName.map(
         function Cards(props){
             return (
-                <DashboardCard name={props.name} link={props.link}/>
+                <DashboardCard key={props.id} name={props.name} link={props.link}/>
             )
         }
     )

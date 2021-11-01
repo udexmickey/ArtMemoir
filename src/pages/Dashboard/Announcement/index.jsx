@@ -24,7 +24,8 @@ export default function Announcement() {
     }
 
     const badgeButton = {
-        background : '#606060'
+        background : '#606060',
+        width: '300px',
     }
 
     const dashboardData = DashboardFormDataInput.map( 
@@ -49,7 +50,7 @@ export default function Announcement() {
                 <ul style={flexContainer}>
                 <li>   
                     <NavLink activeClassName='is-active' to="/blogpost">
-                        <HeadBadge name="Blog post" style={badgeButton } style={sizeHeadBadge}/>
+                        <HeadBadge name="Blog post" style={badgeButton }/>
                     </NavLink> 
                 </li>
                 <li>
@@ -60,7 +61,7 @@ export default function Announcement() {
                 </ul>
             </div>
              <div className="left-flower">
-                <img src={flowerLeft} alt="" srcset="" />
+                <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
             <div className="dashboard-holder">
@@ -82,7 +83,7 @@ export default function Announcement() {
                 {/* </div> */}
             </div>
             <div className="right-flower">
-                <img src={flowerRight} alt="" srcset="" />
+                <img src={flowerRight} alt="" srcSet="" />
             </div>
         </div>
     )

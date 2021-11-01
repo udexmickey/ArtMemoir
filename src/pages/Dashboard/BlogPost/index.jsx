@@ -18,7 +18,6 @@ export default function BlogPost() {
         justifyContent: 'space-around',
         alignItems: 'center',
         margin: 'auto 22%',
-        width: '300px',
     }
 
     const inputContainer = {
@@ -26,7 +25,8 @@ export default function BlogPost() {
         width: ' 360px',
     }
     const badgeButton = {
-        background : '#606060'
+        background : '#606060',
+        width: '300px',
     }
     const sizeHeadBadge = {
         width: '300px',
@@ -59,13 +59,13 @@ export default function BlogPost() {
                 </li>
                 <li>
                     <NavLink activeClassName='is-active' to="/announcement">
-                        <HeadBadge name="Announcement" style={badgeButton} style={sizeHeadBadge}/>
+                        <HeadBadge name="Announcement" style={badgeButton} />
                     </NavLink>
                 </li>
                 </ul>
             </div>
              <div className="left-flower">
-                <img src={flowerLeft} alt="" srcset="" />
+                <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
             <div className="dashboard-holder">
@@ -98,7 +98,7 @@ export default function BlogPost() {
                 {/* </div> */}
             </div>
             <div className="right-flower">
-                <img src={flowerRight} alt="" srcset="" />
+                <img src={flowerRight} alt="" srcSet="" />
             </div>
         </div>
     )

@@ -18,7 +18,7 @@ export default function HeaderNav() {
       <div className="headerNav">
         <div className="nav-logo">
           <Link to="/" exact={true}>
-            <img src={logo} alt="" srcset="" />
+            <img src={logo} alt="" srcSet="" />
           </Link>
         </div>
         <div className="nav-list-container">

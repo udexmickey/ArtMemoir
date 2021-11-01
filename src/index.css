@@ -16,10 +16,10 @@ body {
   color: var(--secondary);
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 a,
 Link,
