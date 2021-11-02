@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-
+import axios from 'axios'
 export default function useFetch(url ='', options= null) {
     const [data, setData] = useState(null)
     const [error, setError] = useState(null)
@@ -8,26 +8,42 @@ export default function useFetch(url ='', options= null) {
     useEffect(() => {
         setLoading(true)
         let isMounted = true;
-        fetch(url, options)
-        .then(res => res.json())
+        axios.get(url, options)
         .then(data => { 
             if(isMounted) {
-                setError(null) 
-                setData(data)
+                setData(data.data)
             }
         })
         .catch(error =>{ 
             if(isMounted){
                 setError(error)
-                setData(null)
             }
         })
         .finally(() => isMounted && setLoading(false))
 
         return (() => isMounted = false)
     }, [url, options])
-// console.log(data[1].id);
-    return {loading, error, data}
+
+    const reFresh = () =>{
+        setLoading(true)
+        let isMounted = true;
+        axios.get(url, options)
+        // .then(res => res.json())
+        .then(data => { 
+            if(isMounted) {
+                setData(data.data)
+            }
+        })
+        .catch(error =>{ 
+            if(isMounted){
+                setError(error)
+            }
+        })
+        .finally(() => isMounted && setLoading(false))
+
+        return (() => isMounted = false)
+    }
+    return {loading, error, data, reFresh}
 }
 
 
