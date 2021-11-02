@@ -11,7 +11,7 @@ export default function Blog() {
   
   const [value, setValue] = useState([])
   const {loading, error, data, reFresh} = useFetch( URL )
-  const [a, b, ...rest] = data ? data : [];
+  const [...rest] = data ? data : [];
   // console.log(a);
 
 if(loading) return <h1>Loading...</h1>
