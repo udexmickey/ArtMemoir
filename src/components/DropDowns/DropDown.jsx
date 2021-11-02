@@ -6,7 +6,7 @@ import './dropdown.scss';
 function DropDowns({ selected, setSelected }) {
   const [isActive, setIsActive] = useState(false);
   const options = [
-    'Overview',
+    'Abstract',
     'NFTs & Art',
     'NFTs & Real Estate',
     'NFTs & Games',
