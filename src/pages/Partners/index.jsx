@@ -11,7 +11,7 @@ export default function Partners() {
     <div className="our-partners">
       <HeadBadge name="Our Partners" />
       <div className="background-flower">
-        <img src={flowerLeft} alt="" srcset="" />
+        <img src={flowerLeft} alt="" srcSet="" />
       </div>
       <div className="our-partners-container">
         <UserCard

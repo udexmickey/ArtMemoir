@@ -24,24 +24,9 @@ export default function Announcement() {
     }
 
     const badgeButton = {
-        background : '#606060'
+        background : '#606060',
+        width: '300px',
     }
-
-    const dashboardData = DashboardFormDataInput.map( 
-        function inputData(data){
-            return (
-                <InputForm 
-                    title={data.title}
-                    type={data.type}
-                    name={data.name}
-                    id={data.id} 
-                    className={data.className}
-                    key={data.key}
-                    placeholder={data.placeholder}
-                />
-            )
-        }
-     )
 
     return (
         <div className='dashboard'>
@@ -49,7 +34,7 @@ export default function Announcement() {
                 <ul style={flexContainer}>
                 <li>   
                     <NavLink activeClassName='is-active' to="/blogpost">
-                        <HeadBadge name="Blog post" style={badgeButton } style={sizeHeadBadge}/>
+                        <HeadBadge name="Blog post" style={badgeButton }/>
                     </NavLink> 
                 </li>
                 <li>
@@ -60,29 +45,37 @@ export default function Announcement() {
                 </ul>
             </div>
              <div className="left-flower">
-                <img src={flowerLeft} alt="" srcset="" />
+                <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
             <div className="dashboard-holder">
-                    <div className="group-form upload-image">
-                        <UploadAndDisplayImage />
-                    </div>
                     <div className="">
-
-                        {dashboardData}
-
-                        <div className="group-form">
-                            <label htmlFor="message">Body</label>
-                            <textarea name="message" id="message" placeholder='' cols="40" rows="20"></textarea>
-                        </div>
-                        <div className="group-form group-form-button">
-                            <Button title='Send' />
-                        </div>
+                        <form action="">
+                            <div className="group-form upload-image">
+                                <UploadAndDisplayImage />
+                            </div>
+                                <InputForm 
+                                    title={data.title}
+                                    type={data.type}
+                                    name={data.name}
+                                    id={data.id} 
+                                    className={data.className}
+                                    key={data.key}
+                                    placeholder={data.placeholder}
+                                />
+                            <div className="group-form">
+                                <label htmlFor="message">Body</label>
+                                <textarea name="message" id="message" placeholder='' cols="40" rows="20"></textarea>
+                            </div>
+                            <div className="group-form group-form-button">
+                                <Button title='Send' />
+                            </div>
+                        </form>
                     </div>
                 {/* </div> */}
             </div>
             <div className="right-flower">
-                <img src={flowerRight} alt="" srcset="" />
+                <img src={flowerRight} alt="" srcSet="" />
             </div>
         </div>
     )

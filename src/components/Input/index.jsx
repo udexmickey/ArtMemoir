@@ -11,7 +11,18 @@ export default function InputForm(props) {
         <div>
             <div className={`group-form ${props.className}`}>
                 <label htmlFor={props.htmlFor}>{props.title}</label>
-                <input style={styling} accept={props.accept} type={props.type} name={props.name} id={props.id} placeholder={props.placeholder}/>
+                <input 
+                    style={styling} 
+                    accept={props.accept} 
+                    type={props.type} 
+                    name={props.name} 
+                    id={props.id} 
+                    placeholder={props.placeholder}
+                    ref={props.ref}
+                    onChange={props.onChange}
+                    value={props.value}
+                    className={props.className}
+                />
             </div>
         </div>
     )

@@ -1,17 +1,44 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
-
+import useFetch from '../../hooks/useFetch'
 import './blogs.scss';
 import Blogs from './blogsData';
 import ButtonDirections from '../../components/ButtonDirections/btn-directions';
+import {url as URL} from '../../config/config.json'
 
 export default function Blog() {
-  const blogposts = Blogs.map(function BlogCard(blog) {
+  
+  const [value, setValue] = useState([])
+  const {loading, error, data, reFresh} = useFetch( URL )
+  const [...rest] = data ? data : [];
+  // console.log(a);
+
+if(loading) return <h1>Loading...</h1>
+if(data) console.log(data);
+if(error) return <h1>{error}</h1>
+
+const dataArray = rest.map((list, idk) =>{
+    return <div className="blog-card">
+         <UserCard
+          // key={list.id}
+          name={list.author}
+          message={list.text}
+        />
+    </div>
+})
+  const styling = {
+    display: 'block',
+    fontSize: '48',
+    color: 'white',
+    border: 'solid blue 5px',
+    // height: '59px'
+  }
+  const blogposts = Blogs.map(function BlogCard(blog, idx) {
     return (
       <div className="blog-card">
         <UserCard
-          key={blog.player.id}
+          key={idx}
           avatar={blog.player.avatar}
           name={blog.player.name}
           role={blog.player.role}
@@ -52,9 +79,16 @@ export default function Blog() {
       </div>
 
       <div className="blog-container">
-        <div className="blog-card-holder">{blogposts}</div>
+        <div className="blog-card-holder">
+            {/* {blogposts} */}
+            {dataArray}
+        </div>
       </div>
       <ButtonDirections />
+      {/* <img src={infoData} alt="" /> */}
+      {/* <h1 style={styling}>{data?.name}</h1> */}
+      {/* <h1 style={styling}>{dataArray}</h1> */}
+      <button onClick={reFresh}>Fresh</button>
     </div>
   );
 }
