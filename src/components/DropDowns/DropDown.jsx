@@ -6,7 +6,7 @@ import './dropdown.scss';
 function DropDowns({ selected, setSelected }) {
   const [isActive, setIsActive] = useState(false);
   const options = [
-    'Overview',
+    'Abstract',
     'NFTs & Art',
     'NFTs & Real Estate',
     'NFTs & Games',
@@ -26,8 +26,9 @@ function DropDowns({ selected, setSelected }) {
       </div>
       {isActive && (
         <div className="dropdown-content">
-          {options.map((option) => (
+          {options.map((option, i) => (
             <div
+              key={i}
               onClick={(e) => {
                 setSelected(option);
                 setIsActive(false);
