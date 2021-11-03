@@ -3,9 +3,9 @@ import React, { useState } from "react";
 // import Button from "../Button";
 import './uploadImage.scss';
 
-const UploadAndDisplayImage = () => {
+const UploadAndDisplayImage = ({getPhoto, externalData}) => {
   const [selectedImage, setSelectedImage] = useState(null);
-  
+  // console.log(getPhoto, externalData)
     const stylingInput = {
         display: 'none',
         height: '300px',
@@ -34,12 +34,11 @@ const UploadAndDisplayImage = () => {
             <input
                 style={selectedImage ? stylingInput : null}
                 type="file"
-                name="myImage"
+                name="image"
                 onChange={(event) => {
-                console.log(event.target.files[0]);
-                setSelectedImage(event.target.files[0]
-                    
-                );
+                // console.log(event.target.value)
+                setSelectedImage(event.target.files[0]);
+                getPhoto({...externalData, image:event.target.files[0]})
                 }}
             />
         </div>

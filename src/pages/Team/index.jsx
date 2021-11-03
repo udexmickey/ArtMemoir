@@ -7,7 +7,6 @@ import './team.scss'
 
 export default function Team() {
     function TeamMembers(person, idx) {
-        console.log(idx)
         return(
             <UserCard
                 id={person.id}

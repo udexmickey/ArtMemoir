@@ -1,4 +1,4 @@
-import DashboardFormDataInput from '../dashboardformdata'
+// import DashboardFormDataInput from '../dashboardformdata'
 import InputForm from '../../../components/Input'
 import flowerLeft from '../../../assets/Images/flower-left.png'
 import flowerRight from '../../../assets/Images/flowerRight.png'
@@ -6,8 +6,28 @@ import HeadBadge from '../../../components/HeaderBadge'
 import Button from '../../../components/Button'
 import UploadAndDisplayImage from '../../../components/UploadImage/index'
 import { NavLink } from "react-router-dom";
-
+import { useForm }  from 'react-hook-form'
+import '../dashboard.scss'
+import { useState } from 'react'
 export default function Announcement() {
+
+    const [data, setData] = useState([
+        {
+         
+        }
+    ])
+    // const { register, errors, handleSubmit } = useForm()
+
+    const controlSubmit = (e) => {
+         e.preventDefault();
+        const formData = new FormData()
+        formData.append("image", data.image)
+        formData.append('title', data.title)
+        formData.append('content', data.content)
+        console.log(data)
+    }
+
+
 
     const badgeContainer = {
         marginRight: '11rem'
@@ -19,6 +39,14 @@ export default function Announcement() {
         margin: 'auto 22%',
         
     }
+
+    const flexForm = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        
+    }
+
     const sizeHeadBadge = {
         width: '300px',
     }
@@ -27,6 +55,23 @@ export default function Announcement() {
         background : '#606060',
         width: '300px',
     }
+
+    // const dashboardData = DashboardFormDataInput.map( 
+    //     function inputData(data){
+    //         return (
+    //             <InputForm 
+    //                 title={data.title}
+    //                 type={data.type}
+    //                 name={data.name}
+    //                 id={data.id} 
+    //                 className={data.className}
+    //                 key={data.key}
+    //                 placeholder={data.placeholder}
+    //                 ref={register}
+    //             />
+    //         )
+    //     }
+    //  )
 
     return (
         <div className='dashboard'>
@@ -50,25 +95,31 @@ export default function Announcement() {
             
             <div className="dashboard-holder">
                     <div className="">
-                        <form action="">
+                        <form action="" style={flexForm } onSubmit={controlSubmit}>
                             <div className="group-form upload-image">
-                                <UploadAndDisplayImage />
+                                <UploadAndDisplayImage getPhoto={setData} externalData={data} />
                             </div>
-                                <InputForm 
-                                    title={data.title}
-                                    type={data.type}
-                                    name={data.name}
-                                    id={data.id} 
-                                    className={data.className}
-                                    key={data.key}
-                                    placeholder={data.placeholder}
+                            <div>
+                                <input
+                                    title={'Title'}
+                                    type={"text"}
+                                    name={"title"}
+                                    id={'send-email'} 
+                                    // className={data.className}
+                                    // value={setData(data.title)}
+                                    // onChange={(title) => setData(title)}
+                                    key={'1'}
                                 />
-                            <div className="group-form">
-                                <label htmlFor="message">Body</label>
-                                <textarea name="message" id="message" placeholder='' cols="40" rows="20"></textarea>
-                            </div>
-                            <div className="group-form group-form-button">
-                                <Button title='Send' />
+                                <div className="group-form">
+                                    <label htmlFor="message">Body</label>
+                                    <textarea name="content" 
+                                    // onChange={(content) => setData(content)} 
+                                    // value={setData(data.content)} 
+                                    id="message" placeholder='' cols="40" rows="20"></textarea>
+                                </div>
+                                <div className="group-form group-form-button">
+                                    <Button title='Send' type='submit'/>
+                                </div>
                             </div>
                         </form>
                     </div>

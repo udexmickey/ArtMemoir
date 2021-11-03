@@ -12,11 +12,10 @@ export default function Blog() {
   const [value, setValue] = useState([])
   const {loading, error, data, reFresh} = useFetch( URL )
   const [...rest] = data ? data : [];
-  // console.log(a);
 
 if(loading) return <h1>Loading...</h1>
 if(data) console.log(data);
-if(error) return <h1>{error}</h1>
+if(error)  console.error('error...'+error)
 
 const dataArray = rest.map((list, idk) =>{
     return <div className="blog-card">
