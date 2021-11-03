@@ -4,7 +4,7 @@ import flowerRight from '../../assets/Images/flowerRight.png'
 import './dashboard.scss'
 import DashboardCard from '../../components/DashboardCard'
 
-import  { test } from '../../config/config.json'
+// import  { test } from '../../config/config.json'
 
 export default function Dashboard() {
    

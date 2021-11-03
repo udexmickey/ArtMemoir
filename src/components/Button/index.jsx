@@ -12,7 +12,7 @@ export default function Button(props) {
     }
     return (
         <div>
-            <button type="submit" className={props.class} style={buttonSyle} onClick={props.onClick}>
+            <button type={props.type} className={props.class} style={buttonSyle} onClick={props.onClick}>
                 {props.title}
             </button>
         </div>

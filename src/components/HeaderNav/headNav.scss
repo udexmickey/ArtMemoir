@@ -49,7 +49,6 @@
 @media only screen and (max-width: 600px) {
   .headnav-container {
     .headerNav {
-      margin: 40px;
       justify-content: space-between;
 
       .nav-list-container {
@@ -61,6 +60,13 @@
           display: none;
         }
       }
+    }
+  }
+}
+@media only screen and (min-width: 1189px) {
+  .headnav-container {
+    .headerNav{
+      margin: 40px 0px !important;
     }
   }
 }

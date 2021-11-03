@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import Button from "../Button";
 import './uploadImage.scss';
 
-const UploadAndDisplayImage = ({getPhoto, externalData}) => {
+const UploadAndDisplayImage = ({name, register}) => {
   const [selectedImage, setSelectedImage] = useState(null);
   // console.log(getPhoto, externalData)
     const stylingInput = {
@@ -35,11 +35,14 @@ const UploadAndDisplayImage = ({getPhoto, externalData}) => {
                 style={selectedImage ? stylingInput : null}
                 type="file"
                 name="image"
-                onChange={(event) => {
-                // console.log(event.target.value)
-                setSelectedImage(event.target.files[0]);
-                getPhoto({...externalData, image:event.target.files[0]})
-                }}
+                // onChange={(event) => {
+                // // console.log(event.target.files[0])
+                // setSelectedImage(event.target.files[0]);
+                // // getPhoto({...externalData, image:event.target.files[0]})
+                // }}
+                {...register(name, {onChange : (e) =>{
+                  setSelectedImage(e.target.files[0]);
+                }})}
             />
         </div>
     </div>

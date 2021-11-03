@@ -11,24 +11,21 @@ import '../dashboard.scss'
 import { useState } from 'react'
 export default function Announcement() {
 
-    const [data, setData] = useState([
-        {
-         
-        }
-    ])
-    // const { register, errors, handleSubmit } = useForm()
+    const { register, errors, handleSubmit } = useForm()
 
-    const controlSubmit = (e) => {
-         e.preventDefault();
+    const controlSubmit = (data) => {
+        //  data.preventDefault();
         const formData = new FormData()
-        formData.append("image", data.image)
+        formData.append("image", data.image[0])
         formData.append('title', data.title)
         formData.append('content', data.content)
-        console.log(data)
+        // console.log(formData.entries(), data)
+        for(var pair of formData.entries()) {
+            console.log(pair[0]+ ', '+ pair[1]);
+         }
     }
 
-
-
+    // Styling the component
     const badgeContainer = {
         marginRight: '11rem'
     }
@@ -56,27 +53,10 @@ export default function Announcement() {
         width: '300px',
     }
 
-    // const dashboardData = DashboardFormDataInput.map( 
-    //     function inputData(data){
-    //         return (
-    //             <InputForm 
-    //                 title={data.title}
-    //                 type={data.type}
-    //                 name={data.name}
-    //                 id={data.id} 
-    //                 className={data.className}
-    //                 key={data.key}
-    //                 placeholder={data.placeholder}
-    //                 ref={register}
-    //             />
-    //         )
-    //     }
-    //  )
-
     return (
         <div className='dashboard'>
             <div className="" style={badgeContainer}>
-                <ul style={flexContainer}>
+                <ul className='badge-toggle' style={flexContainer}>
                 <li>   
                     <NavLink activeClassName='is-active' to="/blogpost">
                         <HeadBadge name="Blog post" style={badgeButton }/>
@@ -92,39 +72,40 @@ export default function Announcement() {
              <div className="left-flower">
                 <img src={flowerLeft} alt="" srcSet="" />
             </div>
-            
-            <div className="dashboard-holder">
-                    <div className="">
-                        <form action="" style={flexForm } onSubmit={controlSubmit}>
-                            <div className="group-form upload-image">
-                                <UploadAndDisplayImage getPhoto={setData} externalData={data} />
-                            </div>
-                            <div>
-                                <input
-                                    title={'Title'}
-                                    type={"text"}
-                                    name={"title"}
-                                    id={'send-email'} 
-                                    // className={data.className}
-                                    // value={setData(data.title)}
-                                    // onChange={(title) => setData(title)}
-                                    key={'1'}
-                                />
-                                <div className="group-form">
-                                    <label htmlFor="message">Body</label>
-                                    <textarea name="content" 
-                                    // onChange={(content) => setData(content)} 
-                                    // value={setData(data.content)} 
-                                    id="message" placeholder='' cols="40" rows="20"></textarea>
-                                </div>
-                                <div className="group-form group-form-button">
-                                    <Button title='Send' type='submit'/>
-                                </div>
-                            </div>
-                        </form>
+
+            <form action="" style={flexForm } onSubmit={handleSubmit(controlSubmit)}>
+                <div className="dashboard-holder">
+                        
+                    <div className="group-form upload-image">
+                        <UploadAndDisplayImage register={register} name='image' />
                     </div>
-                {/* </div> */}
-            </div>
+                    <div>
+                        <div className="group-form">
+                            <label htmlFor="">Title</label>
+                            <input
+                            type={"text"}
+                            name={"title"}
+                            id={'send-email'} 
+                            key={'1'}
+                            {...register('title', {required: true})}
+                        />
+                        </div>
+                        
+                        <div className="group-form">
+                            <label htmlFor="message">Body</label>
+                            <textarea 
+                                {...register('content', {required: true})}
+                                name="content" 
+                                id="message" placeholder='' cols="40" rows="20">
+
+                            </textarea>
+                        </div>
+                        <div className="group-form group-form-button">
+                            <Button title='Send' type='submit'/>
+                        </div>
+                    </div>
+                </div>
+            </form>
             <div className="right-flower">
                 <img src={flowerRight} alt="" srcSet="" />
             </div>
