@@ -22,6 +22,7 @@ export default function InputForm(props) {
                     onChange={props.onChange}
                     value={props.value}
                     className={props.className}
+                    {...props.register(props.name)}
                 />
             </div>
         </div>

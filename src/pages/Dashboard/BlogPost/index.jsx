@@ -6,11 +6,31 @@ import flowerRight from '../../../assets/Images/flowerRight.png'
 import HeadBadge from '../../../components/HeaderBadge'
 import Button from '../../../components/Button'
 import UploadAndDisplayImage from '../../../components/UploadImage/index'
+import {useForm} from 'react-hook-form';
+import { useState } from 'react';
 
 export default function BlogPost() {
 
+    const {register, handleSubmit, setValue } = useForm();
+
+    let see = true
+    const BlongOnSubmit = (res) => {
+        let formData = new FormData();
+    
+        formData.append("content", res);
+        formData.append("title", res.title);
+        formData.append("link", res.link);
+
+    // My axios call ...
+        setValue("content","");
+        console.log(res);
+      };
+
+    
+      //Styling the componets inline
+
     const badgeContainer = {
-        marginRight: '11rem'
+    marginRight: '11rem'
     }
 
     const flexContainer = {
@@ -20,38 +40,27 @@ export default function BlogPost() {
         margin: 'auto 22%',
     }
 
+    const noDisplay={
+        display: 'none'
+    }
     const inputContainer = {
         height: "10px",
         width: ' 360px',
     }
+
     const badgeButton = {
         background : '#606060',
         width: '300px',
     }
+    
     const sizeHeadBadge = {
         width: '300px',
     }
 
-    const dashboardData = DashboardFormDataInput.map( 
-        function inputData(data){
-            return (
-                <InputForm 
-                    title={data.title}
-                    type={data.type}
-                    name={data.name}
-                    id={data.id} 
-                    className={data.className}
-                    key={data.key}
-                    placeholder={data.placeholder}
-                />
-            )
-        }
-     )
-
     return (
         <div className='dashboard'>
             <div className="" style={badgeContainer}>
-                <ul style={flexContainer}>
+                <ul style={see ? flexContainer : noDisplay}>
                 <li>   
                     <NavLink activeClassName='is-active' to="/blogpost" >
                         <HeadBadge name="Blog post" style={sizeHeadBadge}/>
@@ -68,19 +77,36 @@ export default function BlogPost() {
                 <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
-            <div className="dashboard-holder">
+            <form action="" onSubmit={handleSubmit(BlongOnSubmit)}>
+                <div className="dashboard-holder">
                     <div className="group-form upload-image">
-                        <UploadAndDisplayImage />
+                        <UploadAndDisplayImage register={register} name='image' />
                     </div>
                     <div className="">
-                        {dashboardData}
+                        <div className="group-form">
+                            <label htmlFor="title">Title</label>
+                            <input
+                            type={"text"}
+                            name={"title"}
+                            id={'send-email'} 
+                            key={'1'}
+                            {...register('title', { required: true })}
+                        />
+                        </div>
 
                         <div className="group-form">
                             <label htmlFor="message">Body</label>
-                            <textarea name="message" id="message" placeholder='' cols="20" rows="10"></textarea>
+                            <textarea 
+                                {...register('content', { required: true })}
+                                id="message"
+                                placeholder='' 
+                                cols="20" 
+                                rows="10">
+
+                            </textarea>
                         </div>
                         <div className="group-form group-form-button">
-                            <InputForm 
+                            <InputForm
                                 title='Link to article'
                                 type='link'
                                 name='blog-post-link'
@@ -88,15 +114,15 @@ export default function BlogPost() {
                                 className='blog-post-link'
                                 key='1'
                                 style={inputContainer}
-                                // placeholder='blog-post-link'
+                                register={register} name='link'
                             />
                         </div>
                         <div className="group-form group-form-button">
-                            <Button title='Send' />
+                            <Button title='Send' type="submit" />
                         </div>
                     </div>
-                {/* </div> */}
-            </div>
+                </div>
+            </form>
             <div className="right-flower">
                 <img src={flowerRight} alt="" srcSet="" />
             </div>
