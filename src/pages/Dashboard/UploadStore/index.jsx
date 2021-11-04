@@ -32,8 +32,8 @@ export default function UploadStore() {
                 <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
-            <div className="dashboard-holder">
-                <form action="" onSubmit={handleSubmit(controlSubmit)}>
+            <div >
+                <form action="" className="dashboard-holder" onSubmit={handleSubmit(controlSubmit)}>
                     <div className="group-form upload-image">
                         <UploadAndDisplayImage register={register} name='image' />
                     </div>
@@ -43,8 +43,9 @@ export default function UploadStore() {
                             <textarea {...register('content', {required: true})} id="message" placeholder='' cols="40" rows="20"></textarea>
                         </div>
                         <div className="group-form group-form-button">
-                            <InputForm 
-                                title='Link to article'
+                            <label htmlFor="">Link to article</label>
+                            <input
+                                title=''
                                 type='url'
                                 name='blog-post-link'
                                 id='blog-post-link'

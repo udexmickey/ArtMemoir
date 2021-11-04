@@ -86,7 +86,7 @@ export default function Blog() {
 
       <div className="blog-container">
         <Carousel
-          autoPlay={true}
+          autoPlay={false}
           showStatus={false}
           showThumbs={false}
           showIndicators={false}
