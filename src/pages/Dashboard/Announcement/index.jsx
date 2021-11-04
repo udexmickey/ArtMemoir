@@ -11,11 +11,9 @@ import '../dashboard.scss';
 import { useState } from 'react';
 import useFetch from '../../../hooks/useFetch';
 export default function Announcement() {
-  const [formData, setFormData] = useState(new FormData());
   const { register, handleSubmit } = useForm();
   const { loading, error, data, postRequest } = useFetch(
     'https://type.fit/api/announcement',
-    formData,
   );
 
   const controlSubmit = async (data) => {
@@ -29,9 +27,7 @@ export default function Announcement() {
       console.log(pair[0] + ', ' + pair[1]);
     }
 
-    setFormData(formData);
-
-    await postRequest();
+    await postRequest(formData);
   };
 
   // Styling the component
