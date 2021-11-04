@@ -1,4 +1,4 @@
-import InputForm from '../../../components/Input'
+// import InputForm from '../../../components/Input'
 import flowerLeft from '../../../assets/Images/flower-left.png'
 import flowerRight from '../../../assets/Images/flowerRight.png'
 import HeadBadge from '../../../components/HeaderBadge'

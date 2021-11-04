@@ -1,4 +1,4 @@
-import DashboardFormDataInput from '../dashboardformdata';
+// import DashboardFormDataInput from '../dashboardformdata';
 import { NavLink } from 'react-router-dom';
 import InputForm from '../../../components/Input';
 import flowerLeft from '../../../assets/Images/flower-left.png';
@@ -7,12 +7,11 @@ import HeadBadge from '../../../components/HeaderBadge';
 import Button from '../../../components/Button';
 import UploadAndDisplayImage from '../../../components/UploadImage/index';
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
 import useFetch from '../../../hooks/useFetch';
 
 export default function BlogPost() {
   const { register, handleSubmit, setValue } = useForm();
-  const { loading, error, data, postRequest } = useFetch(
+  const { postRequest } = useFetch(
     'http://localhost:4000/post',
   );
 
@@ -115,7 +114,6 @@ export default function BlogPost() {
                 key="1"
                 style={inputContainer}
                 register={register}
-                name="link"
               />
             </div>
             <div className="group-form group-form-button">

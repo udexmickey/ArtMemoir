@@ -1,5 +1,5 @@
 // import React from 'react'
-import InputForm from '../../../components/Input'
+// import InputForm from '../../../components/Input'
 import flowerLeft from '../../../assets/Images/flower-left.png'
 import flowerRight from '../../../assets/Images/flowerRight.png'
 import '../dashboard.scss'

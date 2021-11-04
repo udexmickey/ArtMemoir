@@ -1,5 +1,5 @@
 // import DashboardFormDataInput from '../dashboardformdata'
-import InputForm from '../../../components/Input';
+// import InputForm from '../../../components/Input';
 import flowerLeft from '../../../assets/Images/flower-left.png';
 import flowerRight from '../../../assets/Images/flowerRight.png';
 import HeadBadge from '../../../components/HeaderBadge';
@@ -8,11 +8,10 @@ import UploadAndDisplayImage from '../../../components/UploadImage/index';
 import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import '../dashboard.scss';
-import { useState } from 'react';
 import useFetch from '../../../hooks/useFetch';
 export default function Announcement() {
   const { register, handleSubmit } = useForm();
-  const { loading, error, data, postRequest } = useFetch(
+  const { postRequest } = useFetch(
     'http://localhost:4000/announcement',
   );
 
