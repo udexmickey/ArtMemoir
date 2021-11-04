@@ -1,38 +1,45 @@
 import React, { useEffect, useState } from 'react';
 import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
-import useFetch from '../../hooks/useFetch'
+import useFetch from '../../hooks/useFetch';
 import './blogs.scss';
 import Blogs from './blogsData';
 import ButtonDirections from '../../components/ButtonDirections/btn-directions';
-import {url as URL} from '../../config/config.json'
+import { url as URL } from '../../config/config.json';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+import { chunk } from 'lodash';
 
 export default function Blog() {
-  
-  const [value, setValue] = useState([])
-  const {loading, error, data, reFresh} = useFetch( URL )
+  const [value, setValue] = useState([]);
+  const { loading, error, data, reFresh } = useFetch(URL);
   const [...rest] = data ? data : [];
 
-if(loading) return <h1>Loading...</h1>
-if(data) console.log(data);
-if(error)  console.error('error...'+error)
+  if (loading) return <h1>Loading...</h1>;
+  if (data) console.log(data);
+  if (error) console.error('error...' + error);
 
-const dataArray = rest.map((list, idk) =>{
-    return <div className="blog-card">
-         <UserCard
-          // key={list.id}
-          name={list.author}
-          message={list.text}
-        />
+  const dataArray = chunk(rest, 3).map((data) => (
+    <div className="blog-card-holder">
+      {data.map((card) => (
+        <div className="blog-card">
+          <UserCard
+            // key={card.id}
+            name={card.author}
+            message={card.text}
+          />
+        </div>
+      ))}
     </div>
-})
+  ));
+
   const styling = {
     display: 'block',
     fontSize: '48',
     color: 'white',
     border: 'solid blue 5px',
     // height: '59px'
-  }
+  };
   const blogposts = Blogs.map(function BlogCard(blog, idx) {
     return (
       <div className="blog-card">
@@ -78,12 +85,22 @@ const dataArray = rest.map((list, idk) =>{
       </div>
 
       <div className="blog-container">
-        <div className="blog-card-holder">
-            {/* {blogposts} */}
-            {dataArray}
-        </div>
+        <Carousel
+          autoPlay={true}
+          showStatus={false}
+          showThumbs={false}
+          showIndicators={false}
+        >
+          {dataArray}
+        </Carousel>
       </div>
-      <ButtonDirections />
+
+      {/* <div className="blog-container">
+        <div className="blog-card-holder">
+          {dataArray}
+        </div>
+      </div> */}
+      {/* <ButtonDirections /> */}
       {/* <img src={infoData} alt="" /> */}
       {/* <h1 style={styling}>{data?.name}</h1> */}
       {/* <h1 style={styling}>{dataArray}</h1> */}
