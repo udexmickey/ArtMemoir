@@ -13,7 +13,7 @@ import useFetch from '../../../hooks/useFetch';
 export default function Announcement() {
   const { register, handleSubmit } = useForm();
   const { loading, error, data, postRequest } = useFetch(
-    'https://type.fit/api/announcement',
+    'http://localhost:4000/announcement',
   );
 
   const controlSubmit = async (data) => {

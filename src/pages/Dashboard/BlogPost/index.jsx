@@ -13,7 +13,7 @@ import useFetch from '../../../hooks/useFetch';
 export default function BlogPost() {
   const { register, handleSubmit, setValue } = useForm();
   const { loading, error, data, postRequest } = useFetch(
-    'https://type.fit/api/post',
+    'http://localhost:4000/post',
   );
 
   let see = true;
@@ -26,8 +26,7 @@ export default function BlogPost() {
 
     // My axios call ...
     setValue('content', '');
-    await postRequest(formData);
-  };
+    await postRequest(formData);  };
 
   //Styling the componets inline
 
