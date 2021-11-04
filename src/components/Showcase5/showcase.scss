@@ -1,0 +1,21 @@
+.roadmap-container {
+  margin-top: 7rem;
+
+  .roadmap-conatiner-inner {
+    width: 70%;
+    margin: 4rem auto 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .roadmap-container {
+    margin-bottom: 7rem;
+    .roadmap-conatiner-inner {
+      width: 90%;
+    }
+  }
+}

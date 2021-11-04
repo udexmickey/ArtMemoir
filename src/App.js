@@ -10,6 +10,11 @@ import HeaderNav from './components/HeaderNav';
 import Blog from './pages/Blog';
 import './App.scss';
 import Footer from './components/Footer';
+import SendMail from './pages/Dashboard/SendMail';
+import BlogPost from './pages/Dashboard/BlogPost';
+import Announcement from './pages/Dashboard/Announcement';
+import EditStore from './pages/Dashboard/EditStore';
+import UploadStore from './pages/Dashboard/UploadStore';
 import Dashboard from './pages/Dashboard';
 function App() {
   return (
@@ -24,6 +29,11 @@ function App() {
           <Route exact path="/whitepaper" component={WhitePaper} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/sendmail" component={SendMail} />
+          <Route exact path="/blogpost" component={BlogPost} />
+          <Route exact path="/announcement" component={Announcement} />
+          <Route exact path="/editstore" component={EditStore} />
+          <Route exact path="/uploadstore" component={UploadStore} />
           <Route component={PageNotForm} />
         </Switch>
         <Footer />

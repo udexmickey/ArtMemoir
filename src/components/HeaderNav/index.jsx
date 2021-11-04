@@ -18,7 +18,7 @@ export default function HeaderNav() {
       <div className="headerNav">
         <div className="nav-logo">
           <Link to="/" exact={true}>
-            <img src={logo} alt="" srcset="" />
+            <img src={logo} alt="" srcSet="" />
           </Link>
         </div>
         <div className="nav-list-container">
@@ -55,6 +55,11 @@ export default function HeaderNav() {
             <li>
               <NavLink activeClassName="is-active" to="/blog">
                 Blog
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="is-active" to="/dashboard">
+                Dashboard
               </NavLink>
             </li>
           </ul>

@@ -1,0 +1,35 @@
+.showcase {
+  position: relative;
+  margin-top: 6rem;
+
+  .showcase-container {
+    display: flex;
+    padding-left: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    div {
+      .showcase-img {
+        width: 400px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .showcase {
+    .showcase-container {
+      div {
+        .showcase-img {
+          width: 250px;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}

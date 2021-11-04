@@ -16,10 +16,10 @@ body {
   color: var(--secondary);
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} */
 
 a,
 Link,
@@ -28,4 +28,12 @@ li {
   text-decoration: none;
   cursor: pointer;
   color: var(--button);
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--background);
+  margin: 5% 0px 1%;
 }
