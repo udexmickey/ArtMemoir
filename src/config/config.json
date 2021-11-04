@@ -1,5 +1,5 @@
 {
-    "url":"https://type.fit/api/quotes",
-    "test" : "http://localhost:4000",
-    "server ": ""
+  "url": "https://type.fit/api/quotes",
+  "test": "http://localhost:4000",
+  "server ": ""
 }
