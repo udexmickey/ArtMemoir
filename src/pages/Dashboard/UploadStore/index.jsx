@@ -1,32 +1,29 @@
-import DashboardFormDataInput from '../dashboardformdata'
 import InputForm from '../../../components/Input'
 import flowerLeft from '../../../assets/Images/flower-left.png'
 import flowerRight from '../../../assets/Images/flowerRight.png'
 import HeadBadge from '../../../components/HeaderBadge'
 import Button from '../../../components/Button'
 import UploadAndDisplayImage from '../../../components/UploadImage/index'
+import { useForm }  from 'react-hook-form'
 
 export default function UploadStore() {
+    const { register, handleSubmit } = useForm()
+
+    const controlSubmit = (data) => {
+        //  data.preventDefault();
+        const formData = new FormData()
+        formData.append("image", data.image[0])
+        formData.append('title', data.title)
+        formData.append('content', data.content)
+        // console.log(formData.entries(), data)
+        for(var pair of formData.entries()) {
+            console.log(pair[0]+ ', '+ pair[1]);
+         }
+    }
 
     const badgeButton = {
         background : '#CF1D1D'
     }
-
-    const dashboardData = DashboardFormDataInput.map( 
-        function inputData(data){
-            return (
-                <InputForm 
-                    title={data.title}
-                    type={data.type}
-                    name={data.name}
-                    id={data.id} 
-                    className={data.className}
-                    key={data.key}
-                    placeholder={data.placeholder}
-                />
-            )
-        }
-     )
 
     return (
         <div className='dashboard'>
@@ -36,16 +33,14 @@ export default function UploadStore() {
             </div>
             
             <div className="dashboard-holder">
+                <form action="" onSubmit={handleSubmit(controlSubmit)}>
                     <div className="group-form upload-image">
-                        <UploadAndDisplayImage />
+                        <UploadAndDisplayImage register={register} name='image' />
                     </div>
                     <div className="">
-
-                        {dashboardData}
-
                         <div className="group-form">
                             <label htmlFor="message">Body</label>
-                            <textarea name="message" id="message" placeholder='' cols="40" rows="20"></textarea>
+                            <textarea {...register('content', {required: true})} id="message" placeholder='' cols="40" rows="20"></textarea>
                         </div>
                         <div className="group-form group-form-button">
                             <InputForm 
@@ -55,14 +50,14 @@ export default function UploadStore() {
                                 id='blog-post-link'
                                 className='blog-post-link'
                                 key='1'
-                                // placeholder='blog-post-link'
+                                {...register('title', {required: true})}
                             />
                         </div>
                         <div className="group-form group-form-button">
                             <Button title='Send' />
                         </div>
                     </div>
-                {/* </div> */}
+                </form>
             </div>
             <div className="right-flower">
                 <img src={flowerRight} alt="" srcSet="" />
