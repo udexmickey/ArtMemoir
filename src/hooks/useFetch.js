@@ -46,12 +46,12 @@ export default function useFetch(url = '', options = null) {
     return () => (isMounted = false);
   };
 
-  const postRequest = async () => {
+  const postRequest = async (formData) => {
     setLoading(true);
     let isMounted = true;
 
     try {
-      const res = await axios.post(url, options);
+      const res = await axios.post(url, formData, options);
 
       isMounted && setData(res.data);
     } catch (error) {

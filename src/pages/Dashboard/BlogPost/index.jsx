@@ -11,11 +11,9 @@ import { useState } from 'react';
 import useFetch from '../../../hooks/useFetch';
 
 export default function BlogPost() {
-  const [formData, setFormData] = useState(new FormData());
   const { register, handleSubmit, setValue } = useForm();
   const { loading, error, data, postRequest } = useFetch(
     'https://type.fit/api/post',
-    formData,
   );
 
   let see = true;
@@ -26,11 +24,9 @@ export default function BlogPost() {
     formData.append('title', res.title);
     formData.append('link', res.link);
 
-    setFormData(formData);
-
     // My axios call ...
     setValue('content', '');
-    await postRequest();
+    await postRequest(formData);
   };
 
   //Styling the componets inline
