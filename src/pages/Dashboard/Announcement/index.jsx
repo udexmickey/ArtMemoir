@@ -11,7 +11,7 @@ import '../dashboard.scss'
 import { useState } from 'react'
 export default function Announcement() {
 
-    const { register, errors, handleSubmit } = useForm()
+    const { register, handleSubmit } = useForm()
 
     const controlSubmit = (data) => {
         //  data.preventDefault();
