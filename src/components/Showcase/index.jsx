@@ -2,7 +2,6 @@ import React from 'react';
 import pic1 from '../../assets/Images/pic1.png';
 import pic2 from '../../assets/Images/pic2.png';
 import pic3 from '../../assets/Images/pic3.png';
-// import pic4 from '../../assets/Images/pic4.png';
 import './showcase.scss';
 
 const Showcase = () => {
@@ -18,15 +17,6 @@ const Showcase = () => {
         <div>
           <img className="showcase-img" src={pic3} alt="" />
         </div>
-        <div>
-          <img className="showcase-img" src={pic3} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic3} alt="" />
-        </div>
-        {/* <div>
-          <img className="showcase-img" src={pic4} alt="" />
-        </div> */}
       </div>
     </div>
   );
