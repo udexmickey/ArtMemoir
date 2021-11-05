@@ -1,5 +1,5 @@
 .headnav-container {
-  // margin-right: 20%;
+  margin-right: 0px;
   .headerNav {
     display: flex;
     justify-content: space-around;
@@ -9,7 +9,6 @@
     // width: 100%;
 
     .nav-list-container {
-      // margin: auto 22rem auto 0px;
       .memu-list-display {
         font-size: 30px;
         transition: 0.45;
@@ -46,6 +45,16 @@
   }
 }
 
+@media only screen and (min-width: 1189px) {
+  .headnav-container {
+    // margin-left: 10%;
+    .headerNav{
+      margin: 40px 0px !important;
+      
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .headnav-container {
     .headerNav {
@@ -63,27 +72,10 @@
     }
   }
 }
-@media only screen and (min-width: 1189px) {
-  .headnav-container {
-    margin-left: 10%;
-    .headerNav{
-      margin: 40px 0px !important;
-      
-    }
-  }
-}
-@media only screen and (min-width: 600px) {
-  .headnav-container {
-    margin-left: 10%;
-  }
-}
 
 @media only screen and (max-width: 650px) {
   .headnav-container {
-    margin-left: 0;
-    .nav-btn{
-      display: none;
-    }
+    margin-left: 10%;
   }
 }
 

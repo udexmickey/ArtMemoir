@@ -15,7 +15,7 @@ export const Login = () => {
       `${url}admin/login`
   )
   const onSubmit = async(res) => {
-      console.log(res.data)
+      console.log(res)
       let formData = new FormData();
       formData.append('email', res.email)
       formData.append('password', res.password)
