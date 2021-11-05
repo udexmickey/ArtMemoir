@@ -69,16 +69,16 @@
 
     .left-container {
       z-index: -100;
+      height: 100%;
       width: 80%;
     }
 
     .right-container {
       padding-bottom: 20rem;
-      position: absolute;
-      z-index: 1000;
       text-align: right;
       width: 100%;
       padding: 7rem 2rem;
+      position: absolute;
       height: 100%;
       background: rgba($color: #000000, $alpha: 0.7);
 
