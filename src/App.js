@@ -16,7 +16,7 @@ import Announcement from './pages/Dashboard/Announcement';
 import EditStore from './pages/Dashboard/EditStore';
 import UploadStore from './pages/Dashboard/UploadStore';
 import Dashboard from './pages/Dashboard';
-import { Login } from './pages/Dashboard/Login';
+import { Login } from './pages/Login';
 function App() {
   return (
     <div className="App">

@@ -43,23 +43,6 @@
           margin: 5% 0px 1%;
         }
 
-        input,
-        textarea {
-          border: 1px solid rgba(186, 186, 186, 0.24);
-          box-sizing: border-box;
-          border-radius: 5px;
-          background: rgba(#fff, 0.25);
-          width: 660px;
-          color: rgba(#fff, 0.8);
-          padding: 0px 20px;
-          font-size: 16px;
-          // width: 100%;
-          z-index: 9999;
-          &:focus {
-            outline: white;
-          }
-        }
-
         input {
           height: 44px;
         }
@@ -167,5 +150,8 @@
         }
       }
     }
+    .right-flower, .left-flower {
+      display: none;
+  }
   }
 }
