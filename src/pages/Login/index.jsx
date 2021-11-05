@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { useForm } from 'react-hook-form';
 import useFetch from '../../hooks/useFetch';
 import { url } from '../../config/config.json';
@@ -11,15 +11,13 @@ import './login.scss';
 export const Login = () => {
   const { register, handleSubmit } = useForm();
 
-  const { postRequest } = useFetch(`${url}admin/login`);
-  const onSubmit = async (res) => {
-    console.log(res);
-    // let formData = new FormData();
-    // formData.append('email', res.email)
-    // formData.append('password', res.password)
+  const { postRequest, data, error, loading } = useFetch(`${url}admin/login`);
+  const token = useMemo(() => (data ? data : ''), [data]);
 
-    await postRequest(res);
-    if (res) localStorage.setItem('token', JSON.stringify(res.token));
+  localStorage.setItem('token', token);
+
+  const onSubmit = async (arg) => {
+    await postRequest(arg);
   };
 
   return (
