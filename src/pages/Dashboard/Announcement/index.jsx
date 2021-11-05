@@ -8,11 +8,12 @@ import UploadAndDisplayImage from '../../../components/UploadImage/index';
 import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import '../dashboard.scss';
+import {url} from '../../../config/config.json'
 import useFetch from '../../../hooks/useFetch';
 export default function Announcement() {
   const { register, handleSubmit } = useForm();
   const { postRequest } = useFetch(
-    'http://localhost:4000/announcement',
+    `${url}announcement`
   );
 
   const controlSubmit = async (data) => {

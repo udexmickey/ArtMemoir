@@ -7,25 +7,27 @@ import HeadBadge from '../../../components/HeaderBadge';
 import Button from '../../../components/Button';
 import UploadAndDisplayImage from '../../../components/UploadImage/index';
 import { useForm } from 'react-hook-form';
+import { url } from '../../../config/config.json'
 import useFetch from '../../../hooks/useFetch';
 
 export default function BlogPost() {
   const { register, handleSubmit, setValue } = useForm();
   const { postRequest } = useFetch(
-    'http://localhost:4000/post',
+    `${url}post`,
   );
 
   let see = true;
-  const BlongOnSubmit = async (res) => {
+  const BlogOnSubmit = async (res) => {
     let formData = new FormData();
-
-    formData.append('content', res);
+    formData.append('cover', res.image[0]);
+    formData.append('post', res);
     formData.append('title', res.title);
-    formData.append('link', res.link);
+    formData.append('medium_link', res.link);
 
     // My axios call ...
-    setValue('content', '');
-    await postRequest(formData);  };
+    setValue('post', '');
+    await postRequest(formData);  
+  };
 
   //Styling the componets inline
 
@@ -77,7 +79,7 @@ export default function BlogPost() {
         <img src={flowerLeft} alt="" srcSet="" />
       </div>
 
-      <form action="" onSubmit={handleSubmit(BlongOnSubmit)}>
+      <form action="" onSubmit={handleSubmit(BlogOnSubmit)}>
         <div className="dashboard-holder">
           <div className="group-form upload-image">
             <UploadAndDisplayImage register={register} name="image" />
