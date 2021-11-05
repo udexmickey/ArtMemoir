@@ -1,5 +1,8 @@
 .headnav-container {
-  // margin-right: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   .headerNav {
     display: flex;
     justify-content: space-around;
@@ -68,11 +71,7 @@
   @media only screen and (min-width: 1189px) {
     .headnav-container {
       margin-left: 10%;
-      .headerNav{
-      .headerNav {
-        margin: 40px 0px !important;
-        
-      }
+      .headerNav{margin: 40px 0px !important;
     }
   }
   @media only screen and (min-width: 600px) {

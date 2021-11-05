@@ -107,7 +107,7 @@ label {
 
 @media screen and (max-width: 480px) {
   .App {
-    max-width: 480px;
+    // max-width: 480px;
     box-sizing: border-box;
     .headerNav {
       display: flex;
@@ -117,7 +117,7 @@ label {
 
       .nav-list-container {
         margin: auto auto auto 10rem;
-        width: 400px;
+        // width: 400px;
       }
     }
     .footer {

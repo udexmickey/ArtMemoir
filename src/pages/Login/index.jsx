@@ -14,13 +14,13 @@ export const Login = () => {
   const { postRequest } = useFetch(
       `${url}admin/login`
   )
-  const onSubmit = async(res) => {
-      console.log(res.data)
+  const onSubmit = async(data) => {
+      
       let formData = new FormData();
-      formData.append('email', res.email)
-      formData.append('password', res.password)
-
-      await postRequest(res); 
+      formData.append('email', data.email)
+      formData.append('password', data.password)
+      console.log(data)
+      await postRequest(formData); 
   }
 
   return (
