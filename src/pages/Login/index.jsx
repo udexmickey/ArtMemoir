@@ -16,11 +16,12 @@ export const Login = () => {
   )
   const onSubmit = async(res) => {
       console.log(res)
-      let formData = new FormData();
-      formData.append('email', res.email)
-      formData.append('password', res.password)
+      // let formData = new FormData();
+      // formData.append('email', res.email)
+      // formData.append('password', res.password)
 
-      await postRequest(res); 
+      await postRequest(res);
+      if(res) localStorage.setItem('token', JSON.stringify(res.token))
   }
 
   return (
