@@ -1,5 +1,5 @@
 // import React from 'react'
-import InputForm from '../../../components/Input'
+// import InputForm from '../../../components/Input'
 import flowerLeft from '../../../assets/Images/flower-left.png'
 import flowerRight from '../../../assets/Images/flowerRight.png'
 import '../dashboard.scss'
@@ -35,15 +35,15 @@ export default function SendEmail() {
                 <img src={flowerLeft} alt="" srcSet="" />
             </div>
             
-            <div className="dashboard-holder">
-                <form action="" onSubmit={handleSubmit(controlSubmit)}>
+            <div >
+                <form action="" className="dashboard-holder" onSubmit={handleSubmit(controlSubmit)}>
                     <div className="group-form upload-image">
                         <UploadAndDisplayImage register={register} name='image' />
                     </div>
                     <div className="">
                         <div className="group-form">
                             <label htmlFor="">Title</label>
-                            <InputForm
+                            <input
                                 type={"text"}
                                 name={"title"}
                                 id={'send-email'} 

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
 import logo from '../../../src/assets/Images/logo.png';
 
 import './headNav.scss';
@@ -12,6 +11,20 @@ export default function HeaderNav() {
   const openMenu = () => {
     return setShowMenu(!showMenu);
   };
+
+  const btnStyle = {
+    width: '100px',
+    height: '59px',
+    background: 'rgb(207, 29, 29)',
+    borderRadius: '5px',
+    // color: 'rgb(255, 255, 255)',
+    border: 'none',
+    outline: 'none',
+    cursor: 'pointer',
+    fontSize: '18px',
+    fontFamily: 'open sans',
+    color: 'var(--secondary)'
+  }
 
   return (
     <div className="headnav-container">
@@ -63,6 +76,12 @@ export default function HeaderNav() {
               </NavLink>
             </li>
           </ul>
+        </div>
+        <div className="nav-btn" >
+        <Link to='/auth'>
+          <button style={btnStyle}> {'Login'}</button>
+        </Link>
+          
         </div>
       </div>
     </div>

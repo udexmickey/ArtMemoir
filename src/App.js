@@ -16,12 +16,15 @@ import Announcement from './pages/Dashboard/Announcement';
 import EditStore from './pages/Dashboard/EditStore';
 import UploadStore from './pages/Dashboard/UploadStore';
 import Dashboard from './pages/Dashboard';
+import { Login } from './pages/Login';
 function App() {
   return (
     <div className="App">
       <Router>
+        
         <HeaderNav />
         <Switch>
+          <Route exact path="/auth" component={Login}/>
           <Route exact path="/" component={Home} />
           <Route exact path="/partners" component={Partners} />
           <Route exact path="/contact" component={Contact} />

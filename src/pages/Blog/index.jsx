@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
 import useFetch from '../../hooks/useFetch';
 import './blogs.scss';
-import Blogs from './blogsData';
-import ButtonDirections from '../../components/ButtonDirections/btn-directions';
-import { url as URL } from '../../config/config.json';
+// import Blogs from './blogsData';
+// import ButtonDirections from '../../components/ButtonDirections/btn-directions';
+import { url as URL, testServer} from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
 
 export default function Blog() {
-  const [value, setValue] = useState([]);
-  const { loading, error, data, reFresh } = useFetch(URL);
+  const { loading, error, data, reFresh } = useFetch(testServer);
   const [...rest] = data ? data : [];
 
   if (loading) return <h1>Loading...</h1>;
@@ -21,41 +20,43 @@ export default function Blog() {
 
   const dataArray = chunk(rest, 3).map((data) => (
     <div className="blog-card-holder">
-      {data.map((card) => (
+      {data.map((blog, idx) => (
         <div className="blog-card">
-          <UserCard
-            // key={card.id}
-            name={card.author}
-            message={card.text}
-          />
+        <UserCard
+            key={blog.id}
+            // name={blog.id}
+            message={blog.title}
+            avatar={blog.url}
+        />
         </div>
       ))}
     </div>
   ));
 
-  const styling = {
-    display: 'block',
-    fontSize: '48',
-    color: 'white',
-    border: 'solid blue 5px',
-    // height: '59px'
-  };
-  const blogposts = Blogs.map(function BlogCard(blog, idx) {
-    return (
-      <div className="blog-card">
-        <UserCard
-          key={idx}
-          avatar={blog.player.avatar}
-          name={blog.player.name}
-          role={blog.player.role}
-          className={``}
-          message={blog.player.message}
-          btn={blog.player.btn}
-          link={blog.player.link}
-        />
-      </div>
-    );
-  });
+  // const styling = {
+  //   display: 'block',
+  //   fontSize: '48',
+  //   color: 'white',
+  //   border: 'solid blue 5px',
+  //   // height: '59px'
+  // };
+
+  // const blogposts = rest.map(function BlogCard(blog, idx) {
+  //   return (
+  //     <div className="blog-card">
+  //       <UserCard
+  //         key={idx}
+  //         avatar={blog.player.avatar}
+  //         name={blog.player.name}
+  //         role={blog.player.role}
+  //         className={``}
+  //         message={blog.player.message}
+  //         btn={blog.player.btn}
+  //         link={blog.player.link}
+  //       />
+  //     </div>
+  //   );
+  // });
 
   return (
     <div className="blog-page">
@@ -86,24 +87,15 @@ export default function Blog() {
 
       <div className="blog-container">
         <Carousel
-          autoPlay={true}
+          autoPlay={false}
           showStatus={false}
           showThumbs={false}
           showIndicators={false}
         >
+          {/* {blogposts} */}
           {dataArray}
         </Carousel>
       </div>
-
-      {/* <div className="blog-container">
-        <div className="blog-card-holder">
-          {dataArray}
-        </div>
-      </div> */}
-      {/* <ButtonDirections /> */}
-      {/* <img src={infoData} alt="" /> */}
-      {/* <h1 style={styling}>{data?.name}</h1> */}
-      {/* <h1 style={styling}>{dataArray}</h1> */}
       <button onClick={reFresh}>Fresh</button>
     </div>
   );
