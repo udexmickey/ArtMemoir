@@ -1,7 +1,7 @@
-import React from 'react';
-import {useForm} from 'react-hook-form'
-import useFetch from '../../hooks/useFetch'
-import {url} from '../../config/config.json'
+import React, { useMemo } from 'react';
+import { useForm } from 'react-hook-form';
+import useFetch from '../../hooks/useFetch';
+import { url } from '../../config/config.json';
 import IconList from '../../components/IconList/IconList';
 import flowerLeft from '../../assets/Images/flower-left.png';
 import flowerRight from '../../assets/Images/flowerRight.png';
@@ -9,20 +9,16 @@ import HeadBadge from '../../components/HeaderBadge';
 import './login.scss';
 
 export const Login = () => {
+  const { register, handleSubmit } = useForm();
 
-  const {register, handleSubmit} = useForm()
-  const { postRequest } = useFetch(
-      `${url}admin/login`
-  )
-  const onSubmit = async(res) => {
-      console.log(res)
-      // let formData = new FormData();
-      // formData.append('email', res.email)
-      // formData.append('password', res.password)
+  const { postRequest, data, error, loading } = useFetch(`${url}admin/login`);
+  const token = useMemo(() => (data ? data : ''), [data]);
 
-      await postRequest(res);
-      if(res) localStorage.setItem('token', JSON.stringify(res.token))
-  }
+  localStorage.setItem('token', token);
+
+  const onSubmit = async (arg) => {
+    await postRequest(arg);
+  };
 
   return (
     <div className="login">
@@ -51,12 +47,16 @@ export const Login = () => {
                     name="login-email"
                     id="login-email"
                     placeholder="example@email.com"
-                    {...register('email')} 
+                    {...register('email')}
                   />
                 </div>
-                <div className="group-form" >
-                    <label htmlFor="">Password</label>
-                    <input type="password" name="password" {...register('password')} />
+                <div className="group-form">
+                  <label htmlFor="">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    {...register('password')}
+                  />
                 </div>
                 <div className="group-form group-form-button">
                   <button type="submit"> Login </button>
@@ -75,4 +75,4 @@ export const Login = () => {
       </div>
     </div>
   );
-}
+};

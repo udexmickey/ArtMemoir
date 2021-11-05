@@ -5,7 +5,7 @@ import useFetch from '../../hooks/useFetch';
 import './blogs.scss';
 // import Blogs from './blogsData';
 // import ButtonDirections from '../../components/ButtonDirections/btn-directions';
-import { url as URL, testServer} from '../../config/config.json';
+import { url as URL, testServer } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
@@ -22,12 +22,12 @@ export default function Blog() {
     <div className="blog-card-holder">
       {data.map((blog, idx) => (
         <div className="blog-card">
-        <UserCard
+          <UserCard
             key={blog.id}
             // name={blog.id}
             message={blog.title}
             avatar={blog.url}
-        />
+          />
         </div>
       ))}
     </div>
