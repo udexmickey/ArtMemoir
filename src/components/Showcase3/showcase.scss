@@ -19,12 +19,13 @@
 
   .item-container {
     width: 300px;
-    height: 250px;
     text-align: center;
     background: #131313;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
     border-radius: 6px;
-    position: relative;
+    align-items: center;
 
     .item-header {
       color: white;
@@ -43,13 +44,10 @@
       background: none;
       border: 2px solid #cf1d1d;
       margin-top: 2rem;
-      padding: 1rem 2.1rem;
+      padding: 1.2rem 2.2rem;
       font-size: 1.5rem;
       font-weight: bold;
       border-radius: 3px;
-      position: absolute;
-      bottom: 20px;
-      transform: translateX(-50%);
     }
   }
 }
