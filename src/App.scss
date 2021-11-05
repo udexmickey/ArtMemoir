@@ -63,7 +63,9 @@ textarea {
   z-index: 9999;
   height: 56px;
   &:focus {
-    outline: white;
+    // outline: white;
+    color: rgba(#fff, 0.8);
+    background: rgba(#fff, 0.25);
   }
 }
 
@@ -92,7 +94,7 @@ label {
         margin-left: auto;
       }
 
-      .nav-list {
+      .nav-list, .nav-btn {
         display: none;
       }
     }

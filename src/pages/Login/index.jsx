@@ -10,17 +10,16 @@ import './login.scss';
 
 export const Login = () => {
   const { register, handleSubmit } = useForm();
-  const { postRequest, data: token, error } = useFetch(`${url}admin/login`);
 
-  console.log(token);
-  console.log(error);
+  const { postRequest } = useFetch(`${url}admin/login`);
+  const onSubmit = async (res) => {
+    console.log(res);
+    // let formData = new FormData();
+    // formData.append('email', res.email)
+    // formData.append('password', res.password)
 
-  const onSubmit = async (data) => {
-    let formData = new FormData();
-    formData.append('email', data.email);
-    formData.append('password', data.password);
-    console.log(data);
-    await postRequest(formData);
+    await postRequest(res);
+    if (res) localStorage.setItem('token', JSON.stringify(res.token));
   };
 
   return (

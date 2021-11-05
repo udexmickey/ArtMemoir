@@ -1,8 +1,5 @@
 .headnav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  margin-right: 0px;
   .headerNav {
     display: flex;
     justify-content: space-around;
@@ -12,7 +9,6 @@
     // width: 100%;
 
     .nav-list-container {
-      // margin: auto 22rem auto 0px;
       .memu-list-display {
         font-size: 30px;
         transition: 0.45;
@@ -49,44 +45,29 @@
   }
 }
 
-  @media only screen and (max-width: 600px) {
-    .headnav-container {
-      padding: 0 3rem;
-      .headerNav {
-        justify-content: space-between;
-        margin-right: 0;
+@media only screen and (min-width: 1189px) {
+  .headnav-container {
+    // margin-left: 10%;
+    .headerNav {
+      margin: 40px 0px !important;
+    }
+  }
+}
 
-        .nav-list-container {
-          .nav-burger-icon {
-            display: block;
-          }
+@media only screen and (max-width: 600px) {
+  .headnav-container {
+    .headerNav {
+      justify-content: space-between;
 
-          .nav-list {
-            display: none;
-          }
+      .nav-list-container {
+        .nav-burger-icon {
+          display: block;
+        }
+
+        .nav-list {
+          display: none;
         }
       }
     }
   }
-  @media only screen and (min-width: 1189px) {
-    .headnav-container {
-      margin-left: 10%;
-      .headerNav{margin: 40px 0px !important;
-    }
-  }
-  @media only screen and (min-width: 600px) {
-    .headnav-container {
-      margin-left: 10%;
-    }
-  }
-
-  @media only screen and (max-width: 650px) {
-    .headnav-container {
-      margin-left: 0;
-      .nav-btn{
-        display: none;
-      }
-    }
-  }
-
 }
