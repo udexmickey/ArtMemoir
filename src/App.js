@@ -16,6 +16,8 @@ import Announcement from './pages/Dashboard/Announcement';
 import EditStore from './pages/Dashboard/EditStore';
 import UploadStore from './pages/Dashboard/UploadStore';
 import Dashboard from './pages/Dashboard';
+import BlogAnnouncement from './pages/Blog/BlogAnnouncement';
+
 function App() {
   return (
     <div className="App">
@@ -28,6 +30,7 @@ function App() {
           <Route exact path="/team" component={Team} />
           <Route exact path="/whitepaper" component={WhitePaper} />
           <Route exact path="/blog" component={Blog} />
+          <Route exact path="/blog/announcement" component={BlogAnnouncement} />
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/sendmail" component={SendMail} />
           <Route exact path="/blogpost" component={BlogPost} />
