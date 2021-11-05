@@ -7,7 +7,6 @@ import HeadBadge from '../../../components/HeaderBadge';
 import Button from '../../../components/Button';
 import UploadAndDisplayImage from '../../../components/UploadImage/index';
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
 import useFetch from '../../../hooks/useFetch';
 
 export default function BlogPost() {
