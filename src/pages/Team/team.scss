@@ -75,22 +75,41 @@
     width: 100%;
     .our-team-container {
       width: 100%;
-      .user-details {
-        width: 100%;
-        .name {
-          font-size: 38px;
-          line-height: 46px;
-        }
-      }
+      // .user-info{
+      //   width: 60%;
+      // }
+      // .user-details {
+      //   width: 80%;
+      //   .name {
+      //     font-size: 28px;
+      //     line-height: 46px;
+      //   }
+      // }
 
       .team-card1 {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
+      }
+      .class{
+        width: 50%;
+
+        .name {
+          font-size: 16px;
+          line-height: 46px;
+        }
+        small{
+          font-size: 12px;
+        }
+        .message{
+          font-size: 10px;
+          line-height: 1.7;
+        }
       }
       .user-details {
+        padding: 0 ;
         .user-img-holder {
           margin-right: 1rem;
-          width: 250px;
-          height: 70px;
+          width: 40%;
+          height: 150px;
         }
       }
     }

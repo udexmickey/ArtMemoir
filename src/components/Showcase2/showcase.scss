@@ -1,4 +1,4 @@
-.showcase-container {
+.showcase-container-holder {
   display: flex;
   flex-direction: row;
   margin-top: 4rem;
@@ -64,14 +64,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .showcase-container {
+  .showcase-container-holder {
     position: relative;
     display: block;
 
     .left-container {
       // z-index: -100;
       height: 100%;
-      width: 80%;
+      width: 100%;
     }
 
     .right-container {
@@ -93,9 +93,9 @@
         .right-container-content {
           margin-bottom: 6rem;
 
-          h1 {
-            font-size: 5rem;
-          }
+          // h1 {
+          //   font-size: 5rem;
+          // }
 
           p {
             font-size: 1.7rem;
