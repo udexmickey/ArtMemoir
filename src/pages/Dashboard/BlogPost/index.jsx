@@ -9,24 +9,30 @@ import UploadAndDisplayImage from '../../../components/UploadImage/index';
 import { useForm } from 'react-hook-form';
 import { url } from '../../../config/config.json'
 import useFetch from '../../../hooks/useFetch';
+import { useMemo } from 'react';
 
 export default function BlogPost() {
   const { register, handleSubmit, setValue } = useForm();
-  const { postRequest } = useFetch(
+  const { postRequest, error, data } = useFetch(
     `${url}post`,
   );
+  const info = useMemo(() => (data ? data : ''), [data]);
+
 
   let see = true;
   const BlogOnSubmit = async (res) => {
     let formData = new FormData();
-    formData.append('cover', res.image[0]);
-    formData.append('post', res);
+    formData.append('cover', res.cover);
+    formData.append('post', res.post);
     formData.append('title', res.title);
-    formData.append('medium_link', res.link);
+    formData.append('medium_link', res.medium_link);
 
     // My axios call ...
-    setValue('post', '');
+    console.log(formData);
+    await setValue('post', 'cover', 'title', 'medium_link');
+    if (error) console.log('An Error request');
     await postRequest(formData);  
+    console.log(info);
   };
 
   //Styling the componets inline
@@ -82,7 +88,7 @@ export default function BlogPost() {
       <form action="" onSubmit={handleSubmit(BlogOnSubmit)}>
         <div className="dashboard-holder">
           <div className="group-form upload-image">
-            <UploadAndDisplayImage register={register} name="image" />
+            <UploadAndDisplayImage register={register} name="cover" />
           </div>
           <div className="">
             <div className="group-form">
@@ -99,7 +105,7 @@ export default function BlogPost() {
             <div className="group-form">
               <label htmlFor="message">Body</label>
               <textarea
-                {...register('content', { required: true })}
+                {...register('post', { required: true })}
                 id="message"
                 placeholder=""
                 cols="20"
@@ -110,7 +116,7 @@ export default function BlogPost() {
               <InputForm
                 title="Link to article"
                 type="link"
-                name="blog-post-link"
+                name="medium_link"
                 id="blog-post-link"
                 className="blog-post-link"
                 key="1"

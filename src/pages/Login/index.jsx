@@ -11,11 +11,10 @@ import './login.scss';
 export const Login = () => {
   const { register, handleSubmit } = useForm();
 
-  const { postRequest, data, error, loading } = useFetch(`${url}admin/login`);
+  const { postRequest, data, } = useFetch(`${url}admin/login`);
   const token = useMemo(() => (data ? data : ''), [data]);
 
-  localStorage.setItem('token', token);
-
+  localStorage.setItem('token', JSON.stringify(token));
   const onSubmit = async (arg) => {
     await postRequest(arg);
   };
