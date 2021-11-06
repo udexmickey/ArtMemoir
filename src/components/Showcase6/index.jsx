@@ -33,13 +33,13 @@ const Showcase6 = () => {
         content:
           'Venenatis ac sit turpis fringilla nisi nunc aliquet eu egestas. Libero pharetra enim egestas adipiscing hac. Sagittis id.',
       },
-      // {
-      //   id: v4(),
-      //   img: pic4,
-      //   header: 'Viverra sed adipiscing mi dictumst.',
-      //   content:
-      //     'Venenatis ac sit turpis fringilla nisi nunc aliquet eu egestas. Libero pharetra enim egestas adipiscing hac. Sagittis id.',
-      // },
+      {
+        id: v4(),
+        img: pic4,
+        header: 'Viverra sed adipiscing mi dictumst.',
+        content:
+          'Venenatis ac sit turpis fringilla nisi nunc aliquet eu egestas. Libero pharetra enim egestas adipiscing hac. Sagittis id.',
+      },
     ],
     [],
   );
