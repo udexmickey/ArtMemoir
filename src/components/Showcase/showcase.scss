@@ -15,6 +15,7 @@
     div {
       .showcase-img {
         width: 400px;
+        height: 320px;
         margin: 0 10px;
       }
     }
@@ -24,9 +25,13 @@
 @media only screen and (max-width: 600px) {
   .showcase {
     .showcase-container {
-      div {
+      div{
+        &:first-child{
+          margin-left: -40px;
+        }
+        // margin-right: 10rem;
         .showcase-img {
-          width: 250px;
+          width: 300px;
           margin: 0 20px;
         }
       }

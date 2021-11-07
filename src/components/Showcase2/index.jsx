@@ -6,7 +6,7 @@ import './showcase.scss';
 
 const Showcase2 = () => {
   return (
-    <div className="showcase-container">
+    <div className="showcase-container-holder">
       <div className="left-container">
         <img src={road} alt="" />
         <img src={man} alt="" />

@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 500px;
     // border: lawngreen solid 1px;
     text-align: center;
     box-sizing: border-box;
@@ -116,6 +116,13 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      .terms-privacy{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto 1rem;
+      }
     }
   }
 }
@@ -152,6 +159,10 @@
             }
           }
         }
+        .list-icons ul{
+          margin: 1rem auto 0;
+          justify-content: center;
+        }
 
         .footer-list {
           width: 100%;
@@ -163,7 +174,7 @@
         }
 
         .footer-copyright {
-          margin-top: 2rem;
+          margin-top: 1.5rem;
 
           flex-direction: column;
           div {

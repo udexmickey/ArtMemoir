@@ -26,20 +26,20 @@ function App() {
         
         <HeaderNav />
         <Switch>
-          <Route exact path="/auth" component={Login}/>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/partners" component={Partners} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/team" component={Team} />
-          <Route exact path="/whitepaper" component={WhitePaper} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/blog/announcement" component={BlogAnnouncement} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route exact path="/sendmail" component={SendMail} />
-          <Route exact path="/blogpost" component={BlogPost} />
-          <Route exact path="/announcement" component={Announcement} />
-          <Route exact path="/editstore" component={EditStore} />
-          <Route exact path="/uploadstore" component={UploadStore} />
+          <Route exact="true" path="/auth" component={Login}/>
+          <Route exact="true" path="/" component={Home} />
+          <Route exact="true" path="/partners" component={Partners} />
+          <Route exact="true" path="/contact" component={Contact} />
+          <Route exact="true" path="/team" component={Team} />
+          <Route exact="true" path="/whitepaper" component={WhitePaper} />
+          <Route exact="true" path="/blog" component={Blog} />
+          <Route exact="true" path="/blog/announcement" component={BlogAnnouncement} />
+          <Route exact="true" path="/dashboard" component={Dashboard} />
+          <Route exact="true" path="/sendmail" component={SendMail} />
+          <Route exact="true" path="/blogpost" component={BlogPost} />
+          <Route exact="true" path="/announcement" component={Announcement} />
+          <Route exact="true" path="/editstore" component={EditStore} />
+          <Route exact="true" path="/uploadstore" component={UploadStore} />
           <Route component={PageNotForm} />
         </Switch>
         <Footer />

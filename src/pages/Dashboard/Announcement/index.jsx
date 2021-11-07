@@ -25,9 +25,10 @@ export default function Announcement() {
     // console.log(formData.entries(), data)
     for (var pair of formData.entries()) {
       console.log(pair[0] + ', ' + pair[1]);
+      await postRequest(formData);
     }
 
-    await postRequest(formData);
+    // await postRequest(formData);
   };
 
   // Styling the component
