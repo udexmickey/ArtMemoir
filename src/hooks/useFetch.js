@@ -1,40 +1,14 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 export default function useFetch(url = '', options = null) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
-  const baseURL = url;
-
-  const api = useMemo(() => {
-    const defaultConfig = {
-      baseURL,
-      timeout: 60000,
-      headers: {
-        'Content-type': ['application/json'],
-        'Access-Control-Allow-Origin': '*',
-      },
-    };
-
-    let instance = axios.create({ ...defaultConfig });
-
-    instance.interceptors.request.use(
-      (config) => {
-        const token = localStorage.getItem('token');
-        if (token) config.headers.Authorization = `Bearer ${token}`;
-
-        return config;
-      },
-      (err) => Promise.reject(err),
-    );
-
-    return instance;
-  }, []);
 
   useEffect(() => {
     setLoading(true);
     let isMounted = true;
-    api
+    axios
       .get(url, options)
       .then((data) => {
         if (isMounted) {
@@ -54,7 +28,7 @@ export default function useFetch(url = '', options = null) {
   const reFresh = () => {
     setLoading(true);
     let isMounted = true;
-    api
+    axios
       .get(url, options)
       // .then(res => res.json())
       .then((data) => {
@@ -77,11 +51,7 @@ export default function useFetch(url = '', options = null) {
     let isMounted = true;
 
     try {
-      const res = await api.post(url, formData, {
-        headers: {
-          "Authorization": `Bearer ${window.sessionStorage.getItem("token")}`
-        }
-      });
+      const res = await axios.post(url, formData, options);
 
       isMounted && setData(res.data);
     } catch (error) {
