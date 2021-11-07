@@ -9,16 +9,12 @@ import UploadAndDisplayImage from '../../../components/UploadImage/index';
 import { useForm } from 'react-hook-form';
 import { url } from '../../../config/config.json'
 import useFetch from '../../../hooks/useFetch';
-import { useMemo } from 'react';
-import axios from "axios"
 
 export default function BlogPost() {
   const { register, handleSubmit, setValue } = useForm();
-  const { postRequest, error, data } = useFetch(
+  const { postRequest, error } = useFetch(
     `${url}post`,
   );
-  const info = useMemo(() => (data ? data : ''), [data]);
-
 
   let see = true;
   const BlogOnSubmit = async (res) => {

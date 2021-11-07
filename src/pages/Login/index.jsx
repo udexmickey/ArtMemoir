@@ -1,7 +1,5 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
-import useFetch from '../../hooks/useFetch';
-import { url } from '../../config/config.json';
 import IconList from '../../components/IconList/IconList';
 import flowerLeft from '../../assets/Images/flower-left.png';
 import flowerRight from '../../assets/Images/flowerRight.png';
