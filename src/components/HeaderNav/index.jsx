@@ -5,12 +5,48 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import logo from '../../../src/assets/Images/logo.png';
 
 import './headNav.scss';
+
+const MobileNavigation = ({ setShowMenu }) => {
+  return (
+    <div className="mobile-nav-container">
+      <ul className="mobile-nav-list">
+        <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/contact">
+            Contact Us
+          </NavLink>
+        </li>
+        <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/partners">
+            Our Partners
+          </NavLink>
+        </li>
+        <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/team">
+            Our Team
+          </NavLink>
+        </li>
+        <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/whitepaper">
+            WhitePaper
+          </NavLink>
+        </li>
+        <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/blog">
+            Blog
+          </NavLink>
+        </li>
+        <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/dashboard">
+            Dashboard
+          </NavLink>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
 export default function HeaderNav() {
   const [showMenu, setShowMenu] = useState(false);
-
-  const openMenu = () => {
-    return setShowMenu(!showMenu);
-  };
 
   const btnStyle = {
     width: '100px',
@@ -23,8 +59,8 @@ export default function HeaderNav() {
     cursor: 'pointer',
     fontSize: '18px',
     fontFamily: 'open sans',
-    color: 'var(--secondary)'
-  }
+    color: 'var(--secondary)',
+  };
 
   return (
     <div className="headnav-container">
@@ -38,11 +74,15 @@ export default function HeaderNav() {
           <div className="nav-burger-icon">
             <FontAwesomeIcon
               icon={faBars}
-              onClick={openMenu}
+              onClick={() => setShowMenu((prev) => !prev)}
               size="500px"
               className={`memu-list-display`}
             />
           </div>
+
+          {showMenu && (
+            <MobileNavigation setShowMenu={() => setShowMenu(false)} />
+          )}
 
           <ul className={`nav-list `}>
             <li>
@@ -77,11 +117,10 @@ export default function HeaderNav() {
             </li>
           </ul>
         </div>
-        <div className="nav-btn" >
-        <Link to='/auth'>
-          <button style={btnStyle}> {'Login'}</button>
-        </Link>
-          
+        <div className="nav-btn">
+          <Link to="/auth">
+            <button style={btnStyle}> {'Login'}</button>
+          </Link>
         </div>
       </div>
     </div>
