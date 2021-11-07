@@ -77,7 +77,11 @@ export default function useFetch(url = '', options = null) {
     let isMounted = true;
 
     try {
-      const res = await api.post(url, formData, options);
+      const res = await api.post(url, formData, {
+        headers: {
+          "Authorization": `Bearer ${window.sessionStorage.getItem("token")}`
+        }
+      });
 
       isMounted && setData(res.data);
     } catch (error) {

@@ -10,6 +10,7 @@ import { useForm } from 'react-hook-form';
 import { url } from '../../../config/config.json'
 import useFetch from '../../../hooks/useFetch';
 import { useMemo } from 'react';
+import axios from "axios"
 
 export default function BlogPost() {
   const { register, handleSubmit, setValue } = useForm();
@@ -22,19 +23,22 @@ export default function BlogPost() {
   let see = true;
   const BlogOnSubmit = async (res) => {
     let formData = new FormData();
-    formData.append('cover', res.cover);
+    formData.append('cover', res.cover[0], );
     formData.append('post', res.post);
     formData.append('title', res.title);
     formData.append('medium_link', res.medium_link);
 
     // My axios call ...
-    console.log(formData);
-    await setValue('post', 'cover', 'title', 'medium_link');
+    // console.log(formData);
+     setValue('post', 'cover', 'title', 'medium_link');
     if (error) console.log('An Error request');
     await postRequest(formData);  
-    console.log(info);
+    console.log(res);
+
+    
   };
 
+  
   //Styling the componets inline
 
   const badgeContainer = {

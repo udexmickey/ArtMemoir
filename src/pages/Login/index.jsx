@@ -7,16 +7,16 @@ import flowerLeft from '../../assets/Images/flower-left.png';
 import flowerRight from '../../assets/Images/flowerRight.png';
 import HeadBadge from '../../components/HeaderBadge';
 import './login.scss';
+import useLogin from '../../hooks/loginPost';
 
 export const Login = () => {
   const { register, handleSubmit } = useForm();
-
-  const { postRequest, data, } = useFetch(`${url}admin/login`);
-  const token = useMemo(() => (data ? data : ''), [data]);
-
-  localStorage.setItem('token', JSON.stringify(token));
+const {login} = useLogin()
+  
   const onSubmit = async (arg) => {
-    await postRequest(arg);
+   login(arg).then(data => {
+    console.log(data)
+   }).catch(error => console.log(error)) 
   };
 
   return (

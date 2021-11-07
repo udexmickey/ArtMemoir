@@ -57,6 +57,9 @@ export default function Footer() {
                 <li>
                   <Link to="/blog">Blog</Link>
                 </li>
+                <li>
+                  <Link to="/dashboard">Dashboard</Link>
+                </li>
               </ul>
             </div>
             <div className="footer-service">
@@ -77,17 +80,25 @@ export default function Footer() {
                 <li>
                   <Link to="#">Harmonic Studio</Link>
                 </li>
+                <li>
+                  <Link to="#">Single Tokens</Link>
+                </li>
               </ul>
             </div>
           </div>
           <IconList />
           <div className="footer-copyright">
             <div className="copy-text">© ArtMemoir. All rights reserved</div>
-            <div className="terms">
-              <Link to="/terms">Terms and Conditions</Link>
+            <div className="terms-privacy">
+              <div className="terms">
+                <Link to="/terms">Terms and Conditions</Link>
+              </div>
+              <div className="privacy">
+                <Link to="/privacy">Privacy</Link>
+              </div>
             </div>
-            <div className="privacy">
-              <Link to="/privacy">Privacy</Link>
+            <div className="footer-dev">
+              Powered by HarmonicStudioz
             </div>
           </div>
         </div>
