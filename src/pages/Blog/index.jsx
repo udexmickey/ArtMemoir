@@ -8,6 +8,9 @@ import { url as URL, } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
+import ControlledCarousel from '../../components/BootsrapCarousel';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Blog() {
   const { loading, error, data, reFresh } = useFetch(`${URL}post`);
@@ -54,7 +57,7 @@ export default function Blog() {
     <div className="blog-page">
       {/* <img src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
 
-      <div
+      {/* <div
         className="blog-badge"
         style={{
           background: `url(${Background})`,
@@ -62,7 +65,8 @@ export default function Blog() {
           width: '100%',
           backgroundRepeat: 'no-repeat',
         }}
-      >
+      > */}
+       <ControlledCarousel />
         <div className="blog-heading-container">
           <div className="blog-heading-holder">
             <div className="blog-heading-title">
@@ -75,7 +79,7 @@ export default function Blog() {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
 
       <div className="blog-container">
         <Carousel

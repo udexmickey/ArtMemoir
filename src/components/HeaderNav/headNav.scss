@@ -5,7 +5,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 40px auto;
-    margin-right: 20%;
+    // margin-right: 20%;
     // width: 100%;
 
     .nav-list-container {
@@ -39,6 +39,15 @@
         }
         .is-active {
           color: var(--accent);
+        }
+      }
+    }
+    .nav-btn{
+      
+      .btn-nav{
+        color: var(--background);
+        &:hover{
+          color: var(--secondary);
         }
       }
     }

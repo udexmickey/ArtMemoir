@@ -119,9 +119,10 @@
   }
 
   .btn-direction {
-    position: absolute;
+    // position: absolute;
     bottom: 3%;
     right: 0;
+    height: 400px;
 
     .arrow-left,
     .arrow-right {
@@ -138,9 +139,9 @@
   .blog-page {
     .blog-badge {
       .blog-heading-container {
-        position: absolute;
+        // position: absolute;
         top: 17rem;
-        height: auto;
+        height: 400px;
         padding-top: 4rem;
         .blog-heading-title {
           width: 100%;
