@@ -18,27 +18,27 @@ const Showcase2 = () => {
           <div className="right-container-content">
             <h1>Collections</h1>
             <p>
-              NFTs minted in various nft marketplace to support <br /> various
-              artists in their journey of art and for the love of <br /> arts.
+              NFTs minted in various nft marketplace to support various
+              artists in their journey of art and for the love of arts.
             </p>
-            <button>Learn more</button>
+            <button>Read More</button>
           </div>
           <div className="right-container-content">
             <h1>GAMEFI</h1>
             <p>
-              Minting NFTs which will serve as a medium of exchange <br /> where
-              gamers can pay in our minted NFT to play games <br /> and win
+              Minting NFTs which will serve as a medium of exchange where
+              gamers can pay in our minted NFT to play games and win
               tokens in real time.
             </p>
-            <button>Learn more</button>
+            <button>Read More</button>
           </div>
           <div className="right-container-content">
             <h1>Real Estate</h1>
             <p>
-              Buy these Nfts in exchange for shares in Real Estate <br />{' '}
+              Buy these Nfts in exchange for shares in Real Estate{' '}
               projects or to get an outlet in an estate
             </p>
-            <button>Learn more</button>
+            <button>Read More</button>
           </div>
         </div>
       </div>

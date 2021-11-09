@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import Prev from './Prev';
 import Next from './Next';
 import pic1 from '../../assets/Images/storepic1.png';
@@ -8,9 +8,23 @@ import pic4 from '../../assets/Images/pic4.png';
 import { v4 } from 'uuid';
 import './showcase.scss';
 import Item from './Item';
+import { chunk } from 'lodash';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+
 
 const Showcase6 = () => {
-  const data = useMemo(
+  const [windowsize , setWindowSize] = useState(window.innerWidth)
+  useEffect(() => {
+    window.addEventListener('resize', ()=>{
+      setWindowSize(window.innerWidth)
+    }) 
+    return () => {
+      window.removeEventListener('resize')
+    }
+  }, [])
+
+  const dataStore = useMemo(
     () => [
       {
         id: v4(),
@@ -50,6 +64,22 @@ const Showcase6 = () => {
     ],
     [],
   );
+  
+
+    const storeSliders = chunk(dataStore, windowsize <= 600 ? 1 : 3).map((data) => (
+      <div className="blog-card-holder">
+        {data.map((store, idx) => (
+          <div className="blog-card">
+            <Item
+              id={store.id}
+              content={store.content}
+              header={store.header}
+              img={store.img}
+            />
+          </div>
+        ))}
+      </div>
+    ));
   return (
     <div className="store-container">
       <h1 className="showcase-text">Store</h1>
@@ -57,14 +87,10 @@ const Showcase6 = () => {
         <div className="prev">
           <Prev />
         </div>
-        {data.map((data) => (
-          <Item
-            id={data.id}
-            content={data.content}
-            header={data.header}
-            img={data.img}
-          />
-        ))}
+        <Carousel infiniteLoop={true} autoPlay={true} showArrows={false}>
+          <div className="storries-slide">{storeSliders}</div>
+        </Carousel>
+         
         <div className="next">
           <Next />
         </div>

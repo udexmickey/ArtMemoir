@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Carousel } from 'react-bootstrap'
+// import { Carousel } from 'react-bootstrap'
 import pic8 from '../../assets/Images/nft-head.JPG';
 import pic9 from '../../assets/Images/nft-lady.JPG';
 import pic10 from '../../assets/Images/nft-lion.JPG';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // export default function BootsrapCarousel() {

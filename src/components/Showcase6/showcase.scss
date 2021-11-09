@@ -10,6 +10,9 @@
     overflow-x: auto;
     overflow-y: hidden;
 
+    .storries-slide{
+      display: flex;
+    }
     .item-container {
       width: 400px;
       height: 450px;
@@ -90,10 +93,11 @@
       }
 
       .item-container {
-        width: 100%;
-        margin: 2rem auto;
+        // width: 100%;
+        // margin: auto;
+        margin-right: 2rem;
         padding-bottom: 2rem;
-        height: auto;
+        height: 550px;
 
         .cover {
           width: 100%;

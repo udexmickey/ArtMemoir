@@ -38,7 +38,7 @@ export default function UserCard(props) {
               <small className="role">{props.role}</small>
             </div>
             <hr />
-            <div className="message">{props.message}</div>
+            <p className="message">{props.message}</p>
             <button type="submit">
               {' '}
               <Link to={`/blog/${props.link}`}>{props.btn}</Link>

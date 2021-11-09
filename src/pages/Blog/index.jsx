@@ -1,4 +1,4 @@
-import React, {useMemo} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
 import useFetch from '../../hooks/useFetch';
@@ -16,6 +16,15 @@ export default function Blog() {
   const { loading, error, data, reFresh } = useFetch(`${URL}post`);
   const rest = useMemo(() => (data ? data : ''), [data]);
 
+  const [windowsize , setWindowSize] = useState(window.innerWidth)
+  useEffect(() => {
+    window.addEventListener('resize', ()=>{
+      setWindowSize(window.innerWidth)
+    }) 
+    return () => {
+      window.removeEventListener('resize')
+    }
+  }, [])
   if (loading) return <h1>Loading...</h1>;
   if (rest) console.log(rest.posts);
   if (error) console.error('error...' + error);
@@ -35,7 +44,9 @@ export default function Blog() {
   //   </div>
   // ));
 
-  const dataArray = chunk(rest.posts, 3).map((data) => (
+
+
+  const dataArray = chunk(rest.posts, windowsize <= 600 ? 1 : 3).map((data) => (
     <div className="blog-card-holder">
       {data.map((blog, idx) => (
         <div className="blog-card">
@@ -57,7 +68,7 @@ export default function Blog() {
     <div className="blog-page">
       {/* <img src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
 
-      {/* <div
+      <div
         className="blog-badge"
         style={{
           background: `url(${Background})`,
@@ -65,8 +76,7 @@ export default function Blog() {
           width: '100%',
           backgroundRepeat: 'no-repeat',
         }}
-      > */}
-       <ControlledCarousel />
+      >
         <div className="blog-heading-container">
           <div className="blog-heading-holder">
             <div className="blog-heading-title">
@@ -79,7 +89,7 @@ export default function Blog() {
             </div>
           </div>
         </div>
-      {/* </div> */}
+      </div>
 
       <div className="blog-container">
         <Carousel

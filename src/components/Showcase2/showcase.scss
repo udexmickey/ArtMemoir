@@ -76,7 +76,6 @@
 
     .right-container {
       padding-bottom: 20rem;
-      text-align: right;
       width: 100%;
       padding: 7rem 2rem;
       // position: absolute;
@@ -84,7 +83,10 @@
       background: rgba($color: #000000, $alpha: 0.7);
 
       .right-container-heading {
-        font-size: 2.5rem;
+        text-align: right;
+        font-size: 24px;
+        line-height: 5px;
+        // text-align: right;
       }
 
       .right-container-inner {
@@ -92,13 +94,17 @@
 
         .right-container-content {
           margin-bottom: 6rem;
+          text-align: right;
 
-          // h1 {
-          //   font-size: 5rem;
-          // }
+          h1 {
+            font-size: 2rem;
+          }
 
           p {
-            font-size: 1.7rem;
+            font-size: 1rem;
+            display: flex;
+            justify-content: end;
+            text-align: initial;
           }
 
           button {
