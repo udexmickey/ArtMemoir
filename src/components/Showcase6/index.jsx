@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Prev from './Prev';
 import Next from './Next';
 import pic1 from '../../assets/Images/storepic1.png';
@@ -8,8 +8,11 @@ import pic4 from '../../assets/Images/pic4.png';
 import { v4 } from 'uuid';
 import './showcase.scss';
 import Item from './Item';
+import { chunk } from 'lodash';
+import { Carousel } from 'react-responsive-carousel';
 
 const Showcase6 = () => {
+  const [width, setWidth] = useState(window.innerWidth);
   const data = useMemo(
     () => [
       {
@@ -50,25 +53,33 @@ const Showcase6 = () => {
     ],
     [],
   );
+
+  useEffect(() => {
+    window.addEventListener('resize', () =>
+      setWidth((prev) => window.innerWidth),
+    );
+  }, []);
+
+  const chunkedImages = chunk(data, width <= 600 ? 1 : 3).map((set) => (
+    <div className="store-container-inner">
+      {set.map((d) => (
+        <Item id={d.id} content={d.content} header={d.header} img={d.img} />
+      ))}
+    </div>
+  ));
+
   return (
     <div className="store-container">
       <h1 className="showcase-text">Store</h1>
-      <div className="store-container-inner">
-        <div className="prev">
-          <Prev />
-        </div>
-        {data.map((data) => (
-          <Item
-            id={data.id}
-            content={data.content}
-            header={data.header}
-            img={data.img}
-          />
-        ))}
-        <div className="next">
-          <Next />
-        </div>
-      </div>
+      <Carousel
+        autoPlay={true}
+        showStatus={false}
+        showThumbs={false}
+        showIndicators={false}
+        showArrows={false}
+      >
+        {chunkedImages}
+      </Carousel>
     </div>
   );
 };

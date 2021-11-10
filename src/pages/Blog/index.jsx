@@ -1,10 +1,10 @@
-import React, {useMemo} from 'react';
+import React, { useMemo } from 'react';
 import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
 import useFetch from '../../hooks/useFetch';
 import './blogs.scss';
 // import ButtonDirections from '../../components/ButtonDirections/btn-directions';
-import { url as URL, } from '../../config/config.json';
+import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
@@ -16,21 +16,6 @@ export default function Blog() {
   if (loading) return <h1>Loading...</h1>;
   if (rest) console.log(rest.posts);
   if (error) console.error('error...' + error);
-
-  // const dataArray = chunk(rest, 3).map((data) => (
-  //   <div className="blog-card-holder">
-  //     {data.map((blog, idx) => (
-  //       <div className="blog-card">
-  //         <UserCard
-  //           key={blog.id}
-  //           // name={blog.id}
-  //           message={blog.title}
-  //           avatar={blog.url}
-  //         />
-  //       </div>
-  //     ))}
-  //   </div>
-  // ));
 
   const dataArray = chunk(rest.posts, 3).map((data) => (
     <div className="blog-card-holder">
@@ -48,7 +33,6 @@ export default function Blog() {
       ))}
     </div>
   ));
-  
 
   return (
     <div className="blog-page">

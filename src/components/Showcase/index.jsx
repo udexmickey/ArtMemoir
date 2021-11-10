@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import pic1 from '../../assets/Images/nft--africa.JPG';
 import pic2 from '../../assets/Images/nft--town.JPG';
 import pic3 from '../../assets/Images/nft-bird.JPG';
@@ -10,45 +10,84 @@ import pic8 from '../../assets/Images/nft-head.JPG';
 import pic9 from '../../assets/Images/nft-lady.JPG';
 import pic10 from '../../assets/Images/nft-lion.JPG';
 import './showcase.scss';
+import { v4 } from 'uuid';
+import { chunk } from 'lodash';
+import { Carousel } from 'react-responsive-carousel';
 
 const Showcase = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+  const showcaseImages = useMemo(
+    () => [
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic1} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic2} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic3} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic4} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic5} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic6} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic7} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic8} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic9} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic10} alt="" />,
+      },
+    ],
+    [],
+  );
+
+  useEffect(() => {
+    window.addEventListener('resize', () =>
+      setWidth((prev) => window.innerWidth),
+    );
+  }, []);
+
+  const chunkedImages = chunk(showcaseImages, width <= 600 ? 1 : 3).map(
+    (set) => (
+      <div className="showcase-container">
+        {set.map((d) => (
+          <div key={d.id}>{d.content}</div>
+        ))}
+      </div>
+    ),
+  );
+
   return (
     <div className="showcase">
-      <div className="showcase-container">
-        <div>
-          <img className="showcase-img" src={pic1} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic2} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic3} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic4} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic5} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic6} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic7} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic8} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic9} alt="" />
-        </div>
-        <div>
-          <img className="showcase-img" src={pic10} alt="" />
-        </div>
-        {/* <div>
-          <img className="showcase-img" src={pic4} alt="" />
-        </div> */}
-      </div>
+      <Carousel
+        autoPlay={true}
+        showStatus={false}
+        showThumbs={false}
+        showIndicators={false}
+      >
+        {chunkedImages}
+      </Carousel>
     </div>
   );
 };
