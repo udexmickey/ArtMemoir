@@ -9,6 +9,7 @@ import pic7 from '../../assets/Images/nft-girl.JPG';
 import pic8 from '../../assets/Images/nft-head.JPG';
 import pic9 from '../../assets/Images/nft-lady.JPG';
 import pic10 from '../../assets/Images/nft-lion.JPG';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './showcase.scss';
 import { v4 } from 'uuid';
 import { chunk } from 'lodash';

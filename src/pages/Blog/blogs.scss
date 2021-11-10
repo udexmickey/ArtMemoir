@@ -119,9 +119,10 @@
   }
 
   .btn-direction {
-    position: absolute;
-    bottom: 3%;
+    // position: absolute;
+    // bottom: 3%;
     right: 0;
+    height: 400px;
 
     .arrow-left,
     .arrow-right {
@@ -138,10 +139,17 @@
   .blog-page {
     .blog-badge {
       .blog-heading-container {
-        position: absolute;
-        top: 17rem;
-        height: auto;
+        // position: absolute;
+        // top: 17rem;
+        height: 400px;
         padding-top: 4rem;
+
+        .blog-card {
+          width: 80%;
+          margin: 0 auto;
+
+        }
+
         .blog-heading-title {
           width: 100%;
           font-size: 3rem;
@@ -161,14 +169,22 @@
     }
 
     .blog-container {
-      top: -25rem;
+      // top: -25rem;
       height: auto;
 
       .blog-card-holder {
+        display: block;
+        margin-right: 2rem;
         .blog-card {
           margin: auto 1rem;
-          //   width: 300px;
+            width: 100%;
           padding: auto;
+          // margin-left: -5px;
+
+          .user-details {
+            width: 100%;
+            padding-left: -2rem;
+          }
 
           .class {
             .message {

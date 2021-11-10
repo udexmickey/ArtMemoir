@@ -6,7 +6,7 @@ const Item = ({ id, header, content }) => {
     <div className="item-container" key={id}>
       <p className="item-header">{header}</p>
       <p className="item-content">{content}</p>
-      <button>Learn more</button>
+      <button>Read More</button>
     </div>
   );
 };

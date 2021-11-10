@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
 import useFetch from '../../hooks/useFetch';
@@ -8,11 +8,23 @@ import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
+import ControlledCarousel from '../../components/BootsrapCarousel';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Blog() {
   const { loading, error, data, reFresh } = useFetch(`${URL}post`);
   const rest = useMemo(() => (data ? data : ''), [data]);
 
+  const [windowsize, setWindowSize] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      setWindowSize(window.innerWidth);
+    });
+    return () => {
+      window.removeEventListener('resize');
+    };
+  }, []);
   if (loading) return <h1>Loading...</h1>;
   if (rest) console.log(rest.posts);
   if (error) console.error('error...' + error);

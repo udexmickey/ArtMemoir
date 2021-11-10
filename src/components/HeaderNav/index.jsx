@@ -59,7 +59,6 @@ export default function HeaderNav() {
     cursor: 'pointer',
     fontSize: '18px',
     fontFamily: 'open sans',
-    color: 'var(--secondary)',
   };
 
   return (
@@ -119,7 +118,10 @@ export default function HeaderNav() {
         </div>
         <div className="nav-btn">
           <Link to="/auth">
-            <button style={btnStyle}> {'Login'}</button>
+            <button style={btnStyle} className="btn-nav">
+              {' '}
+              {'Login'}
+            </button>
           </Link>
         </div>
       </div>
