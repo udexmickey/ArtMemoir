@@ -77,6 +77,7 @@ const Showcase6 = () => {
         showThumbs={false}
         showIndicators={false}
         showArrows={false}
+        infiniteLoop={true}
       >
         {chunkedImages}
       </Carousel>

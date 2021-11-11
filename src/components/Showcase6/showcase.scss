@@ -82,7 +82,7 @@
     .store-container-inner {
       .item-container {
         width: 100%;
-        padding-bottom: 2rem;
+        // padding-bottom: 2rem;
         height: auto;
 
         .cover {
@@ -92,13 +92,13 @@
         }
 
         .content-container {
-          .header {
-            font-size: 2.3rem;
-          }
-
-          // .content {
-          //   font-size: 1.7rem;
+          // .header {
+          //   font-size: 1.8rem;
           // }
+
+          .content {
+            font-size: 1.2rem;
+          }
 
           .footer {
             // padding-right: 2rem;
