@@ -35,7 +35,7 @@ export default function useFetch(url = '', options = null) {
     setLoading(true);
     let isMounted = true;
     api
-      .get(url, options)
+      .get(baseURL, options)
       .then((data) => {
         if (isMounted) {
           setData(data.data);
@@ -49,7 +49,7 @@ export default function useFetch(url = '', options = null) {
       .finally(() => isMounted && setLoading(false));
 
     return () => (isMounted = false);
-  }, [url, options]);
+  }, [baseURL, options, api]);
 
   const reFresh = () => {
     setLoading(true);
