@@ -8,7 +8,7 @@ import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
-import ControlledCarousel from '../../components/BootsrapCarousel';
+// import ControlledCarousel from '../../components/BootsrapCarousel';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -24,7 +24,7 @@ export default function Blog() {
     return () => {
       window.removeEventListener('resize');
     };
-  }, []);
+  }, [windowsize]);
   if (loading) return <h1>Loading...</h1>;
   if (rest) console.log(rest.posts);
   if (error) console.error('error...' + error);

@@ -5,15 +5,16 @@
 
   .showcase-container {
     display: flex;
+    // height: 400px;
 
     &::-webkit-scrollbar {
       display: none;
     }
 
     div {
+      width: 400px;
       margin: 0 20px;
       .showcase-img {
-        width: 400px;
         height: 320px;
       }
     }
@@ -28,8 +29,9 @@
         //   // margin-left: -40px;
         // }
         // margin-right: 10rem;
+        width: 300px;
         .showcase-img {
-          width: 300px;
+          
           margin: 0 20px;
         }
       }

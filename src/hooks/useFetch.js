@@ -8,7 +8,7 @@ export default function useFetch(url = '', options = null) {
 
   const api = useMemo(() => {
     const defaultConfig = {
-      baseURL,
+      baseURL : baseURL,
       timeout: 60000,
       headers: {
         'Content-type': ['application/json'],
@@ -29,7 +29,7 @@ export default function useFetch(url = '', options = null) {
     );
 
     return instance;
-  }, []);
+  }, [baseURL]);
 
   useEffect(() => {
     setLoading(true);

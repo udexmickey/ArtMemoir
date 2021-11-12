@@ -18,13 +18,13 @@ export default function Partners() {
           avatar={AfenBadge}
           name={`Afen Group`}
           className="partner-card"
-          message={`convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.`}
+          message={`Afen is the African leading hub for decentralized products in Arts, Education and Real Estate. ArtMemoir partnered with Afeb as a Secondary Marketplace for the sale of Her NFTs in the blockchain.`}
         />
         <UserCard
-          name={`Swirge Community`}
+          name={`ConservatioNFT`}
           avatar={AfenBadge}
           className="partner-card"
-          message={`convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.`}
+          message={`In a bid to give back to the world, ArtMemoir collaborated with ConservatioNFT to create cross continent Turtles in real life existence.`}
         />
       </div>
     </div>

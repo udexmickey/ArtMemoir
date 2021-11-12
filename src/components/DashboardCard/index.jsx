@@ -12,7 +12,7 @@ export default function DashboardCard(props) {
         marginTop: '4rem',
     }
     return (
-        <div >
+        <div className={props.className}>
             <NavLink style={styleCard} to={props.link} activeClassName="is-active">
                 {props.name}
             </NavLink>

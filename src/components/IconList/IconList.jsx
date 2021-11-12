@@ -1,10 +1,9 @@
 import React from 'react'
 import Twitter from '../../assets/Svg/Twitter'; 
-import Telegram from '../../assets/Svg/Telegram';
 import Instagram from '../../assets/Svg/Instagram';
 import Linkedin from '../../assets/Svg/Linkedin';
-import Facebook from '../../assets/Svg/Facebook';
-import Reddit from '../../assets/Svg/Reddit';
+import { MdAccountCircle, FaMediumM} from "react-icons/all";
+
 import './iconList.scss'
 export default function IconList() {
     return (
@@ -12,25 +11,33 @@ export default function IconList() {
             <div className='list-icons'>
                 <ul>
                     <li>
-                        <Twitter />
-                    </li>
-                    <li>
-                        <Telegram />
+                        <a activeClassName="is-active" href='https://twitter.com/art_memoir?s=21'>
+                            <Twitter />
+                        </a>
                     </li>
                     <li> 
+                        <a href="https://instagram.com/art_memoirnft?utm_medium=copy_link">
                         <Instagram />
+                        </a>
                     </li>
                     <li>
+                        <a href="https://linkedin.com/">
                         <Linkedin />
+                        </a>
                     </li>
                     <li>
-                        <Reddit />
-                    </li>   
+                        <a href="https://medium.com/@artmemoir21nft/">
+                        <FaMediumM />
+                        </a>
+                    </li>
                     <li>
-                        <Facebook />
+                        <a href="https://afenmarketplace.com/artist-profile/0x7a00bf0C5C05ca31d275233A6822327eE3909178">
+                        <MdAccountCircle />
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     )
 }
+

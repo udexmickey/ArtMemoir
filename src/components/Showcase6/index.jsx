@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import Prev from './Prev';
-import Next from './Next';
+// import Prev from './Prev';
+// import Next from './Next';
 import pic1 from '../../assets/Images/storepic1.png';
 import pic2 from '../../assets/Images/storepic2.png';
 import pic3 from '../../assets/Images/pic3.png';

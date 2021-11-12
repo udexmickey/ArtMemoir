@@ -11,7 +11,7 @@ export default function Dashboard() {
   console.log(test + '/' + params);
 
   const displayCards = DashboardName.map(function Cards(props) {
-    return <DashboardCard key={props.id} name={props.name} link={props.link} />;
+    return <DashboardCard key={props.id} className={'dashboardCard'} name={props.name} link={props.link} />;
   });
   return (
     <div className="dashboard">
