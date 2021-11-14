@@ -14,7 +14,7 @@ const Showcase4 = () => {
       {
         id: v4(),
         color: '#FF0035',
-        content: 'investors/partnership 12%',
+        content: 'investors / partnership 12%',
       },
       {
         id: v4(),

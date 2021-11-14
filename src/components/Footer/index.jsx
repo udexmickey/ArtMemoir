@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../../src/assets/Images/logo.png';
 import { Link } from 'react-router-dom';
 import './footer.scss';
+import { ImLink } from 'react-icons/all';
 import IconList from '../IconList/IconList';
 export default function Footer() {
   function handleSubmit(e) {
@@ -98,7 +99,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer-dev">
-              Powered by HarmonicStudioz
+              <ImLink /> Powered by HarmonicStudioz
             </div>
           </div>
         </div>

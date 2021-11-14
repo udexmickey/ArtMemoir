@@ -54,17 +54,18 @@
 
 @media only screen and (max-width: 600px) {
   .our-utilities-container {
-    margin-top: 6rem;
+    margin-top: 3rem;
 
     .our-utilities-container-inner-1,
     .our-utilities-container-inner-2 {
       width: 100%;
       flex-direction: column;
+      margin-top: .5rem;
     }
 
     .item-container {
       width: 90%;
-      margin: 2rem auto;
+      margin: .5rem auto;
 
       .item-header {
         font-size: 1.8rem;
@@ -73,6 +74,10 @@
       .item-content {
         // font-size: 1.6rem;
         margin-bottom: 2rem;
+      }
+      button {
+        padding: .7rem 2.2rem;
+        font-size: 1rem;
       }
     }
   }

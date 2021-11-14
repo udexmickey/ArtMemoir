@@ -13,9 +13,16 @@
 
     div {
       width: 400px;
-      margin: 0 20px;
+      height: 360px;
+      margin-left: 2.3rem;
+      // background: #494949;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .showcase-img {
-        height: 320px;
+        width: 100%;
+        // opacity: .8;
+        border: solid silver 5px;
       }
     }
   }
@@ -30,9 +37,12 @@
         // }
         // margin-right: 10rem;
         width: 300px;
+        height: 320px;
         .showcase-img {
-          
-          margin: 0 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // margin: 0 20px;
         }
       }
       .showcase-img &:first-child {
