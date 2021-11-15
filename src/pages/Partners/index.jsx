@@ -4,6 +4,7 @@ import HeadBadge from '../../components/HeaderBadge';
 import UserCard from '../../components/UserCard';
 import AfenBadge from '../../assets/Images/afen logo.png';
 import flowerLeft from '../../assets/Images/flower-left.png';
+import ConservatioNFT from '../../assets/Images/ConservatioNFT-01.jpg'
 import './partners.scss';
 
 export default function Partners() {
@@ -22,7 +23,7 @@ export default function Partners() {
         />
         <UserCard
           name={`ConservatioNFT`}
-          avatar={AfenBadge}
+          avatar={ConservatioNFT}
           className="partner-card"
           message={`In a bid to give back to the world, ArtMemoir collaborated with ConservatioNFT to create cross continent Turtles in real life existence.`}
         />

@@ -35,11 +35,11 @@ const MobileNavigation = ({ setShowMenu }) => {
             Blog
           </NavLink>
         </li>
-        <li onClick={setShowMenu}>
+        {/* <li onClick={setShowMenu}>
           <NavLink activeClassName="is-active" to="/dashboard">
             Dashboard
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

@@ -1,47 +1,41 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
+import Home from '../../assets/Images/home.png';
 import useFetch from '../../hooks/useFetch';
 import './blogs.scss';
-// import ButtonDirections from '../../components/ButtonDirections/btn-directions';
 import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
-// import ControlledCarousel from '../../components/BootsrapCarousel';
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Blog() {
   const { loading, error, data, reFresh } = useFetch(`${URL}post`);
   const rest = useMemo(() => (data ? data : ''), [data]);
+  const [width, setWidth] = useState(window.innerWidth);
 
-  const [windowsize, setWindowSize] = useState(window.innerWidth);
   useEffect(() => {
-    window.addEventListener('resize', () => {
-      setWindowSize(window.innerWidth);
-    });
-    return () => {
-      window.removeEventListener('resize');
-    };
-  }, [windowsize]);
+    window.addEventListener('resize', () =>
+      setWidth((prev) => window.innerWidth),
+    );
+  }, []);
   if (loading) return <h1>Loading...</h1>;
   if (rest) console.log(rest.posts);
   if (error) console.error('error...' + error);
 
-  const dataArray = chunk(rest.posts, 3).map((data) => (
+  const chunkedBlogs = chunk(rest.posts, width <= 600 ? 1 : 3).map((data) => (
     <div className="blog-card-holder">
-      {data.map((blog, idx) => (
+      {data.map((blog) => (
         <div className="blog-card">
           <UserCard
-            key={blog.id}
-            avatar={blog.cover}
-            name={blog.title}
-            message={blog.post}
-            btn={'Read More'}
-            link={blog.link}
-          />
-        </div>
+          key={blog.id}
+          avatar={blog.cover}
+          name={blog.title}
+          message={blog.post}
+          btn={'Read More'}
+          link={blog.link}
+        />
+       </div>
       ))}
     </div>
   ));
@@ -49,16 +43,20 @@ export default function Blog() {
   return (
     <div className="blog-page">
       {/* <img src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
-
+      <Carousel
+          autoPlay={true}
+          showStatus={false}
+          showThumbs={false}
+          showIndicators={true}
+        >
       <div
         className="blog-badge"
         style={{
-          background: `url(${Background})`,
           backgroundSize: '100%',
           width: '100%',
-          backgroundRepeat: 'no-repeat',
         }}
       >
+        <img src={Background} alt="" />
         <div className="blog-heading-container">
           <div className="blog-heading-holder">
             <div className="blog-heading-title">
@@ -66,22 +64,46 @@ export default function Blog() {
             </div>
             <div className="blog-heading-text">
               Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
-              Pretium eu amet tempus elit, interdum consectetur arcu tortor.
-              Pharetra pulvinar accumsan non facilisis amet. Lacus in.
+              Pretium eu amet tempus elit.
             </div>
+            <button className='blog-anouncement-btn'>Read more</button>
           </div>
         </div>
       </div>
-
+      
+      <div
+        className="blog-badge"
+        style={{
+          backgroundSize: '100%',
+          width: '100%',
+        }}
+      >
+        <img src={Home} alt="" />
+        <div className="blog-heading-container">
+          <div className="blog-heading-holder">
+            <div className="blog-heading-title">
+              The Announcement is a banger.
+            </div>
+            <div className="blog-heading-text">
+              Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
+              Pretium eu amet tempus elit.
+            </div>
+            <button className='blog-anouncement-btn'>Read more</button>
+          </div>
+        </div>
+      </div>
+      </Carousel>
       <div className="blog-container">
         <Carousel
-          autoPlay={false}
+          autoPlay={true}
           showStatus={false}
-          showThumbs={false}
-          showIndicators={false}
+          showThumbs={true}
+          showIndicators={true}
         >
           {/* {blogposts} */}
-          {dataArray}
+        {/* <div className="blog-card"> */}
+        {chunkedBlogs}
+        {/* </div> */}
         </Carousel>
       </div>
       <button onClick={reFresh}>Fresh</button>
