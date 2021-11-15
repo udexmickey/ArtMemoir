@@ -48,6 +48,7 @@ export default function Blog() {
           showStatus={false}
           showThumbs={false}
           showIndicators={true}
+          interval={7000}
         >
       <div
         className="blog-badge"
@@ -99,11 +100,10 @@ export default function Blog() {
           showStatus={false}
           showThumbs={true}
           showIndicators={true}
+          infiniteLoop={true}
+          // interval={5000}
         >
-          {/* {blogposts} */}
-        {/* <div className="blog-card"> */}
         {chunkedBlogs}
-        {/* </div> */}
         </Carousel>
       </div>
       <button onClick={reFresh}>Fresh</button>

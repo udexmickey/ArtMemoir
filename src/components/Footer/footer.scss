@@ -142,23 +142,30 @@
         width: 100%;
 
         .footer-title {
-          font-size: 2rem;
+          font-size: 1.2rem;
         }
 
         .footer-form {
           margin-bottom: 2.5rem;
+          width: 90%;
 
           label {
-            font-size: 2rem;
+            // font-size: 2rem;
           }
 
           form {
+            margin: 0 auto;
             .value-btn-box {
-              margin-top: 2rem;
+              margin-top: .5rem;
+              width: 100%;
+              display: flex;
+
 
               #newsletter {
                 width: 100%;
-                margin: 0 1rem 1rem 1rem;
+                // margin: 0 1rem 1rem;
+                margin-left: 1.5rem;
+                height: 46px;
               }
             }
           }
