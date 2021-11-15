@@ -8,9 +8,9 @@ import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
-
+import HeaderBadge from '../../components/HeaderBadge'
 export default function Blog() {
-  const { loading, error, data, reFresh } = useFetch(`${URL}post`);
+  const { loading, error, data} = useFetch(`${URL}post`);
   const rest = useMemo(() => (data ? data : ''), [data]);
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -43,12 +43,14 @@ export default function Blog() {
   return (
     <div className="blog-page">
       {/* <img src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
+      <HeaderBadge name={'Announcement'} />
       <Carousel
           autoPlay={true}
+          infiniteLoop={true}
           showStatus={false}
           showThumbs={false}
-          showIndicators={true}
-          interval={7000}
+          showIndicators={false}
+          interval={8000}
         >
       <div
         className="blog-badge"
@@ -106,7 +108,7 @@ export default function Blog() {
         {chunkedBlogs}
         </Carousel>
       </div>
-      <button onClick={reFresh}>Fresh</button>
+      {/* <button onClick={reFresh}>Fresh</button> */}
     </div>
   );
 }

@@ -19,7 +19,7 @@ export default function Partners() {
           avatar={AfenBadge}
           name={`Afen Group`}
           className="partner-card"
-          message={`Afen is the African leading hub for decentralized products in Arts, Education and Real Estate. ArtMemoir partnered with Afeb as a Secondary Marketplace for the sale of Her NFTs in the blockchain.`}
+          message={`Afen is the African leading hub for decentralized products in Arts, Education and Real Estate. ArtMemoir partnered with Afen as a Secondary Marketplace for the sale of Her NFTs in the blockchain.`}
         />
         <UserCard
           name={`ConservatioNFT`}
