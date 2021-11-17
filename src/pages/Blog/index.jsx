@@ -34,7 +34,7 @@ export default function Blog() {
           name={blog.title}
           message={blog.post}
           btn={'Read More'}
-          link={'announcement'}
+          link={'blogs'}
         />
        </div>
       ))}
