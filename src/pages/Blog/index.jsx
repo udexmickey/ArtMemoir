@@ -9,6 +9,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
 import HeaderBadge from '../../components/HeaderBadge'
+import { Link } from 'react-router-dom';
 export default function Blog() {
   const { loading, error, data} = useFetch(`${URL}post`);
   const rest = useMemo(() => (data ? data : ''), [data]);
@@ -33,7 +34,7 @@ export default function Blog() {
           name={blog.title}
           message={blog.post}
           btn={'Read More'}
-          link={blog.link}
+          link={'announcement'}
         />
        </div>
       ))}
@@ -69,7 +70,9 @@ export default function Blog() {
               Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
               Pretium eu amet tempus elit.
             </div>
-            <button className='blog-anouncement-btn'>Read more</button>
+            <button className='blog-anouncement-btn'>
+              <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
+            </button>
           </div>
         </div>
       </div>
@@ -91,7 +94,9 @@ export default function Blog() {
               Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
               Pretium eu amet tempus elit.
             </div>
-            <button className='blog-anouncement-btn'>Read more</button>
+            <button className='blog-anouncement-btn'>
+              <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
+            </button>
           </div>
         </div>
       </div>

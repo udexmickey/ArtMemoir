@@ -17,6 +17,16 @@
     margin: 6rem auto;
     content: '';
   }
+  #roadmap{
+    margin: 3rem auto 4rem;
+    span, .showcase-text{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {

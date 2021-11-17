@@ -32,7 +32,7 @@ function App() {
           <Route exact="true" path="/team" component={Team} />
           <Route exact="true" path="/whitepaper" component={WhitePaper} />
           <Route exact="true" path="/blog" component={Blog} />
-          <Route exact="true" path="/blog/announcement" component={BlogAnnouncement} />
+          <Route exact="true" path="/blog/:id" component={BlogAnnouncement} />
           <Route exact="true" path="/dashboard" component={Dashboard} />
           <Route exact="true" path="/sendmail" component={SendMail} />
           <Route exact="true" path="/blogpost" component={BlogPost} />

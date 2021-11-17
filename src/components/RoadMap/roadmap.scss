@@ -1,0 +1,128 @@
+.roadmap{
+    display: none;
+    background: linear-gradient();
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .roadmap, #roadmap{
+        overflow: hidden;
+
+        width: 100%;
+        position: static;
+        display: block;
+
+        .roadmap-holder{
+            position: relative;
+            left: 1rem;
+    
+            .round-table-top, .round-table-bottom{
+                position: relative;
+                height: 65px;
+                width: 65px;
+                border-radius: 50%;
+                z-index: 6;
+                background: #c52205;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                font-weight: bolder;
+                color: white;
+            }
+
+            .roadmap-stick{
+                position: relative;
+                top: 0;
+                right: -28px;
+                width: 10px;
+                background-image: linear-gradient(red, yellow, red);
+                z-index: 4;
+    
+                .roadmap-stick-holder{
+                    padding: 1rem 0;
+                    width: 90%;
+
+                    .span-border-line{
+                        border-top: .5px solid #e7c25a;
+                        width: 130px;
+                        height: 150px;
+                        margin: 5rem 0 1rem;
+        
+                        .dot-map{
+                            position: relative;
+                            top: -12px;
+                            left: -5px;
+                            height: 22px;
+                            width: 22px;
+                            border-radius: 50%;
+                            z-index: 6;
+                            background: #b49a04;
+                        }
+
+                        .map-title{
+                            position: relative;
+                            left: 180px;
+                            top: -10px;
+                            width: 150px;
+                            font-size: 1.6rem;
+                        }
+                        .map-message{
+                            position: relative;
+                            left: 50px;
+                            top: 15px;
+                            font-size: .8rem;
+                            width: 300px;
+                        }
+                        &:nth-child(1){
+                            border-top: .5px solid #e74e33;
+                        }
+                        &:nth-child(2){
+                            color: #f5f83d;
+                            height: 0px;
+                            margin-bottom: 0;
+                            border-top: .5px solid #e74e33;
+                        }
+                    }
+                }
+            }
+
+            #container {
+                position: relative;
+                margin: 0 auto;
+             }
+             
+             #background {
+                position: absolute;
+                top: 200px;
+                left: 160px;
+                bottom: 60px;
+                // right: 0;
+                z-index: -1;
+                overflow: hidden;
+
+                // display: inline;
+                font-size: 120px;
+                font-style: bold;
+                -moz-transform: scale(-1, -1);
+                -webkit-transform: scale(-1, -1);
+                -o-transform: scale(-1, -1);
+                -ms-transform: scale(-1, -1);
+                transform: scale(-1, -1);
+                // transform: rotate(-1deg); 
+                opacity: 0.15;
+             }
+
+             li{
+                transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+             }
+        }
+    
+    }
+}

@@ -40,12 +40,17 @@
     .blog-container-showcase {
       .showcase-heading {
         padding: 1.5rem;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
       }
     }
 
     .content-container {
       padding: 1.5rem;
+
+      p {
+        line-height: 160%;
+        font-size: 13px;
+      }
     }
   }
 }

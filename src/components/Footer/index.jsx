@@ -58,9 +58,6 @@ export default function Footer() {
                 <li>
                   <Link to="/blog">Blog</Link>
                 </li>
-                <li>
-                  <Link to="/dashboard">Dashboard</Link>
-                </li>
               </ul>
             </div>
             <div className="footer-service">
@@ -79,10 +76,7 @@ export default function Footer() {
                   <Link to="#">Real Estate</Link>
                 </li>
                 <li>
-                  <Link to="#">Harmonic Studio</Link>
-                </li>
-                <li>
-                  <Link to="#">Single Tokens</Link>
+                  <Link to="#roadmap">RoadMap</Link>
                 </li>
               </ul>
             </div>
