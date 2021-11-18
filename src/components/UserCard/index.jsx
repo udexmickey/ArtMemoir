@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Avatar from '../Avatar';
 import './user-card.scss';
+
 export default function UserCard(props) {
   const acceptedLocations = ['/team'];
   const location = useLocation();
@@ -27,8 +28,8 @@ export default function UserCard(props) {
               ...(acceptedLocations.includes(location.pathname) &&
                 !isEven && {
                   textAlign: 'right',
-                  marginRight: '2rem',
-                  marginLeft: '2rem',
+                  marginRight: '1rem',
+                  // marginLeft: '2rem',
                 }),
             }}
           >

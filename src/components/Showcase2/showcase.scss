@@ -78,11 +78,10 @@
     }
 
     .right-container {
-      padding-bottom: 20rem;
       width: 100%;
-      padding: 4rem 2rem 1rem;
+      padding: 1rem 2rem 1rem;
       // position: absolute;
-      height: 100%;
+      height: 50%;
       background: rgba($color: #000000, $alpha: 0.7);
 
 
@@ -91,7 +90,7 @@
 
         .right-container-content {
           display: block;
-          margin-bottom: 6rem;
+          margin-bottom: 3rem;
           text-align: right;
           img {
             width: 100%;
