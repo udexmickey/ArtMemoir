@@ -6,7 +6,7 @@ import './whitepaper.scss';
 // import DropDown from '../../components/DropDowns/DropDown';
 import DropDowns from '../../components/DropDowns/DropDown';
 import content from './content';
-import {FiDownload} from 'react-icons/all'
+// import {FiDownload} from 'react-icons/all'
 export default function WhitePaper() {
   const [selected, setSelected] = useState('Abstract');
 
@@ -14,6 +14,11 @@ export default function WhitePaper() {
     <div className="whitePaper">
       <div className="whitepaper-badge">
         <HeadBadge name="WhitePaper" />
+        <div className="white-paper-download white-paper-download-top">Download whitepaper 
+            <Link to='/files/Art Memoir.pdf' target="_blank" download>
+               <span> Here </span>
+            </Link>
+          </div>
       </div>
       <div  className="whitepaper-holder">
         <div className="">
@@ -25,9 +30,9 @@ export default function WhitePaper() {
             <div className="whitepaper-content">{content[selected]}</div>
           </div>
           {/* <ButtonDirections /> */}
-          <div className="white-paper-download">
+          <div className="white-paper-download">Download whitepaper 
             <Link to='/files/Art Memoir.pdf' target="_blank" download>
-                Click here to download the whitepaper <span> <FiDownload /></span>
+               <span> Here </span>
             </Link>
           </div>
         </div>

@@ -1,8 +1,21 @@
 .whitePaper {
   .whitepaper-badge {
+
     .headbadge-title-container {
-      margin-top: -2rem;
+      margin: -2rem auto;
       height: 200px;
+
+    }
+
+    .white-paper-download-top{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      span{
+        margin-left: 1rem;
+      }
     }
   }
   .whitepaper-holder {
@@ -57,8 +70,8 @@
 
       .dropdown .dropdown-content {
         position: absolute;
-        top: 170%;
-        left: -169px;
+        top: 115px;
+        left: -249px;
         padding: 10px;
         background: #fff;
         box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
@@ -107,23 +120,19 @@
       }
     }
     a, Link{
-      color: #606060;
-      opacity: .5;
+      color: #ff0000;
       &:hover{
-        color: green;
+        color: #008000;
         opacity: 1;
       }
     }
     .white-paper-download{
-      cursor:pointer;
       font-size: 2rem;
       display: inline-flex;
+      color: #919090;
 
       span{
-        margin-left: 2rem;
-      }
-      &:hover{
-        color: green;
+        margin-left: .5rem;
       }
     }
   }
@@ -151,10 +160,22 @@
 
 @media only screen and (max-width: 600px) {
   .whitePaper {
+    .whitepaper-badge {
+      .white-paper-download-top{
+        // display: block;
+        font-size: 1rem;
+        margin: 1rem auto;
+        span{
+          margin-left: 0rem;
+        }
+      }
+    }
+
     .whitepaper-holder {
       height: auto;
 
       .whitepaper-title {
+        height: 0px;
         .dropdown {
           width: 100%;
 
@@ -162,6 +183,7 @@
             width: 100%;
             left: 0;
             right: 0;
+            top: 55px;
             font-size: 18px;
           }
           .dropdown-btn {
