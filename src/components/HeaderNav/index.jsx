@@ -10,9 +10,9 @@ const MobileNavigation = ({ setShowMenu }) => {
   return (
     <div className="mobile-nav-container">
       <ul className="mobile-nav-list">
-        <li onClick={setShowMenu}>
-          <NavLink activeClassName="is-active" to="/contact">
-            Contact Us
+      <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/ ">
+            Home
           </NavLink>
         </li>
         <li onClick={setShowMenu}>
@@ -33,6 +33,11 @@ const MobileNavigation = ({ setShowMenu }) => {
         <li onClick={setShowMenu}>
           <NavLink activeClassName="is-active" to="/blog">
             Blog
+          </NavLink>
+        </li>
+        <li onClick={setShowMenu}>
+          <NavLink activeClassName="is-active" to="/contact">
+            Contact Us
           </NavLink>
         </li>
         {/* <li onClick={setShowMenu}>

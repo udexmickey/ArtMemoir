@@ -106,6 +106,14 @@
         // margin-right: 10px;
       }
     }
+    a, Link{
+      color: #606060;
+      opacity: .5;
+      &:hover{
+        color: green;
+        opacity: 1;
+      }
+    }
     .white-paper-download{
       cursor:pointer;
       font-size: 2rem;
