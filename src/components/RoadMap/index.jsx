@@ -39,15 +39,8 @@ const RoadMap = props => {
                             </div>
                             </div>
                         </div>
-                        <div className="span-border-line">
-                            <div className="dot-map">
-                            <div className="map-content">
-                                <div className="map-title"> 2022 </div>
-                                {/* <div className="map-message"> - Project Development</div> */}
+                        <div className="map-title-next"> 2022 </div>
 
-                            </div>
-                            </div>
-                        </div>
                         <div className="span-border-line">
                             <div className="dot-map">
                             <div className="map-content">

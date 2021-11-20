@@ -2,41 +2,41 @@
   position: relative;
   .background-flower {
     position: absolute;
-    left: 30rem;
-    right: 35rem;
+    left: 50rem;
+    right: 65rem;
     top: 12rem;
   }
   .our-partners-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin: 6rem 2rem 2rem 2rem;
 
     .partner-card {
       z-index: 9999;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 660px;
-      height: 335px;
+      width: 620px;
+      height: 280px;
       // padding: 2rem 0 3rem;
       background: rgba(186, 186, 186, 0.1);
       border: 1px solid rgba(186, 186, 186, 0.1);
       box-sizing: border-box;
       border-radius: 11px;
-      margin-bottom: 2rem;
+      margin: auto 4rem 3rem;
+      // margin-right: 5rem;
+      &:nth-child(2){
+        margin-right: 0rem;
+      }
 
       hr {
         margin: 10px auto;
-        // width: 561px;
       }
 
       img {
-        // display: none;
-        width: 47px;
-        height: 32px;
+        width: 80px;
+        height: auto;
       }
     }
   }
@@ -47,12 +47,19 @@
     .background-flower {
       left: 0;
       right: 0;
+      // display: none;
     }
 
     .our-partners-container {
+      display: block;
       .partner-card {
         width: 100%;
-        // padding: 2rem 0 5rem;
+        height: inherit;
+        padding: .5rem;
+        margin: 4rem auto;
+      }
+      .user-details{
+        padding: .5rem;
       }
     }
   }
