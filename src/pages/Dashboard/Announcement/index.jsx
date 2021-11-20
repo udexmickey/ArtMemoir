@@ -74,7 +74,7 @@ export default function Announcement() {
         </ul>
       </div>
       <div className="left-flower">
-        <img src={flowerLeft} alt="" srcSet="" />
+        <img loading="lazy"src={flowerLeft} alt="" srcSet="" />
       </div>
 
       <form action="" style={flexForm} onSubmit={handleSubmit(controlSubmit)}>
@@ -112,7 +112,7 @@ export default function Announcement() {
         </div>
       </form>
       <div className="right-flower">
-        <img src={flowerRight} alt="" srcSet="" />
+        <img loading="lazy"src={flowerRight} alt="" srcSet="" />
       </div>
     </div>
   );

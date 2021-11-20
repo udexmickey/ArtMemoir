@@ -22,7 +22,7 @@ export default function Partners() {
     <div className="our-partners">
        <HeadBadge name="Our Partners" />
        <div className="background-flower">
-         <img src={flowerLeft} alt="" srcSet="" />
+         <img loading="lazy"src={flowerLeft} alt="" srcSet="" />
        </div>
       <div className="our-partners-container">
         {PartnersList}

@@ -82,7 +82,7 @@ export default function BlogPost() {
         </ul>
       </div>
       <div className="left-flower">
-        <img src={flowerLeft} alt="" srcSet="" />
+        <img loading="lazy"src={flowerLeft} alt="" srcSet="" />
       </div>
 
       <form action="" onSubmit={handleSubmit(BlogOnSubmit)}>
@@ -131,7 +131,7 @@ export default function BlogPost() {
         </div>
       </form>
       <div className="right-flower">
-        <img src={flowerRight} alt="" srcSet="" />
+        <img loading="lazy"src={flowerRight} alt="" srcSet="" />
       </div>
     </div>
   );

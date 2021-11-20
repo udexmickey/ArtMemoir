@@ -7,7 +7,7 @@ export default function PageNotForm() {
         <div className='error-page'>
             
             <div className="error-page-image">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iK9Ox2kDjycxc_LsZC2VN4vMNyI_vgqdmw&usqp=CAU"
+                <img loading="lazy"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6iK9Ox2kDjycxc_LsZC2VN4vMNyI_vgqdmw&usqp=CAU"
                     alt="" 
                 />
             </div>

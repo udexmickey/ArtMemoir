@@ -20,7 +20,7 @@ const Showcase5 = () => {
     <div className="roadmap-container">
       <h1 className="showcase-text">Roadmap</h1>
       <div className="roadmap-conatiner-inner">
-        <img src={isMobile ? roadmapMobile : roadmap} alt="" />
+        <img loading="lazy"src={isMobile ? roadmapMobile : roadmap} alt="" />
       </div>
     </div>
   );

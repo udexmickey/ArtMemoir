@@ -10,7 +10,10 @@ import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
 import HeaderBadge from '../../components/HeaderBadge'
 import { Link } from 'react-router-dom';
+
+
 export default function Blog() {
+
   const { loading, error, data} = useFetch(`${URL}post`);
   const rest = useMemo(() => (data ? data : ''), [data]);
   const [width, setWidth] = useState(window.innerWidth);
@@ -30,9 +33,9 @@ export default function Blog() {
         <div className="blog-card">
           <UserCard
           key={blog.id}
-          avatar={blog.cover}
+          avatar={blog.image}
           name={blog.title}
-          message={blog.post}
+          message={blog.post.substring(0, 75)+'...'}
           btn={'Read More'}
           link={'blogs'}
         />
@@ -43,7 +46,7 @@ export default function Blog() {
 
   return (
     <div className="blog-page">
-      {/* <img src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
+      {/* <img loading="lazy"src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
       <HeaderBadge name={'Announcement'} />
       <Carousel
           autoPlay={true}
@@ -60,7 +63,7 @@ export default function Blog() {
           width: '100%',
         }}
       >
-        <img src={Background} alt="" />
+        <img loading="lazy"src={Background} alt="" />
         <div className="blog-heading-container">
           <div className="blog-heading-holder">
             <div className="blog-heading-title">
@@ -84,7 +87,7 @@ export default function Blog() {
           width: '100%',
         }}
       >
-        <img src={Home} alt="" />
+        <img loading="lazy"src={Home} alt="" />
         <div className="blog-heading-container">
           <div className="blog-heading-holder">
             <div className="blog-heading-title">

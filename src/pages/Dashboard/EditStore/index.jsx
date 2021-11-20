@@ -29,7 +29,7 @@ export default function BlogPost() {
         <div className='dashboard'>
             <HeadBadge name="Edit store data" style={badgeButton}/>
              <div className="left-flower">
-                <img src={flowerLeft} alt="" srcSet="" />
+                <img loading="lazy"src={flowerLeft} alt="" srcSet="" />
             </div>
             
             <div className="dashboard-holder">
@@ -43,7 +43,7 @@ export default function BlogPost() {
                 </form>
             </div>
             <div className="right-flower">
-                <img src={flowerRight} alt="" srcSet="" />
+                <img loading="lazy"src={flowerRight} alt="" srcSet="" />
             </div>
         </div>
     )

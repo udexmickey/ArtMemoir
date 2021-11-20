@@ -15,7 +15,7 @@ export default function Contact() {
     <div className="contact">
       <div className="left-flower">
         {/* <FlowerRight /> */}
-        <img src={flowerLeft} alt="" srcSet="" />
+        <img loading="lazy"src={flowerLeft} alt="" srcSet="" />
       </div>
 
       <div className="contact-container">
@@ -69,7 +69,7 @@ export default function Contact() {
         </div>
       </div>
       <div className="right-flower">
-        <img src={flowerRight} alt="" srcSet="" />
+        <img loading="lazy"src={flowerRight} alt="" srcSet="" />
       </div>
     </div>
   );

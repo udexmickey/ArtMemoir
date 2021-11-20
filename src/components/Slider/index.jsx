@@ -10,23 +10,23 @@ export default function Slider(props) {
     return (
         <Carousel style={{ height: "200px", color: "#fff" }} showArrows={false} showThumbs={false} showStatus={false} autoPlay={true} infiniteLoop={true}>
             <div style={{ height: "200px", color: "#fff" }}>
-                <img style={{ height: "400px", color: "#fff" }} src={Background} />
+                <img loading="lazy"style={{ height: "400px", color: "#fff" }} src={Background} />
                 {/* <p className="legend">Legend 1</p>
                 <div className="slider-item-div">Hello world</div> */}
             </div>
             <div>
-                <img style={{ height: "400px", color: "#fff" }} src={pic6} />
+                <img loading="lazy"style={{ height: "400px", color: "#fff" }} src={pic6} />
                 {/* <p className="legend">Legend 2</p>
                 <div className="slider-item-div">Hello world</div> */}
             </div>
             <div>
-                <img style={{ height: "400px", color: "#fff" }} src={pic7} />
+                <img loading="lazy"style={{ height: "400px", color: "#fff" }} src={pic7} />
                 {/* <p className="legend">Legend 3</p>
                 <div className="slider-item-div">Hello world</div> */}
             </div>
 
             <div className='slider-component'>
-                <img src={props.avatar} />
+                <img loading="lazy"src={props.avatar} />
                 {/* <p className="legend">{props.message}</p> */}
             </div>
         </Carousel>

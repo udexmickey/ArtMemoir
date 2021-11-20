@@ -16,7 +16,7 @@ const UploadAndDisplayImage = ({name, register}) => {
       <label htmlFor="message">Add image (Optional)</label>
       {selectedImage && (
         <div className='image-info'>
-        <img alt="not fount" width={"360px"} src={URL.createObjectURL(selectedImage)} />
+        <img loading="lazy"alt="not fount" width={"360px"} src={URL.createObjectURL(selectedImage)} />
         <br />
         {/* <Button title='Remove'  onClick={()=>setSelectedImage(null)}/> */}
             <div className="close-img" onClick={()=>setSelectedImage(null)}>

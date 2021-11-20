@@ -17,11 +17,11 @@ export default function Dashboard() {
     <div className="dashboard">
       <div className="dashboard-container" style={{ width: '100%' }}>
         <div className="left-flower">
-          <img src={flowerLeft} alt="" srcset="" />
+          <img loading="lazy"src={flowerLeft} alt="" srcset="" />
         </div>
         <div className="dashboard-card">{displayCards}</div>
         <div className="right-flower">
-          <img src={flowerRight} alt="" srcset="" />
+          <img loading="lazy"src={flowerRight} alt="" srcset="" />
         </div>
       </div>
     </div>
