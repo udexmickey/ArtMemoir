@@ -69,7 +69,7 @@ const Showcase = () => {
     );
   }, []);
 
-  const chunkedImages = chunk(showcaseImages, width <= 600 ? 1 : 3).map(
+  const chunkedImages = chunk(showcaseImages, width <= 600 ? 1 : 4).map(
     (set) => (
       <div className="showcase-container">
         {set.map((d) => (

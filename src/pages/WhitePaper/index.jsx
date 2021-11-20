@@ -5,6 +5,7 @@ import './whitepaper.scss';
 // import DropDown from '../../components/DropDowns/DropDown';
 import DropDowns from '../../components/DropDowns/DropDown';
 import content from './content';
+import {FiDownload} from 'react-icons/all'
 
 export default function WhitePaper() {
   const [selected, setSelected] = useState('Abstract');
@@ -24,6 +25,9 @@ export default function WhitePaper() {
             <div className="whitepaper-content">{content[selected]}</div>
           </div>
           {/* <ButtonDirections /> */}
+          <div className="white-paper-download">
+            Click here to download the whitepaper <span> <FiDownload /></span>
+          </div>
         </div>
       </div>
     </div>

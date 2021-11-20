@@ -48,18 +48,18 @@ const MobileNavigation = ({ setShowMenu }) => {
 export default function HeaderNav() {
   const [showMenu, setShowMenu] = useState(false);
 
-  const btnStyle = {
-    width: '100px',
-    height: '59px',
-    background: 'rgb(207, 29, 29)',
-    borderRadius: '5px',
-    // color: 'rgb(255, 255, 255)',
-    border: 'none',
-    outline: 'none',
-    cursor: 'pointer',
-    fontSize: '18px',
-    fontFamily: 'open sans',
-  };
+  // const btnStyle = {
+  //   width: '100px',
+  //   height: '59px',
+  //   background: 'rgb(207, 29, 29)',
+  //   borderRadius: '5px',
+  //   // color: 'rgb(255, 255, 255)',
+  //   border: 'none',
+  //   outline: 'none',
+  //   cursor: 'pointer',
+  //   fontSize: '18px',
+  //   fontFamily: 'open sans',
+  // };
 
   return (
     <div className="headnav-container">
@@ -84,9 +84,9 @@ export default function HeaderNav() {
           )}
 
           <ul className={`nav-list `}>
-            <li>
-              <NavLink activeClassName="is-active" to="/contact">
-                Contact Us
+          <li>
+              <NavLink activeClassName="is-active" to="/ ">
+                Home
               </NavLink>
             </li>
             <li>
@@ -110,20 +110,25 @@ export default function HeaderNav() {
               </NavLink>
             </li>
             <li>
+              <NavLink activeClassName="is-active" to="/contact">
+                Contact Us
+              </NavLink>
+            </li>
+            {/* <li>
               <NavLink activeClassName="is-active" to="/dashboard">
                 Dashboard
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
-        <div className="nav-btn">
+        {/* <div className="nav-btn">
           <Link to="/auth">
             <button style={btnStyle} className="btn-nav">
               {' '}
               {'Login'}
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -14,10 +14,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 700px;
     // border: lawngreen solid 1px;
     text-align: center;
     box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 4%;
 
 
     .footer-img {
@@ -26,13 +28,13 @@
 
     .footer-title {
       line-height: 22px;
-      margin-bottom: 4%;
+      // margin-bottom: 2%;
     }
 
     .footer-form {
-      line-height: 2;
+      // line-height: 2;
       .newsletter-label {
-        line-height: 22px;
+        line-height: 2;
         color: var(--background);
       }
     }
