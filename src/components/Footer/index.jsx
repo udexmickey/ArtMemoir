@@ -17,8 +17,7 @@ export default function Footer() {
             <img src={logo} alt=" " />
           </div>
           <div className="footer-title">
-            Educating the world <br />
-            about its cultures through NFTs
+          Exploring the world <br /> of Art through NFTs.
           </div>
           <div className="footer-form">
             <form action="newsletter" method="post" onSubmit={handleSubmit}>

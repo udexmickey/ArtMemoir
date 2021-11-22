@@ -27,7 +27,7 @@ export default function Blog() {
   if (rest) console.log(rest.posts);
   if (error) console.error('error...' + error);
 
-  const chunkedBlogs = chunk(rest.posts, width <= 600 ? 1 : 3).map((data) => (
+  const chunkedBlogs = chunk(rest.posts, width <= 600 ? 1 : 4).map((data) => (
     <div className="blog-card-holder">
       {data.map((blog) => (
         <div className="blog-card">
@@ -35,7 +35,7 @@ export default function Blog() {
           key={blog.id}
           avatar={blog.image}
           name={blog.title}
-          message={blog.post.substring(0, 75)+'...'}
+          message={blog.post.substring(0, 70)+'...'}
           btn={'Read More'}
           link={'blogs'}
         />
@@ -54,7 +54,7 @@ export default function Blog() {
           showStatus={false}
           showThumbs={false}
           showIndicators={false}
-          interval={8000}
+          interval={10000}
         >
       <div
         className="blog-badge"
@@ -111,12 +111,15 @@ export default function Blog() {
           showThumbs={true}
           showIndicators={true}
           infiniteLoop={true}
-          // interval={5000}
+          interval={7000}
         >
         {chunkedBlogs}
         </Carousel>
       </div>
       {/* <button onClick={reFresh}>Fresh</button> */}
+     <div className="btn-blogs">
+        <Link to='/blogs'>View More Blogs</Link >
+     </div>
     </div>
   );
 }

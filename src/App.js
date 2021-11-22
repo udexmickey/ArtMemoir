@@ -18,6 +18,7 @@ import UploadStore from './pages/Dashboard/UploadStore';
 import Dashboard from './pages/Dashboard';
 import { Login } from './pages/Login';
 import BlogAnnouncement from './pages/Blog/BlogAnnouncement';
+import Blogs from './pages/Blog/Blogs';
 function App() {
   return (
     <div className="App">
@@ -33,6 +34,7 @@ function App() {
           <Route exact="true" path="/team" component={Team} />
           <Route exact="true" path="/whitepaper" component={WhitePaper} />
           <Route exact="true" path="/blog" component={Blog} />
+          <Route exact="true" path="/blogs" component={Blogs} />
           <Route exact="true" path="/blog/:id" component={BlogAnnouncement} />
           <Route exact="true" path="/dashboard" component={Dashboard} />
           <Route exact="true" path="/sendmail" component={SendMail} />

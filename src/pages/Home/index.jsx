@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <Showcase />
-      <h1 className="showcase-text">Exploring the world of Art with NFT. </h1>
+      <h1 className="showcase-text">Exploring the world of Art through NFTs. </h1>
       <Showcase2 />
       <Showcase3 />
       <Showcase4 />
