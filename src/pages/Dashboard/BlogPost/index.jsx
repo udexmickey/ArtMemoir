@@ -30,8 +30,6 @@ export default function BlogPost() {
     if (error) console.log('An Error request');
     await postRequest(formData);  
     console.log(res);
-
-    
   };
 
   

@@ -10,6 +10,7 @@ import { Carousel } from 'react-responsive-carousel';
 import { chunk } from 'lodash';
 import HeaderBadge from '../../components/HeaderBadge'
 import { Link } from 'react-router-dom';
+import PageLoading from '../../components/Loader';
 
 
 export default function Blog() {
@@ -23,7 +24,7 @@ export default function Blog() {
       setWidth((prev) => window.innerWidth),
     );
   }, []);
-  if (loading) return <h1>Loading...</h1>;
+  if (loading) return <PageLoading />
   if (rest) console.log(rest.posts);
   if (error) console.error('error...' + error);
 
