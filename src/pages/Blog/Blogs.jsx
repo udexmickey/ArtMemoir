@@ -4,6 +4,7 @@ import useFetch from '../../hooks/useFetch';
 import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { chunk } from 'lodash';
+import PageLoading from '../../components/Loader';
 import './blogslist.scss';
 
 const Blogs = () => {
