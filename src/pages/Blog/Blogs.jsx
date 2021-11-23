@@ -16,7 +16,7 @@ const Blogs = () => {
       setWidth((prev) => window.innerWidth),
     );
   }, []);
-  if (loading) return <h1>Loading...</h1>;
+  if (loading) return <PageLoading />
   if (rest) console.log(rest.posts);
   if (error) return <h1> oops!!! Check your internet connection.</h1>;
 
