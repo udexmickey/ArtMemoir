@@ -6,44 +6,21 @@ import { ImLink } from 'react-icons/all';
 import IconList from '../IconList/IconList';
 import {url} from '../../config/config.json'
 import { useForm } from 'react-hook-form';
-// import useFetch from '../../hooks/useFetch';
 import axios from 'axios';
 
 export default function Footer() {
 
   const { register, handleSubmit, setValue, error } = useForm();
-  // const { postRequest, error } = useFetch(
-  //   `${url}post`,
-  // );
 
   const handleneswletterSubmit = async data => {
     // e.preventDefault();
-    console.log(data)
     setValue('email');
-    if (error) console.log('email must be unique');
-    // await postRequest(data);
-    console.log('You just Sign up for our newsletter');
-    
-      // store the states in the form data
-  // const newsletterFormData = new FormData();
-  // newsletterFormData.append("email", data.email)
-
-    // try {
-    //   // make axios post request
-    //   const response = await axios({
-    //     method: "post",
-    //     url: `${url}subscribe`,
-    //     data: newsletterFormData,
-    //     headers: { "Content-Type": "multipart/form-data" },
-    //   });
-    // } catch(error) {
-    //   console.log(error);
-    // }
 
     axios
     .post(`${url}subscribe`, data)
     .then(res => console.log(res))
     .catch(err => console.log(err));
+    if (error) console.log('email must be unique');
   }
 
   return (
