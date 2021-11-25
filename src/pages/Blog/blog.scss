@@ -1,6 +1,9 @@
 .blog-page {
   position: relative;
   width: 100%;
+  .blogs3{
+    color: green;
+  }
 
   .headbadge-title {
     width: auto; 
@@ -28,15 +31,15 @@
       align-items: center;
       justify-content: center;
       position: absolute;
-      top: 250px;
+      top: 380px;
       padding: 0 0 2rem;
 
       .blog-heading-title {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: bold;
-        font-size: 64px;
-        line-height: 1.3;
+        font-size: 5.2rem;
+        line-height: 1;
         width: 100%;
         // height: 164px;
         text-align: center;
@@ -45,7 +48,7 @@
       }
       .blog-heading-text {
         width: 1016px;
-        height: 70px;
+        height: 50px;
         font-family: Open Sans;
         font-style: normal;
         font-weight: 600;
@@ -59,14 +62,20 @@
       .blog-anouncement-btn{
         color: var(--background);
         background: var(--button);
-        width: 20%;
-        height: 63px;
+        width: 12%;
+        height: 43px;
         outline: none;
         border: none;
       }
     }
+    // .blogs3{
+    //   color: green;
+    // }
   }
 
+  // .blogs3{
+  //   color: green;
+  // }
   .blog-container {
     width: 100%;
     position: relative;
@@ -163,7 +172,11 @@
     margin-top: -5rem;
   }
 }
-
+.blogs3{
+  position: 'relative'; 
+  display: 'block'; 
+  margin: '0rem auto 20rem';
+}
 @media only screen and (max-width: 600px) {
   .blog-page {
     .headbadge-title {
@@ -173,7 +186,7 @@
     .blog-badge {
       display: block;
       position: relative;
-      height: 480px;
+      height: 420px;
       img{
         height: 300px;
         width: 100%;
@@ -181,7 +194,7 @@
       .blog-heading-container {
         position: absolute;
         top: 200px;
-        height: auto;
+        height: 210px;
 
         .blog-card {
           width: 100%;
@@ -241,7 +254,7 @@
 
           .class {
 
-            padding: 1rem 1rem 2rem;
+            padding: 1rem;
             .user-info {
               height: 55px;
     

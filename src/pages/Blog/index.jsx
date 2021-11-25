@@ -3,7 +3,7 @@ import UserCard from '../../components/UserCard';
 import Background from '../../assets/Images/blogBacground.png';
 import Home from '../../assets/Images/home.png';
 import useFetch from '../../hooks/useFetch';
-import './blogs.scss';
+import './blog.scss';
 import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -49,62 +49,71 @@ export default function Blog() {
     <div className="blog-page">
       {/* <img loading="lazy"src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
       <HeaderBadge name={'Announcement'} />
-      <Carousel
+
+      <div className="">
+        <Carousel
           autoPlay={true}
           infiniteLoop={true}
           showStatus={false}
           showThumbs={false}
-          showIndicators={false}
+          showIndicators={true}
           interval={10000}
         >
-      <div
-        className="blog-badge"
-        style={{
-          backgroundSize: '100%',
-          width: '100%',
-        }}
-      >
-        <img loading="lazy"src={Background} alt="" />
-        <div className="blog-heading-container">
-          <div className="blog-heading-holder">
-            <div className="blog-heading-title">
-              Tempus at cursus maecenas erat id aenean pharetra.
+
+          <div
+            className="blog-badge"
+            style={{
+              backgroundSize: '100%',
+              width: '100%',
+            }}
+          >
+            <img loading="lazy"src={Background} alt="" />
+            <div className="blog-heading-container">
+              <div className="blog-heading-holder">
+                <div className="blog-heading-title">
+                  Tempus at cursus maecenas erat id aenean pharetra.
+                </div>
+                <div className="blog-heading-text">
+                  Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
+                  Pretium eu amet tempus elit.
+                </div>
+                <button className='blog-anouncement-btn'>
+                  <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
+                </button>
+              </div>
             </div>
-            <div className="blog-heading-text">
-              Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
-              Pretium eu amet tempus elit.
-            </div>
-            <button className='blog-anouncement-btn'>
-              <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
-            </button>
           </div>
-        </div>
+          
+          <div
+            className="blog-badge"
+            style={{
+              backgroundSize: '100%',
+              width: '100%',
+            }}
+          >
+            <img loading="lazy"src={Home} alt="" />
+            <div className="blog-heading-container">
+              <div className="blog-heading-holder">
+                <div className="blog-heading-title">
+                  The Announcement is a banger.
+                </div>
+                <div className="blog-heading-text">
+                  Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
+                  Pretium eu amet tempus elit.
+                </div>
+                <button className='blog-anouncement-btn'>
+                  <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
+                </button>
+              </div>
+            </div>
+          </div>
+          </Carousel>
+
       </div>
+     <div className="blogs3" style={{position: 'relative', display: 'block', margin: '0rem auto 20rem'}}>
+     <HeaderBadge name={'Blogs'} />
+     </div>
       
-      <div
-        className="blog-badge"
-        style={{
-          backgroundSize: '100%',
-          width: '100%',
-        }}
-      >
-        <img loading="lazy"src={Home} alt="" />
-        <div className="blog-heading-container">
-          <div className="blog-heading-holder">
-            <div className="blog-heading-title">
-              The Announcement is a banger.
-            </div>
-            <div className="blog-heading-text">
-              Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
-              Pretium eu amet tempus elit.
-            </div>
-            <button className='blog-anouncement-btn'>
-              <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
-            </button>
-          </div>
-        </div>
-      </div>
-      </Carousel>
       <div className="blog-container">
         <Carousel
           autoPlay={true}

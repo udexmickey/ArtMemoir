@@ -5,6 +5,7 @@ import { url as URL } from '../../config/config.json';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { chunk } from 'lodash';
 import PageLoading from '../../components/Loader';
+import HeaderBadge from '../../components/HeaderBadge'
 import './blogslist.scss';
 
 const Blogs = () => {
@@ -40,11 +41,12 @@ const Blogs = () => {
 
   return (
     <div className="blogslist-container">
-      <div className="blogs-container-showcase">
+            <HeaderBadge name={'Blogs'} />
+      {/* <div className="blogs-container-showcase">
         <p className="showcase-heading">
           Here Are the List of Blogs
         </p>
-      </div>
+      </div> */}
       <div className="blogs-content-container">
         <div>
           {chunkedBlogs}
