@@ -24,9 +24,8 @@ export default function Blog() {
       setWidth((prev) => window.innerWidth),
     );
   }, []);
-  if (loading) return <PageLoading />
-  // if (rest) console.log(rest.posts);
-  if (error) return <h1 className='error-loader'> oops!!! Check your internet connection.</h1>;
+  // if (loading) return <PageLoading />
+  // if (error) return <h1 className='error-loader' style={{textAlign: 'center'}}> oops!!! Check your internet connection.</h1>;
 
   const chunkedBlogs = chunk(rest.posts, width <= 600 ? 1 : 4).map((data) => (
     <div className="blog-card-holder">
@@ -110,21 +109,26 @@ export default function Blog() {
           </Carousel>
 
       </div>
-     <div className="blogs3" style={{position: 'relative', display: 'block', margin: '0rem auto 20rem'}}>
+     <div className="blogs3" style={{position: 'relative', display: 'block'}}>
      <HeaderBadge name={'Blogs'} />
      </div>
       
       <div className="blog-container">
-        <Carousel
-          autoPlay={true}
-          showStatus={false}
-          showThumbs={true}
-          showIndicators={true}
-          infiniteLoop={true}
-          interval={7000}
-        >
-        {chunkedBlogs}
-        </Carousel>
+      {loading && <PageLoading/>}
+
+        { error ?
+            <h1 className='error-loader'> OOps!!! Check your internet connection.</h1>
+               : 
+               <Carousel
+               autoPlay={true}
+               showStatus={false}
+               showThumbs={true}
+               showIndicators={true}
+               infiniteLoop={true}
+               interval={7000}
+             > 
+             {chunkedBlogs}
+        </Carousel>}
       </div>
       {/* <button onClick={reFresh}>Fresh</button> */}
      <div className="btn-blogs">
