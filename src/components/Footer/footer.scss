@@ -38,6 +38,19 @@
         margin: 2% auto;
         color: var(--background);
       }
+
+      // .test{
+
+        button{
+            width: 100%;
+            height: 46px;
+            background: var(--button);
+            color: var(--background);
+            line-height: 22px;
+            font-size: 16px;
+            border: transparent;
+        }
+      // }
     }
 
     .value-btn-box {

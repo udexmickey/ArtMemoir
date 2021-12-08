@@ -19,6 +19,7 @@ import Dashboard from './pages/Dashboard';
 import { Login } from './pages/Login';
 import BlogAnnouncement from './pages/Blog/BlogAnnouncement';
 import Blogs from './pages/Blog/Blogs';
+import Test from './pages/Test';
 function App() {
   return (
     <div className="App">
@@ -42,6 +43,7 @@ function App() {
           <Route exact="true" path="/announcement" component={Announcement} />
           <Route exact="true" path="/editstore" component={EditStore} />
           <Route exact="true" path="/uploadstore" component={UploadStore} />
+          <Route exact="true" path="/test" component={Test} />
           <Route component={PageNotForm} />
         </Switch>
         <Footer />

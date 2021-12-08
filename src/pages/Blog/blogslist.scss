@@ -23,6 +23,11 @@
       }
     }
   
+    .error-loader{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     .content-container {
       background: white;
       color: #606060;
@@ -38,6 +43,7 @@
 
 .blogs-card-holder{
     display: flex;
+    flex-wrap: wrap;
     // justify-content: center;
     // align-items: center;
 

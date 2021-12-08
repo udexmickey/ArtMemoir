@@ -25,8 +25,8 @@ export default function Blog() {
     );
   }, []);
   if (loading) return <PageLoading />
-  if (rest) console.log(rest.posts);
-  if (error) console.error('error...' + error);
+  // if (rest) console.log(rest.posts);
+  if (error) return <h1 className='error-loader'> oops!!! Check your internet connection.</h1>;
 
   const chunkedBlogs = chunk(rest.posts, width <= 600 ? 1 : 4).map((data) => (
     <div className="blog-card-holder">

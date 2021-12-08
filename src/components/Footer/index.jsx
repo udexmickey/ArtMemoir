@@ -7,11 +7,12 @@ import IconList from '../IconList/IconList';
 import {url} from '../../config/config.json'
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import Test from '../../pages/Test';
 
 export default function Footer() {
 
-  const { register, handleSubmit, setValue, error } = useForm();
-
+  const { register, handleSubmit, formState, setValue, error } = useForm();
+  const { isSubmitting } = formState;
   const handleneswletterSubmit = async data => {
     // e.preventDefault();
     setValue('email');
@@ -21,6 +22,13 @@ export default function Footer() {
     .then(res => console.log(res))
     .catch(err => console.log(err));
     if (error) console.log('email must be unique');
+
+      // return promise that resolves after 2 seconds
+      return new Promise(resolve => {
+        setTimeout(() => {
+            resolve();
+        }, 2000);
+    });
   }
 
   return (
@@ -35,6 +43,7 @@ export default function Footer() {
           </div>
           <div className="footer-form">
             <form action={`${url}subscribe`} method="post" onSubmit={handleSubmit(handleneswletterSubmit)}>
+              {/* <Test name={`Sign Up`}/> */}
               <label htmlFor="newsletter" className="newsletter-label">
                 Sign up for our newsletter <br />
                 <div className="value-btn-box">
@@ -46,8 +55,13 @@ export default function Footer() {
                     {...register('email', { required: true })}
                   />
                   {/* <input type="button" value="Sign up" className="newsletter-btn"/> */}
-                  <button className="newsletter-btn" type="submit">
+                  {/* <button className="newsletter-btn" type="submit">
                     Sign Up
+                  </button> */}
+                  {/* <Test name={`Sign Up`}/> */}
+                  <button disabled={isSubmitting} style={{cursor : 'pointer'}} className="newsletter-btn" type='submit'>
+                      {isSubmitting && <span style={{marginRight: '.5rem'}}><i class="fa fa-refresh fa-spin"></i></span>}
+                       login
                   </button>
                 </div>
               </label>
@@ -90,7 +104,7 @@ export default function Footer() {
                   <Link to="#">Real Estate</Link>
                 </li>
                 <li>
-                  <Link to="#roadmap">RoadMap</Link>
+                  <Link to="#">RoadMap</Link>
                 </li>
               </ul>
             </div>
