@@ -17,8 +17,9 @@ const Showcase2 = () => {
           <div className="right-container-content">
           <img src={road} alt="" />
             <div className="right-text">
-            <h1 className="right-container-heading">Single NFTs and</h1>
-            <h1>Collections</h1>
+            <h1 className="right-container-heading"></h1>
+            <h1 style={{color: 'var(--secondary)'}}>Art</h1>
+            <h2>Single NFTs and Collections</h2>
             <p>
               NFTs minted in various nft marketplace to support various
               artists in their journey of art and for the love of arts.

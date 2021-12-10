@@ -4,10 +4,30 @@
   .showcase-text {
     text-align: center;
     color: white;
-    text-shadow: 1px 1px red;
+    text-shadow: 1px 1px var(--accent);
     font-size: 6rem;
     font-weight: bold;
     margin-top: 3rem;
+  }
+  .explore-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 1.8;
+    height: 150px;
+    text-shadow: none;
+
+    // .explore-head{
+    //   margin-top: 4rem;
+    // }
+
+    span{
+      text-shadow: 1px 1px var(--accent);
+      display: block;
+      font-size: 1.9rem;
+    }
   }
 
   .divider {
@@ -42,7 +62,16 @@
       // line-height: 30px;
       // margin-bottom: 8px
     }
-
+    .explore-text{
+      font-size: 1.3rem;
+      line-height: 1.7;
+      // height: 50px;
+  
+      span{
+        display: block;
+        font-size: .9rem;
+      }
+    }
     .divider {
       display: none;
     }

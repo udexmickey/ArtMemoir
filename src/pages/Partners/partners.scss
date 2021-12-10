@@ -1,5 +1,6 @@
 .our-partners {
   position: relative;
+
   .background-flower {
     position: absolute;
     left: 50rem;
@@ -12,22 +13,26 @@
     justify-content: center;
     margin: 6rem 2rem 2rem 2rem;
 
+
     .partner-card {
       z-index: 9999;
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 620px;
+      // width: 620px;
       height: 280px;
       // padding: 2rem 0 3rem;
       background: rgba(186, 186, 186, 0.1);
       border: 1px solid rgba(186, 186, 186, 0.1);
       box-sizing: border-box;
       border-radius: 11px;
-      margin: auto 4rem 3rem;
+      margin: auto 3rem;
+      padding: 0px 10px;
       // margin-right: 5rem;
-      &:nth-child(2){
+      &:nth-child(1){
         margin-right: 0rem;
+        background: blue;
+        color: #fff;
       }
 
       hr {
@@ -37,6 +42,10 @@
       img {
         width: 80px;
         height: auto;
+      }
+      &:first-child{
+        // background-color: yellow;
+        color: black;
       }
     }
   }

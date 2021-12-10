@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../../src/assets/Images/logo.png';
 import { Link } from 'react-router-dom';
 import './footer.scss';
@@ -8,9 +8,11 @@ import {url} from '../../config/config.json'
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import Test from '../../pages/Test';
+import { functions } from 'lodash';
 
 export default function Footer() {
 
+  const [signletter, setSignLetter] = useState('Signup')
   const { register, handleSubmit, formState, setValue, error } = useForm();
   const { isSubmitting } = formState;
   const handleneswletterSubmit = async data => {
@@ -19,8 +21,8 @@ export default function Footer() {
 
     axios
     .post(`${url}subscribe`, data)
-    .then(res => console.log(res))
-    .catch(err => console.log(err));
+    .then(res => (res))
+    .catch(err => (err));
     if (error) console.log('email must be unique');
 
       // return promise that resolves after 2 seconds
@@ -28,9 +30,17 @@ export default function Footer() {
         setTimeout(() => {
             resolve();
         }, 2000);
+        // <div style={{backgroundColor: 'green'}}>{setSignLetter('Successful')}</div>
     });
   }
 
+  // const sendLetter = () => {
+  //   if(signletter) {
+  //     {isSubmitting && <span style={{marginRight: '.5rem'}}><i class="fa fa-refresh fa-spin"></i></span>}
+  //     <div style={{background: 'green'}}>{setSignLetter('Successful')}</div>
+  //   }
+  //   return signletter;
+  // }
   return (
     <div className="footer">
       <footer>
@@ -59,9 +69,9 @@ export default function Footer() {
                     Sign Up
                   </button> */}
                   {/* <Test name={`Sign Up`}/> */}
-                  <button disabled={isSubmitting} style={{cursor : 'pointer'}} className="newsletter-btn" type='submit'>
-                      {isSubmitting && <span style={{marginRight: '.5rem'}}><i class="fa fa-refresh fa-spin"></i></span>}
-                       login
+                  <button disabled={isSubmitting} style={{cursor : 'pointer'}} className="newsletter-btn" type='submit' >
+                  {isSubmitting && <span style={{marginRight: '.5rem'}}><i class="fa fa-refresh fa-spin"></i></span>}
+                       {signletter}
                   </button>
                 </div>
               </label>

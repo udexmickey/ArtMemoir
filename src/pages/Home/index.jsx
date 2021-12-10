@@ -12,7 +12,13 @@ export default function Home() {
   return (
     <div className="home-container">
       <Showcase />
-      <h1 style={{fontSize: '1.3rem'}} className="showcase-text">Exploring the world of Art through NFTs. </h1>
+      <h1 className="showcase-text explore-text">
+          <div className="explore-head">
+              We are Exploring the world of Art through diverse high liquidity products; 
+              <span>Valuable NFTs, Arts, Game Fi, Real estate and seamless stake rewards.</span>
+          </div>
+
+      </h1>
       <Showcase2 />
       <Showcase3 />
       <Showcase4 />
