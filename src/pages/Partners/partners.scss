@@ -29,11 +29,13 @@
       margin: auto 3rem;
       padding: 0px 10px;
       // margin-right: 5rem;
-      &:nth-child(1){
-        margin-right: 0rem;
-        background: blue;
-        color: #fff;
-      }
+      margin-right: 0rem;
+
+      // &:nth-child(1){
+      //   margin-right: 0rem;
+      //   background: blue;
+      //   color: #fff;
+      // }
 
       hr {
         margin: 10px auto;
@@ -43,10 +45,10 @@
         width: 80px;
         height: auto;
       }
-      &:first-child{
-        // background-color: yellow;
-        color: black;
-      }
+      // &:first-child{
+      //   // background-color: yellow;
+      //   color: black;
+      // }
     }
   }
 }
