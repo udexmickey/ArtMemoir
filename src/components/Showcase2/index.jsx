@@ -17,7 +17,7 @@ const Showcase2 = () => {
           <div className="right-container-content">
           <img src={road} alt="" />
             <div className="right-text">
-            <h1 className="right-container-heading"></h1>
+            {/* <h1 className="right-container-heading"></h1> */}
             <h1 style={{color: 'var(--secondary)'}}>Art</h1>
             <h2>Single NFTs and Collections</h2>
             <p>

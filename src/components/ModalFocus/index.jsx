@@ -1,10 +1,9 @@
-import React, {Fragment, useRef, useState} from 'react';
+import React, { useState} from 'react';
  import './focustest.scss'
 
 function ModalFocus() {
 
 const [valueData, setValueData] = useState('selete');
-const styles = {background: 'red'}
 const [dynamicClasses, setDynamicClasses] = React.useState([
     "dynamicClass1", "dynamicClass2"
 ]);
@@ -20,9 +19,7 @@ const [dynamicClasses, setDynamicClasses] = React.useState([
 
         if (selectedIndex == 1 ) {
             // event.target.options[selectedIndex].style.color = 'blue';
-            const addClass = newClass => {
                 setDynamicClasses([...dynamicClasses, newClass])
-             }
             return setValueData(particularValue)
         }
         if (selectedIndex == 2 ) {
@@ -47,7 +44,6 @@ const [dynamicClasses, setDynamicClasses] = React.useState([
             <div className="">
                 Display Value
                 {/* <h1 className={ valueData ? `demo` : `test`} >{valueData}</h1> */}
-                <h1 className={`${valueData} ? demo : ${[...dynamicClasses]}`} >{valueData}</h1>
             </div>
         </div>
      </div>

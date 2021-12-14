@@ -5,7 +5,7 @@ import UserCard from '../../components/UserCard';
 import flowerLeft from '../../assets/Images/flower-left.png';
 import './partners.scss';
 import partnersData from './partner'
-import ModalFocus from '../../components/ModalFocus';
+// import ModalFocus from '../../components/ModalFocus';
 
 export default function Partners() {
   const PartnersList =  partnersData.map((partnership, idx) => {
@@ -22,7 +22,7 @@ export default function Partners() {
   return (
     <div className="our-partners">
        <HeadBadge name="Our Partners" />
-       <ModalFocus />
+       {/* <ModalFocus /> */}
        <div className="background-flower">
          <img loading="lazy" src={flowerLeft} alt="" srcSet="" />
        </div>

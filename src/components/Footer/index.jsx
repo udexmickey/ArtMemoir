@@ -7,8 +7,8 @@ import IconList from '../IconList/IconList';
 import {url} from '../../config/config.json'
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import Test from '../../pages/Test';
-import { functions } from 'lodash';
+// import Test from '../../pages/Test';
+// import { functions } from 'lodash';
 
 export default function Footer() {
 
@@ -30,7 +30,7 @@ export default function Footer() {
         setTimeout(() => {
             resolve();
         }, 2000);
-        // <div style={{backgroundColor: 'green'}}>{setSignLetter('Successful')}</div>
+        <div style={{backgroundColor: 'green'}}>{setSignLetter('Signup')}</div>
     });
   }
 
