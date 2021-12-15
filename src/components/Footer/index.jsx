@@ -129,11 +129,11 @@ export default function Footer() {
               <div className="privacy">
                 <Link to="/privacy">Privacy</Link>
               </div>
-            </div>
-            <div className="footer-dev">
+            </div> 
+          </div>
+          <div className="footer-dev">
               <ImLink /> Powered by HarmonicStudioz
             </div>
-          </div>
         </div>
       </footer>
     </div>

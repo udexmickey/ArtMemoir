@@ -7,7 +7,7 @@ export default function Logo() {
                 <rect width="180" height="22.4672" fill="url(#pattern0)"/>
                 <defs>
                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                {/* <use xlink:href="#image0" transform="scale(0.000364964 0.00292398)"/> */}
+                {/* <use xlink:href="#image0" target="_blank" rel="noopener noreferrer" transform="scale(0.000364964 0.00292398)"/> */}
                 </pattern>
                 </defs>
             </svg>

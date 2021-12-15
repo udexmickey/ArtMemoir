@@ -74,15 +74,21 @@
         border: none;
       }
     }
-    // .blogs3{
-    //   color: green;
-    // }
   }
 
   .blogs3 .headbadge-title {
     position: relative; 
     display: block; 
-    margin: 0rem auto 20rem;
+    margin: 0rem auto 8rem;
+  }
+  
+  .blogs-description{
+    position: relative; 
+    display: flex;
+    margin: 0rem auto 8rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
   }
 
   .blog-container {
@@ -95,6 +101,7 @@
     .blog-card-holder {
       display: flex;
       justify-content: space-evenly;
+      height: 550px;
     }
 
     .blog-card {
@@ -179,12 +186,6 @@
     align-items: center;
     font-size: 2rem;
     margin-top: -5rem;
-  }
-
-  .blogs3{
-    position: 'relative'; 
-    display: 'block'; 
-    margin: '0rem auto 20rem';
   }
 }
 @media only screen and (max-width: 600px) {

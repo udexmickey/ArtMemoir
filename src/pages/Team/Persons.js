@@ -1,39 +1,53 @@
- 
 const Persons = [
     {
         id : '1',
         name : 'Rehamzy Omezurike',
         role : 'CEO / Co-Founder',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : ''
+        avatar : '',
+        instagram : "https://instagram.com/art_memoirnft?utm_medium=copy_link",
+        twitter : "https://twitter.com/art_memoir?s=21",
+        medium : "https://medium.com/@artmemoir21nft/",
     },
     {
         id : '2',
         name : 'Gabito Dento',
         role : 'Co-founder',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : ''
+        avatar : '',
+        instagram : "https://instagram.com/art_memoirnft?utm_medium=copy_link",
+        twitter : "https://twitter.com/art_memoir?s=21",
+        medium : "https://medium.com/@artmemoir21nft/",
     },
     {
         id : '3',
         name : 'Jimmy Friday',
         role : 'Head of Design',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : ''
+        avatar : '',
+        instagram : "https://instagram.com/art_memoirnft?utm_medium=copy_link",
+        twitter : "https://twitter.com/art_memoir?s=21",
+        medium : "https://medium.com/@artmemoir21nft/",
     },
     {
         id : '4',
         name : 'Darlington Elendu',
         role : 'Product Manager',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : ''
+        avatar : '',
+        instagram : "https://instagram.com/art_memoirnft?utm_medium=copy_link",
+        twitter : "hhttps://twitter.com/art_memoir?s=21",
+        medium : "https://medium.com/@artmemoir21nft/",
     },
     {
         id : '5',
         name : 'Mary Jane',
         role : 'Head of Contents and Communications',
         message : 'convallis eget elit id rhoncus parturient enim turpis. Nibh tortor tellus urna diam cras cursus. Adipiscing cras euismod tortor dui. Urna amet sit cursus.',
-        avatar : ''
+        avatar : '',
+        instagram : "https://instagram.com/art_memoirnft?utm_medium=copy_link",
+        twitter : "https://twitter.com/art_memoir?s=21",
+        medium : "https://medium.com/@artmemoir21nft/",
     },
 ]
 export default Persons;

@@ -45,18 +45,19 @@
 
 
 .blogs-card-holder{
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 1px;
 
     .blogs-card {
-        width: 18%;
-        // height: 50px;
-        margin-right: 2rem;
-  
+        // width: 18%;
+        // margin-right: 2rem;
         border-radius: 0px 0px 11px 11px;
-  
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 8px;
+        font-size: 30px;
+        text-align: center;
+
         hr {
           display: none;
         }
@@ -72,8 +73,8 @@
           padding: 1rem 1rem 2rem;
           .user-info {
             // width: 380px;
-            height: 52px;
-            line-height: 1.5;
+            height: 60px;
+            line-height: 1;
   
             .name {
               font-size: 20px;
@@ -136,12 +137,14 @@
       }
 
       .blogs-card-holder{
-        display: flex;
-        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        padding: 10px;
     
         .blogs-card {
             width: 100%;
-            margin-right: 0rem;
+            // margin-right: 0rem;
+            padding: 0px;
 
             .user-details{
                 padding: 1rem 0;

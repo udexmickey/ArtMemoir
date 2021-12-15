@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import UserCard from '../../components/UserCard';
-import Background from '../../assets/Images/blogBacground.png';
-import Home from '../../assets/Images/home.png';
+// import Background from '../../assets/Images/blogBacground.png';
+// import Home from '../../assets/Images/home.png';
 import useFetch from '../../hooks/useFetch';
 import './blog.scss';
 import { url as URL } from '../../config/config.json';
@@ -11,7 +11,10 @@ import { chunk } from 'lodash';
 import HeaderBadge from '../../components/HeaderBadge'
 import { Link } from 'react-router-dom';
 import PageLoading from '../../components/Loader';
-
+import hQ from '../../assets/Images/hQ.jpg'
+import nt from '../../assets/Images/nt.jpg'
+import sg from '../../assets/Images/sg-cov.jpg' 
+import upd from '../../assets/Images/upd.jpg' 
 
 export default function Blog() {
 
@@ -66,8 +69,8 @@ export default function Blog() {
               width: '100%',
             }}
           >
-            <img loading="lazy"src={Background} alt="" />
-            <div className="blog-heading-container">
+            <img loading="lazy"src={hQ} alt="" />
+            {/* <div className="blog-heading-container">
               <div className="blog-heading-holder">
                 <div className="blog-heading-title">
                   Tempus at cursus maecenas erat id aenean pharetra.
@@ -80,7 +83,7 @@ export default function Blog() {
                   <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
           
           <div
@@ -90,8 +93,8 @@ export default function Blog() {
               width: '100%',
             }}
           >
-            <img loading="lazy"src={Home} alt="" />
-            <div className="blog-heading-container">
+            <img loading="lazy" src={nt} alt="" />
+            {/* <div className="blog-heading-container">
               <div className="blog-heading-holder">
                 <div className="blog-heading-title">
                   The Announcement is a banger.
@@ -104,7 +107,27 @@ export default function Blog() {
                   <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
                 </button>
               </div>
-            </div>
+            </div> */}
+          </div>
+
+          <div
+            className="blog-badge"
+            style={{
+              backgroundSize: '100%',
+              width: '100%',
+            }}
+          >
+            <img loading="lazy" src={sg} alt="" />
+          </div>
+
+          <div
+            className="blog-badge"
+            style={{
+              backgroundSize: '100%',
+              width: '100%',
+            }}
+          >
+            <img loading="lazy" src={upd} alt="" />
           </div>
           </Carousel>
 
@@ -112,6 +135,7 @@ export default function Blog() {
      <div className="blogs3" style={{position: 'relative', display: 'block'}}>
      <HeaderBadge name={'Blogs'} />
      </div>
+     <h4 className='blogs-description'>Stay updated with our Blogs</h4>
       
       <div className="blog-container">
       {loading && <PageLoading/>}

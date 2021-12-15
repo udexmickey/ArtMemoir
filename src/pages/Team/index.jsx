@@ -17,6 +17,9 @@ export default function Team() {
                 role={person.role}
                 className={`team-card1`}
                 message={person.message}
+                twitter={person.twitter}
+                instagram={person.instagram}
+                medium={person.medium}
             />
         )
     }

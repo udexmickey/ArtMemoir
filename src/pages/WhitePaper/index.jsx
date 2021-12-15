@@ -15,7 +15,7 @@ export default function WhitePaper() {
       <div className="whitepaper-badge">
         <HeadBadge name="WhitePaper" />
         <div className="white-paper-download white-paper-download-top">Download whitepaper 
-            <Link to='/files/Art Memoir.pdf' target="_blank" download>
+            <Link to='/files/Art Memoir.pdf' target="_blank" rel="noopener noreferrer" download>
                <span> Here </span>
             </Link>
           </div>
@@ -31,7 +31,7 @@ export default function WhitePaper() {
           </div>
           {/* <ButtonDirections /> */}
           <div className="white-paper-download">Download whitepaper 
-            <Link to='/files/Art Memoir.pdf' target="_blank" download>
+            <Link to='/files/Art Memoir.pdf' target="_blank" rel="noopener noreferrer" download>
                <span> Here </span>
             </Link>
           </div>

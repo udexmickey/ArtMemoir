@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaInstagram, FaMedium, FaTwitter } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import Avatar from '../Avatar';
 import './user-card.scss';
@@ -44,7 +45,27 @@ export default function UserCard(props) {
               {' '}
               <Link to={`/blog/${props.link}`}>{props.btn}</Link>
             </button>
+              <div className="user-icons">
+                <ul>
+                  <li className="list-icons">
+                        <a href={props.twitter} target="_blank" rel="noopener noreferrer">
+                            <FaTwitter />
+                        </a>
+                  </li>
+                  <li className="list-icons">
+                        <a href={props.instagram} target="_blank" rel="noopener noreferrer">
+                            <FaInstagram />
+                        </a>
+                  </li>
+                  <li className="list-icons">
+                        <a href={props.medium} target="_blank" rel="noopener noreferrer">
+                              <FaMedium/>
+                        </a>
+                  </li>
+                </ul>
+              </div>
           </div>
+          
           {acceptedLocations.includes(location.pathname) && !isEven && (
             <div className="user-img-holder">
               <Avatar img={props.avatar} />

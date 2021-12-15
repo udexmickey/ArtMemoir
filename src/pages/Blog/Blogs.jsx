@@ -30,7 +30,7 @@ const Blogs = () => {
           key={blog.id}
           avatar={blog.image}
           name={blog.title}
-          message={blog.post.substring(0, 68)+'...'}
+          message={blog.post.substring(0, 100)+'...'}
           btn={'Read More'}
           link={'blogs'}
         />
@@ -47,11 +47,15 @@ const Blogs = () => {
           Here Are the List of Blogs
         </p>
       </div> */}
-      <div className="blogs-content-container">
-        <div>
-          {chunkedBlogs}
+      { error ?
+        <h1 className='error-loader'> OOps!!! Check your internet connection.</h1>
+        : 
+        <div className="blogs-content-container">
+          <div>
+            {chunkedBlogs}
+          </div>
         </div>
-      </div>
+      }
     </div>
   );
 };
