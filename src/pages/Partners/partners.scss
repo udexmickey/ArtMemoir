@@ -1,13 +1,8 @@
 .our-partners {
   position: relative;
 
-  .background-flower {
-    position: absolute;
-    left: 50rem;
-    right: 65rem;
-    top: 12rem;
-  }
   .our-partners-container {
+    background: url('../../assets/Images/flower-left.png');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,11 +50,6 @@
 
 @media only screen and (max-width: 600px) {
   .our-partners {
-    .background-flower {
-      left: 0;
-      right: 0;
-      // display: none;
-    }
 
     .our-partners-container {
       display: block;

@@ -59,6 +59,14 @@ const Showcase = () => {
         id: v4(),
         content: <img className="showcase-img" src={pic10} alt="" />,
       },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic2} alt="" />,
+      },
+      {
+        id: v4(),
+        content: <img className="showcase-img" src={pic6} alt="" />,
+      },
     ],
     [],
   );

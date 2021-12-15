@@ -15,12 +15,16 @@ export default function UserCard(props) {
         <div className="user-details">
           {!acceptedLocations.includes(location.pathname) && (
             <div className="user-img-holder">
-              <Avatar img={props.avatar} />
+              <a href={props.avatarLink} target="_blank" rel="noopener noreferrer">
+                <Avatar img={props.avatar} />
+              </a>
             </div>
           )}
           {acceptedLocations.includes(location.pathname) && isEven && (
             <div className="user-img-holder">
-              <Avatar img={props.avatar} />
+              <a href={props.avatarLink} target="_blank" rel="noopener noreferrer">
+                <Avatar img={props.avatar} />
+              </a>
             </div>
           )}
           <div
@@ -45,6 +49,7 @@ export default function UserCard(props) {
               {' '}
               <Link to={`/blog/${props.link}`}>{props.btn}</Link>
             </button>
+            {acceptedLocations.includes(location.pathname) && isEven && (
               <div className="user-icons">
                 <ul>
                   <li className="list-icons">
@@ -64,11 +69,35 @@ export default function UserCard(props) {
                   </li>
                 </ul>
               </div>
+            )}
           </div>
           
           {acceptedLocations.includes(location.pathname) && !isEven && (
+            <div>
             <div className="user-img-holder">
-              <Avatar img={props.avatar} />
+              <a href={props.avatarLink} target="_blank" rel="noopener noreferrer">
+                <Avatar img={props.avatar} />
+              </a>
+            </div>
+            <div className="user-icons user-icons-left">
+                <ul>
+                  <li className="list-icons">
+                        <a href={props.twitter} target="_blank" rel="noopener noreferrer">
+                            <FaTwitter />
+                        </a>
+                  </li>
+                  <li className="list-icons">
+                        <a href={props.instagram} target="_blank" rel="noopener noreferrer">
+                            <FaInstagram />
+                        </a>
+                  </li>
+                  <li className="list-icons">
+                        <a href={props.medium} target="_blank" rel="noopener noreferrer">
+                              <FaMedium/>
+                        </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           )}
         </div>

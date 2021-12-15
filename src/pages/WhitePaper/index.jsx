@@ -14,9 +14,9 @@ export default function WhitePaper() {
     <div className="whitePaper">
       <div className="whitepaper-badge">
         <HeadBadge name="WhitePaper" />
-        <div className="white-paper-download white-paper-download-top">Download whitepaper 
-            <Link to='/files/Art Memoir.pdf' target="_blank" rel="noopener noreferrer" download>
-               <span> Here </span>
+        <div className="white-paper-download white-paper-download-top">Thank you for your interest in Art Memoir! Please find detailed information about our company below.
+           <Link to='/files/Art Memoir.pdf' target="_blank" rel="noopener noreferrer" download>
+               <span> (download here) </span>
             </Link>
           </div>
       </div>
@@ -30,9 +30,9 @@ export default function WhitePaper() {
             <div className="whitepaper-content">{content[selected]}</div>
           </div>
           {/* <ButtonDirections /> */}
-          <div className="white-paper-download">Download whitepaper 
+          <div className="white-paper-download">Thank you for your interest in Art Memoir! Please find detailed information about our company below.
             <Link to='/files/Art Memoir.pdf' target="_blank" rel="noopener noreferrer" download>
-               <span> Here </span>
+               <span> (download here) </span>
             </Link>
           </div>
         </div>

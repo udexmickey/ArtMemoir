@@ -2,7 +2,6 @@ import React from 'react';
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HeadBadge from '../../components/HeaderBadge';
 import UserCard from '../../components/UserCard';
-import flowerLeft from '../../assets/Images/flower-left.png';
 import './partners.scss';
 import partnersData from './partner'
 // import ModalFocus from '../../components/ModalFocus';
@@ -13,6 +12,7 @@ export default function Partners() {
         <UserCard
           key={idx}
           avatar={partnership.avatar}
+          avatarLink={partnership.avatarLink}
           name={partnership.name}
           className={"partner-card"}
           message={partnership.message}
@@ -23,9 +23,6 @@ export default function Partners() {
     <div className="our-partners">
        <HeadBadge name="Our Partners" />
        {/* <ModalFocus /> */}
-       <div className="background-flower">
-         <img loading="lazy" src={flowerLeft} alt="" srcSet="" />
-       </div>
       <div className="our-partners-container">
         {PartnersList }
       </div>

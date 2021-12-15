@@ -37,6 +37,11 @@
         line-height: 2;
         margin: 2% auto;
         color: var(--background);
+
+        small{
+          font-size: 16px;
+          opacity: .7;
+        }
       }
 
       // .test{
@@ -91,10 +96,10 @@
 
       ul {
         li {
-          width: 241px;
-          height: 41px;
+          width: 341px;
+          height: 50px;
           background: rgba(#bababa, 0.1);
-          margin: 6% 4% auto 1%;
+          margin: 3% auto;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -184,6 +189,15 @@
                 margin-left: 1.5rem;
                 height: 46px;
               }
+            }
+          }
+          .newsletter-label {
+            line-height: 1;
+            span{
+              line-height: 2;
+            }
+            small{
+              font-size: 14px;
             }
           }
         }

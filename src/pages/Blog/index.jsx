@@ -73,7 +73,7 @@ export default function Blog() {
             {/* <div className="blog-heading-container">
               <div className="blog-heading-holder">
                 <div className="blog-heading-title">
-                  Tempus at cursus maecenas erat id aenean pharetra.
+                  Be the first to learn of what’s new on ArtMemoir
                 </div>
                 <div className="blog-heading-text">
                   Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
@@ -100,8 +100,7 @@ export default function Blog() {
                   The Announcement is a banger.
                 </div>
                 <div className="blog-heading-text">
-                  Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
-                  Pretium eu amet tempus elit.
+                  Be the first to learn of what’s new on ArtMemoir
                 </div>
                 <button className='blog-anouncement-btn'>
                   <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>

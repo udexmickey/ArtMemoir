@@ -164,7 +164,9 @@
       .white-paper-download-top{
         // display: block;
         font-size: 1rem;
-        margin: 1rem auto;
+        margin: 2rem auto 1rem;
+        display: block;
+        text-align: center;
         span{
           margin-left: 0rem;
         }
@@ -208,8 +210,10 @@
         }
       }
       .white-paper-download{
-        margin: auto 1.2rem;
+        text-align: center;
+        margin: auto 1.2rem 1rem;
         font-size: 1rem;
+        display: block;
   
         span{
           margin-left: .5rem;

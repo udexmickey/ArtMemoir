@@ -49,13 +49,14 @@ export default function Footer() {
             <img src={logo} alt=" " />
           </div>
           <div className="footer-title">
-          Exploring the world of Art <br /> through NFTs.
+          Exploring the world of Art through NFTs.
           </div>
           <div className="footer-form">
             <form action={`${url}subscribe`} method="post" onSubmit={handleSubmit(handleneswletterSubmit)}>
               {/* <Test name={`Sign Up`}/> */}
               <label htmlFor="newsletter" className="newsletter-label">
-                Sign up for our newsletter <br />
+                <span>Sign up for our newsletter </span><br />
+                <small>Stay up to date on new releases, interviews, events, and updates from ArtMemoir’s community.</small>
                 <div className="value-btn-box">
                   <input
                     type="email"

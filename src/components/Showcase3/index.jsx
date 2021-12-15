@@ -8,39 +8,42 @@ const Showcase3 = () => {
     () => [
       {
         id: v4(),
-        header: 'STAKE AND EARN',
+        header: 'GAMEFI REWARDS',
         content:
-          'Hodlers of selected NFts will be able to stake their NFTs to earn returns of both Fiat and Tokens from partnered projects and other crypto companies through the blockchain within a given period of time.',
+          'Partake on revenues generated from our gamefi products and its resources through the blockchain.',
       },
+      
       {
         id: v4(),
-        header: 'CASH BACK RETURNS',
+        header: 'STAKE AND EARN',
         content:
-          'Hodlers of selected NFts will be able to stake their NFTs to earn returns of both Fiat and Tokens from partnered projects and other crypto companies through the blockchain within a given period of time.',
+          'Earn effortless passive Income by unlocking Art Memoir’s treasury and receive rewards while staking your NFTs.',
       },
       {
         id: v4(),
         header: 'REAL ESTATE',
         content:
-          'Hodlers of selected NFts will be able to stake their NFTs to earn returns of both Fiat and Tokens from partnered projects and other crypto companies through the blockchain within a given period of time.',
+          'Generated flow of cash with stake of NFTs and REAL ESTATE to earn returns of both Fiat and Tokens from partnered projects and other crypto companies through the blockchain within a given period of time.',
       },
+
     ],
     [],
   );
 
   const data2 = useMemo(
     () => [
+
       {
         id: v4(),
         header: 'SHARES',
         content:
-          'Users hodling selected nfts used to fund real estate projects automatically become shareholders of that real estate and will receive shares and dividends in Crypto Currency directly to their wallet.',
+          'Be a partaker of the dividends gotten from the Shares your NFTs represents.',
       },
       {
         id: v4(),
-        header: 'GAMEFI REWARDS',
+        header: 'CASH BACK RETURNS',
         content:
-          'Tokens will be rewarded randomly to gamers who use nfts as a medium of transaction in partnered gamefi projects.',
+          'Generated extra flow of cash with our DeFi products powered on the Binance Blockchain.',
       },
     ],
     [],
