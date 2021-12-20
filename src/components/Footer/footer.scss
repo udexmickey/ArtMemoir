@@ -193,11 +193,17 @@
           }
           .newsletter-label {
             line-height: 1;
+            margin-left: 2rem;
             span{
               line-height: 2;
             }
             small{
-              font-size: 14px;
+              // margin: auto 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              font-size: 12px;
             }
           }
         }
