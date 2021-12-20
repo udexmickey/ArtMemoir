@@ -49,7 +49,7 @@ export default function Blog() {
 
   return (
     <div className="blog-page">
-      {/* <img loading="lazy"src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
+      {/* <img className="announce-img"src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
       <HeaderBadge name={'Announcement'} />
 
       <div className="">
@@ -69,7 +69,10 @@ export default function Blog() {
               width: '100%',
             }}
           >
-            <img loading="lazy"src={hQ} alt="" />
+            <div className="img-badge-holder">
+            <img className="announce-img" src={hQ} alt="" />
+            </div>
+            
             {/* <div className="blog-heading-container">
               <div className="blog-heading-holder">
                 <div className="blog-heading-title">
@@ -93,7 +96,10 @@ export default function Blog() {
               width: '100%',
             }}
           >
-            <img loading="lazy" src={nt} alt="" />
+            <div className="img-badge-holder">
+              <img className="announce-img" src={nt} alt="" />
+            </div>
+           
             {/* <div className="blog-heading-container">
               <div className="blog-heading-holder">
                 <div className="blog-heading-title">
@@ -116,7 +122,10 @@ export default function Blog() {
               width: '100%',
             }}
           >
-            <img loading="lazy" src={sg} alt="" />
+            <div className="img-badge-holder">
+            <img className="announce-img" src={sg} alt="" />
+            </div>
+            
           </div>
 
           <div
@@ -126,7 +135,10 @@ export default function Blog() {
               width: '100%',
             }}
           >
-            <img loading="lazy" src={upd} alt="" />
+            <div className="img-badge-holder">
+            <img className="announce-img" src={upd} alt="" />
+            </div>
+           
           </div>
           </Carousel>
 

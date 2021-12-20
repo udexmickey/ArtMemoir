@@ -22,11 +22,17 @@
 
   .blog-badge {
     width: 100%;
-    opacity: 0.7;
-    img{
+    // opacity: 0.7;
+
+    .img-badge-holder{
       height: 600px;
       width: 100%;
+
+      .announce-img{
+        width: 100%;
+      }
     }
+
 
     .blog-heading-container {
       width: 100%;
@@ -202,11 +208,23 @@
     .blog-badge {
       display: block;
       position: relative;
-      height: 420px;
-      img{
-        height: 300px;
+      height: 320px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      
+      .img-badge-holder{
+        height: auto;
         width: 100%;
+
+  
+        .announce-img{
+          // height: 500px;
+          width: 100%;
+          // object-fit: scale-down;
+        }
       }
+
       .blog-heading-container {
         position: absolute;
         top: 200px;
@@ -241,6 +259,11 @@
           margin: 1rem auto;
         }
       }
+    }
+
+    .blogs-description{
+      margin: 0rem;
+      font-size: 18px;
     }
 
     .blogs3 .headbadge-title {
