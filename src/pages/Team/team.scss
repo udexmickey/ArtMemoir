@@ -7,7 +7,7 @@
     align-items: center;
 
     .user-details {
-      height: 330px;
+      height: auto;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -84,7 +84,7 @@
         // justify-content: left;
         position: relative;
         right: 150px;
-        bottom: 35px;
+        bottom: 15px;
       }
     // }
   }
@@ -102,14 +102,8 @@
     .our-team-container {
       width: 100%;
       // .user-info{
-      //   width: 60%;
-      // }
-      // .user-details {
-      //   width: 80%;
-      //   .name {
-      //     font-size: 28px;
-      //     line-height: 46px;
-      //   }
+      //   // width: 60%;
+      //   // height: 40px;
       // }
 
       .team-card1 {
@@ -117,27 +111,50 @@
       }
       .class{
         width: 50%;
+        // height: 350px;
 
         .name {
           font-size: 16px;
-          line-height: 46px;
+          line-height: 1;
         }
         small{
-          font-size: 12px;
+          font-size: 10px;
+          line-height: .5;
         }
         .message{
           font-size: 10px;
           line-height: 1.7;
         }
       }
+
       .user-details {
+        // height: 260px;
         padding: 0 ;
+
         .user-img-holder {
           margin-right: 1rem;
           width: 40%;
-          height: 150px;
+          height: 180px;
+
+          img{
+            height: auto;
+            width: 100%;
+          }
+        }
+        .user-img-holder-left{
+          width: 100%;
         }
       }
+      .user-icons{
+        margin-top: 0rem;
+      }
     }
+
+    .list-icons{
+      a{
+        font-size: 16px;
+      }
+    }
+ 
   }
 }

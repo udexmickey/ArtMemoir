@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaInstagram, FaMedium, FaTwitter } from 'react-icons/fa';
 import { Link, useLocation } from 'react-router-dom';
 import Avatar from '../Avatar';
 import './user-card.scss';
@@ -54,17 +53,17 @@ export default function UserCard(props) {
                 <ul>
                   <li className="list-icons">
                         <a href={props.twitter} target="_blank" rel="noopener noreferrer">
-                            <FaTwitter />
+                            {props.twitterIcon}
                         </a>
                   </li>
                   <li className="list-icons">
                         <a href={props.instagram} target="_blank" rel="noopener noreferrer">
-                            <FaInstagram />
+                            {props.instagramIcon}
                         </a>
                   </li>
                   <li className="list-icons">
                         <a href={props.medium} target="_blank" rel="noopener noreferrer">
-                              <FaMedium/>
+                              {props.facebookIcon}
                         </a>
                   </li>
                 </ul>
@@ -74,7 +73,7 @@ export default function UserCard(props) {
           
           {acceptedLocations.includes(location.pathname) && !isEven && (
             <div>
-            <div className="user-img-holder">
+            <div className="user-img-holder user-img-holder-left">
               <a href={props.avatarLink} target="_blank" rel="noopener noreferrer">
                 <Avatar img={props.avatar} />
               </a>
@@ -83,17 +82,17 @@ export default function UserCard(props) {
                 <ul>
                   <li className="list-icons">
                         <a href={props.twitter} target="_blank" rel="noopener noreferrer">
-                            <FaTwitter />
+                        {props.twitterIcon}
                         </a>
                   </li>
                   <li className="list-icons">
                         <a href={props.instagram} target="_blank" rel="noopener noreferrer">
-                            <FaInstagram />
+                            {props.instagramIcon}
                         </a>
                   </li>
                   <li className="list-icons">
                         <a href={props.medium} target="_blank" rel="noopener noreferrer">
-                              <FaMedium/>
+                              {props.facebookIcon}
                         </a>
                   </li>
                 </ul>
