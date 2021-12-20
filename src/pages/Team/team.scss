@@ -50,10 +50,6 @@
           // float: right;
           background: #606060;
           border-radius: 10px;
-
-          // :nth-child(even){
-          //     float: left;
-          // }
         }
       }
     }
@@ -80,12 +76,12 @@
         //   justify-content: right;
         // }
       }
-      .user-icons-left{
-        // justify-content: left;
-        position: relative;
-        right: 150px;
-        bottom: 15px;
-      }
+      // .user-icons-left{
+      //   // justify-content: left;
+      //   position: relative;
+      //   right: 100px;
+      //   top: 10px;
+      // }
     // }
   }
   .message{
@@ -114,15 +110,15 @@
         // height: 350px;
 
         .name {
-          font-size: 16px;
-          line-height: 1;
+          font-size: 18px;
+          line-height: 1.4;
         }
         small{
-          font-size: 10px;
+          font-size: 14px;
           line-height: .5;
         }
         .message{
-          font-size: 10px;
+          font-size: 11px;
           line-height: 1.7;
         }
       }
@@ -142,11 +138,14 @@
           }
         }
         .user-img-holder-left{
-          width: 100%;
+          width: 140px;
         }
       }
       .user-icons{
         margin-top: 0rem;
+        // position: relative;
+        // top: -190px;
+        // left: -20px;
       }
     }
 

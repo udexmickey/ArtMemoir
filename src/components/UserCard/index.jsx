@@ -48,27 +48,15 @@ export default function UserCard(props) {
               {' '}
               <Link to={`/blog/${props.link}`}>{props.btn}</Link>
             </button>
-            {acceptedLocations.includes(location.pathname) && isEven && (
               <div className="user-icons">
                 <ul>
                   <li className="list-icons">
-                        <a href={props.twitter} target="_blank" rel="noopener noreferrer">
-                            {props.twitterIcon}
-                        </a>
-                  </li>
-                  <li className="list-icons">
-                        <a href={props.instagram} target="_blank" rel="noopener noreferrer">
-                            {props.instagramIcon}
-                        </a>
-                  </li>
-                  <li className="list-icons">
-                        <a href={props.medium} target="_blank" rel="noopener noreferrer">
-                              {props.facebookIcon}
+                        <a href={props.linksName} target="_blank" rel="noopener noreferrer">
+                            {props.linkIcon}
                         </a>
                   </li>
                 </ul>
               </div>
-            )}
           </div>
           
           {acceptedLocations.includes(location.pathname) && !isEven && (
@@ -78,25 +66,6 @@ export default function UserCard(props) {
                 <Avatar img={props.avatar} />
               </a>
             </div>
-            <div className="user-icons user-icons-left">
-                <ul>
-                  <li className="list-icons">
-                        <a href={props.twitter} target="_blank" rel="noopener noreferrer">
-                        {props.twitterIcon}
-                        </a>
-                  </li>
-                  <li className="list-icons">
-                        <a href={props.instagram} target="_blank" rel="noopener noreferrer">
-                            {props.instagramIcon}
-                        </a>
-                  </li>
-                  <li className="list-icons">
-                        <a href={props.medium} target="_blank" rel="noopener noreferrer">
-                              {props.facebookIcon}
-                        </a>
-                  </li>
-                </ul>
-              </div>
             </div>
           )}
         </div>

@@ -17,12 +17,8 @@ export default function Team() {
                 role={person.role}
                 className={`team-card1`}
                 message={person.message.substring(0, 200)+'...'}
-                twitter={person.twitter}
-                instagram={person.instagram}
-                medium={person.medium}
-                twitterIcon={person.twitterIcon}
-                instagramIcon={person.instagramIcon}
-                facebookIcon={person.facebookIcon}
+                linksName={person.linksName}
+                linkIcon={person.linkIcon}
             />
         )
     }
