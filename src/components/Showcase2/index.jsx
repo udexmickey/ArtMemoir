@@ -21,11 +21,11 @@ const Showcase2 = () => {
             <h1 style={{color: 'var(--secondary)'}}>Art</h1>
             <h2>Single NFTs and Collections</h2>
             <p>
-            <span>
+            {/* <span> */}
               SingleNFTs/Collection NFTs-. Our single NFts artworks will be minted in multiple 
               pieces in different nft marketplaces and the artist is granted returns while the 
               collection NFTs are accessible in either GameFi, Real estate and Physical art pieces
-              </span>
+              {/* </span> */}
               NFTs minted in various nft marketplace to support various
               artists in their journey of art and for the love of arts.
 
@@ -42,10 +42,10 @@ const Showcase2 = () => {
               Minting NFTs which will serve as a medium of exchange where
               gamers can pay in our minted NFT to play games and win
               tokens in real time.
-              <span>
+              {/* <span> */}
               Gain earning potential by dedicating time leveling up and improving their characters, 
               with all the data being stored on the blockchain
-              </span>
+              {/* </span> */}
             </p>
             <button>Read More</button>
           </div>
@@ -58,7 +58,9 @@ const Showcase2 = () => {
                 
                 Buy these Nfts in exchange for shares in Real Estate{' '}
                 projects or to get an outlet in an estate
-                <span>Earn rental income from your NFT fractionalised real estate shares</span>
+                {/* <span> */}
+                  Earn rental income from your NFT fractionalised real estate shares
+                  {/* </span> */}
               </p>
               <button>Read More</button>
             </div>
