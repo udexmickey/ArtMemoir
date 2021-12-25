@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../../assets/Images/logo-xs.png';
 
-const Item = ({ id, img, header, content }) => {
+const Item = ({ id, img, header, content, link }) => {
   return (
     <div className="item-container" key={id}>
       <img loading="lazy"className="cover" src={img} alt="" />
@@ -9,11 +9,16 @@ const Item = ({ id, img, header, content }) => {
         <p className="header">{header}</p>
         <p className="content">{content}</p>
         <div className="footer">
-          <div className="logo-container">
-            <img loading="lazy"className="logo" src={logo} alt="" />
-            <p>Afen group</p>
-          </div>
-          <button>Buy Now</button>
+          <a href={link}>
+            <div className="logo-container">
+              <img loading="lazy"className="logo" src={logo} alt="" />
+              <p>Afen group</p>
+              </div>
+            </a>
+          
+          <button>
+           Buy Now 
+          </button>
         </div>
       </div>
     </div>

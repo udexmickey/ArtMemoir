@@ -1,7 +1,7 @@
 import React from 'react';
 import road from '../../assets/Images/road.png';
 import man from '../../assets/Images/man.png';
-import home from '../../assets/Images/home.png';
+import realhome from '../../assets/Images/realhome.jpeg';
 import './showcase.scss';
 
 const Showcase2 = () => {
@@ -51,7 +51,7 @@ const Showcase2 = () => {
           </div>
           </div>
           <div className="right-container-content">
-            <img src={home} alt="" />
+            <img src={realhome} alt="" />
             <div className="right-text">
               <h1>Real Estate</h1>
               <p>
