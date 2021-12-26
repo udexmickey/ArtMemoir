@@ -11,12 +11,12 @@ export default function WhitePaper() {
   const [selected, setSelected] = useState('Abstract');
 
   return (
-    <div className="whitePaper">
+    <div className="whitePaper">  
       <div className="whitepaper-badge">
         <HeadBadge name="WhitePaper" />
         <div className="white-paper-download white-paper-download-top">Thank you for your interest in Art Memoir! Please find detailed information about our company below.
-           <Link to='/files/Art Memoir.pdf' target="_blank" rel="noopener noreferrer" download>
-               <span> (download here) </span>
+           <Link to='/files/The Seven Continent .pdf' target="_blank" rel="noopener noreferrer" download>
+               <span> (download here) </span> 
             </Link>
           </div>
       </div>
@@ -31,7 +31,7 @@ export default function WhitePaper() {
           </div>
           {/* <ButtonDirections /> */}
           <div className="white-paper-download">Thank you for your interest in Art Memoir! Please find detailed information about our company below.
-            <Link to='/files/Art Memoir.pdf' target="_blank" rel="noopener noreferrer" download>
+            <Link to='/files/The Seven Continent .pdf' target="_blank" rel="noopener noreferrer" download>
                <span> (download here) </span>
             </Link>
           </div>

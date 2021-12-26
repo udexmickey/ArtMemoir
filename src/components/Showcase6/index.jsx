@@ -5,6 +5,9 @@ import React, { useEffect, useMemo, useState } from 'react';
 import pic2 from '../../assets/Images/storepic2.png';
 // import pic3 from '../../assets/Images/pic3.png';
 // import pic4 from '../../assets/Images/pic4.png';
+import seaturtle035 from '../../assets/Images/seaturtle035.jpg';
+import seaturtle043 from '../../assets/Images/seaturtle043.jpg';
+import seaturtle048 from '../../assets/Images/seaturtle048.jpg';
 import CovidPrison from '../../assets/Images/nft-bubbles.JPG';
 import Universe from '../../assets/Images/nft--town.JPG';
 import Massai from '../../assets/Images/nft--africa.JPG';
@@ -60,6 +63,34 @@ const Showcase6 = () => {
         content:
           "This artwork is a visual representation of the Music bought out the best out of Adanma's emotions after the loss of her child.",
       },
+      
+      {
+        id: v4(),
+        img: seaturtle035,
+        header: 'Sea Turtle #035',
+        link: 'https://afenmarketplace.com/art-details/2/0x78BfC475a83d8C537867C00Df3A6E621bc9688fe',
+        content:
+          'Turtle Name: AKAN ROYAL- Kente is an indigenous fabric of the Akan people of Ghana. It is a silk and cotton fabric made of interwoven cloth strips. It is a very colourful fabric and each colour on the Kente has its own meaning and symbolism. The turtle represented here has a shell covered with Kente design.'
+      },
+
+      {
+        id: v4(),
+        img: seaturtle043,
+        header: 'Sea Turtle #043',
+        link: 'https://afenmarketplace.com/art-details/10/0x78BfC475a83d8C537867C00Df3A6E621bc9688fe',
+        content:
+          "History has it that the Maya are an extinct ethnic group, native of old Wey province in Ethiopia. Their culture says that the turtle shell represents earth, fertility, wisdom, cleverness and love. This art and the shell's African pattern show all these attributes and the love Mayan people have for creatures.",
+      },
+
+      {
+        id: v4(),
+        img: seaturtle048,
+        header: 'Sea Turtle #048',
+        link: 'https://afenmarketplace.com/art-details/15/0x78BfC475a83d8C537867C00Df3A6E621bc9688fe',
+        content:
+          'The Masai people have a great culture which is admired and loved by people all over the world. The turtle in the painting is depicted with a Masai shield design on his shell, a spear and a Masai giraffe design fused with the ripples on the sea where it inhabits. He is the hunter and Warrior amongst the turtles.',
+      },
+      
       {
         id: v4(),
         img: pic2,

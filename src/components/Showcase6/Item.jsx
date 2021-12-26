@@ -4,7 +4,10 @@ import logo from '../../assets/Images/logo-xs.png';
 const Item = ({ id, img, header, content, link }) => {
   return (
     <div className="item-container" key={id}>
-      <img loading="lazy"className="cover" src={img} alt="" />
+      <div className="cover">
+        <img loading="lazy" src={img} alt="" />
+      </div>
+      
       <div className="content-container">
         <p className="header">{header}</p>
         <p className="content">{content}</p>
