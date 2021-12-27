@@ -7,7 +7,14 @@ function DropDowns({ selected, setSelected }) {
   const [isActive, setIsActive] = useState(false);
   const options = [
     'Abstract',
-    'THE SEVEN CONTINENT',
+    'NFTs & Art',
+    'NFTs & Real Estate',
+    'NFTs & Games',
+    'Art Memoir Services',
+    'Art Memoir NFT Utilities',
+    'Art Memoir Economics',
+    'The team',
+    'The Disclaimer',
   ];
   return (
     <div className="dropdown">
