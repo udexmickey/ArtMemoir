@@ -125,18 +125,18 @@ export default function Footer() {
           <IconList />
           <div className="footer-copyright">
             <div className="copy-text">© ArtMemoir. All rights reserved</div>
-            <div className="terms-privacy">
+            {/* <div className="terms-privacy">
               <div className="terms">
               <ImLink /> <Link to="/terms"> Powered by HarmonicStudioz </Link>
               </div>
               <div className="privacy">
                 <Link to="/privacy">Privacy</Link>
               </div>
-            </div> 
+            </div>  */}
           </div>
-          {/* <div className="footer-dev">
-          <Link to="/terms"> <ImLink /> Powered by HarmonicStudioz </Link>
-            </div> */}
+          <div className="footer-dev">
+          <ImLink />  <Link to="/terms">Powered by HarmonicStudioz </Link>
+            </div>
         </div>
       </footer>
     </div>
