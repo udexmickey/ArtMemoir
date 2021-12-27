@@ -18,6 +18,9 @@
     z-index: 10;
     top: 0px;
     margin: 0;
+    -moz-box-shadow: 10px 7px 9px rgba(0,0,0,.5);
+    -webkit-box-shadow: 10px 7px 9px rgba(0,0,0,.5);
+    box-shadow: 10px 7px 9px rgba(0,0,0,.5);
   }
 
   .blog-badge {

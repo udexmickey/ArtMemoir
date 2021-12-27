@@ -1,7 +1,7 @@
 import React from 'react';
 import road from '../../assets/Images/road.png';
 import man from '../../assets/Images/man.png';
-import realhome from '../../assets/Images/realhome.jpeg';
+import realhome from '../../assets/Images/houses.jpeg';
 import './showcase.scss';
 
 const Showcase2 = () => {

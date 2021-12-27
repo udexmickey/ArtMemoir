@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import IconList from '../../components/IconList/IconList';
 import flowerLeft from '../../assets/Images/flower-left.png';
 import flowerRight from '../../assets/Images/flowerRight.png';
 import HeadBadge from '../../components/HeaderBadge';
+import { useForm } from 'react-hook-form';
 import './contact.scss';
 
 export default function Contact() {
-  function handleSubmit(e) {
-    e.preventDefault();
+  const [successcontact, setSuccesscontact] = useState('Send')
+  const { register, handleSubmit, formState } = useForm();
+  const { isSubmitting } = formState;
+  function handlecontactSubmit(e) {
+    // e.preventDefault();
     // console.log('Hello how may i help you.');
+          // return promise that resolves after 2 seconds
+          return new Promise(resolve => {
+            setTimeout(() => {
+                resolve();
+                <div className='successfulsent' style={{backgroundColor: 'green'}}>{setSuccesscontact('Success')}</div>;
+            }, 2000) ;
+            <div style={{background: 'green'}}>{setSuccesscontact('Loading')}</div>
+        });
   }
   return (
     <div className="contact">
@@ -25,7 +37,7 @@ export default function Contact() {
           </div>
           <div className="contact-text">Leave us a message</div>
           <div className="contact-form">
-            <form action="" method="post" onSubmit={handleSubmit}>
+            <form action="" method="post" onSubmit={handleSubmit(handlecontactSubmit)}>
               <div className="contact-form-title">
                 {/* Leave us a message */}
                 <div className="group-form">
@@ -35,6 +47,7 @@ export default function Contact() {
                     name="contact-fName"
                     id="fName"
                     placeholder="John Doe"
+                    {...register('fName', { required: true })}
                   />
                 </div>
                 <div className="group-form">
@@ -44,6 +57,7 @@ export default function Contact() {
                     name="contact-email"
                     id="contact-email"
                     placeholder="example@email.com"
+                    {...register('email', { required: true })}
                   />
                 </div>
                 <div className="group-form">
@@ -54,10 +68,14 @@ export default function Contact() {
                     placeholder="Hello Dear, How may we help you"
                     cols="30"
                     rows="10"
+                    {...register('message', { required: true })}
                   ></textarea>
                 </div>
                 <div className="group-form group-form-button">
-                  <button type="submit"> Send </button>
+                  <button type="submit"> 
+                  {isSubmitting && <span style={{marginRight: '.5rem'}}><i class="fa fa-refresh fa-spin"></i></span>}
+                       {successcontact}
+                   </button>
                 </div>
               </div>
             </form>
