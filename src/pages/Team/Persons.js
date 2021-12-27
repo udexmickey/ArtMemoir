@@ -7,8 +7,8 @@ import hod from '../../assets/Images/hod.jpg'
 const Persons = [
     {
         id : '1',
-        name : 'Dick-Paul Chisom Alfred',
-        role : 'CEO',
+        name : 'Dick-Paul Alfred',
+        role : 'Cheif Executive Officer',
         message : 'Paul is ArtMemoir’s Chief Executive Officer, leading the company as it builds a platform enabling users to explore the world of Art through NFTs. Paul defines what it means to be both artist and educator. Equipped with a BEng from the University of Anambara, Nigeria and years of dealing with the art, and practice of creating strong visual content, with over 3 years of organizational working experience. He now manages and directs the vision and the voice of ArtMemoir. He has the digital world at heart and has worked on various projects especially in the NFt, Crypto and Blockchain space.',
         avatar : ceo,
         linksName : "https://twitter.com/PaulAlfred_?t=2uoOhTUzrQenLEOoMlYLNg&s=09",
@@ -34,7 +34,7 @@ const Persons = [
     },
     {
         id : '4',
-        name : 'Victory Emmanuel Ihuoma',
+        name : 'Victory Emmanuel',
         role : "Communications and Content Strategy",
         message : "Victory is An enthusiastic digital communicator vast in online platform management, content strategy, with minute expertise in blockchain relations. Victory coupled her love of writing with digital marketing and has spent more than 2 years helping a wide range of businesses enhance their marketing efforts",
         avatar : cm,

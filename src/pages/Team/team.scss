@@ -44,6 +44,7 @@
         border-radius: 10px;
         align-items: center;
         justify-content: center;
+        background: #0f0f0f;
 
         img {
           width: 100%;
@@ -58,14 +59,12 @@
       .user-icons{
         margin-top: 2rem;
         font-size: 24px;
-        color: royalblue;
         display: flex;
 
         ul{
           display: flex;
          
           .list-icons{
-            color: royalblue;
             
 
             a{
@@ -131,7 +130,7 @@
         .user-img-holder {
           margin-right: 1rem;
           width: 40%;
-          height: 180px;
+          height: 250px;
 
           img{
             height: auto;
@@ -143,9 +142,9 @@
         }
       }
       .user-icons{
-        margin-top: 0rem;
+        margin-top: -1rem;
         // position: relative;
-        // top: -190px;
+        // top: -10px;
         // left: -20px;
       }
     }

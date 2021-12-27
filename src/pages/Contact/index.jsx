@@ -9,7 +9,7 @@ import './contact.scss';
 export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
-    console.log('Hello how may i help you.');
+    // console.log('Hello how may i help you.');
   }
   return (
     <div className="contact">
@@ -51,7 +51,7 @@ export default function Contact() {
                   <textarea
                     name="request-message"
                     id="info-message"
-                    placeholder="Hello there, How may we help you"
+                    placeholder="Hello Dear, How may we help you"
                     cols="30"
                     rows="10"
                   ></textarea>

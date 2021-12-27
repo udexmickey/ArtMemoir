@@ -29,15 +29,17 @@ export default function Footer() {
       return new Promise(resolve => {
         setTimeout(() => {
             resolve();
-        }, 2000);
-        <div style={{backgroundColor: 'green'}}>{setSignLetter('Signup')}</div>
+            <div className='successfulsent' style={{backgroundColor: 'green'}}>{setSignLetter('Sent')}</div>;
+        }, 2000) ;
+        <div style={{background: 'green'}}>{setSignLetter('Loading')}</div>
     });
+       
   }
 
   // const sendLetter = () => {
   //   if(signletter) {
   //     {isSubmitting && <span style={{marginRight: '.5rem'}}><i class="fa fa-refresh fa-spin"></i></span>}
-  //     <div style={{background: 'green'}}>{setSignLetter('Successful')}</div>
+  //     <div style={{background: 'green'}}>{setSignLetter('Sent')}</div>
   //   }
   //   return signletter;
   // }
@@ -125,16 +127,16 @@ export default function Footer() {
             <div className="copy-text">© ArtMemoir. All rights reserved</div>
             <div className="terms-privacy">
               <div className="terms">
-                <Link to="/terms">Terms and Conditions</Link>
+              <ImLink /> <Link to="/terms"> Powered by HarmonicStudioz </Link>
               </div>
               <div className="privacy">
                 <Link to="/privacy">Privacy</Link>
               </div>
             </div> 
           </div>
-          <div className="footer-dev">
-              <ImLink /> Powered by HarmonicStudioz
-            </div>
+          {/* <div className="footer-dev">
+          <Link to="/terms"> <ImLink /> Powered by HarmonicStudioz </Link>
+            </div> */}
         </div>
       </footer>
     </div>
