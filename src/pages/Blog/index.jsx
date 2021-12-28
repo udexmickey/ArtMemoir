@@ -11,16 +11,14 @@ import { chunk } from 'lodash';
 import HeaderBadge from '../../components/HeaderBadge'
 import { Link } from 'react-router-dom';
 import PageLoading from '../../components/Loader';
-import hQ from '../../assets/Images/hQ.jpg'
-import nt from '../../assets/Images/nt.jpg'
-import sg from '../../assets/Images/sg-cov.jpg' 
-import upd from '../../assets/Images/upd.jpg' 
-
+import Announce from '../../components/Announcer';
+import announcements from './announcementData'
 export default function Blog() {
 
   const { loading, error, data} = useFetch(`${URL}post`);
   const rest = useMemo(() => (data ? data : ''), [data]);
   const [width, setWidth] = useState(window.innerWidth);
+
 
   useEffect(() => {
     window.addEventListener('resize', () =>
@@ -47,6 +45,18 @@ export default function Blog() {
     </div>
   ));
 
+  const AnnouncementDiv = announcements.map((item, idx) => (
+    <Announce 
+      key={item.idx}
+      img={item.img}
+      title={item.title}
+      message={item.message}
+      btn={item.btn}
+      btnlink={item.btnlink}
+    />
+  ))
+  
+
   return (
     <div className="blog-page">
       {/* <img className="announce-img"src={Background} alt="" srcset="" style={{width: '100%'}}  /> */}
@@ -61,85 +71,7 @@ export default function Blog() {
           showIndicators={true}
           interval={10000}
         >
-
-          <div
-            className="blog-badge"
-            style={{
-              backgroundSize: '100%',
-              width: '100%',
-            }}
-          >
-            <div className="img-badge-holder">
-            <img className="announce-img" src={hQ} alt="" />
-            </div>
-            
-            {/* <div className="blog-heading-container">
-              <div className="blog-heading-holder">
-                <div className="blog-heading-title">
-                  Be the first to learn of what’s new on ArtMemoir
-                </div>
-                <div className="blog-heading-text">
-                  Amet auctor ac sed vel sed. Augue vel nec, ut gravida quis et.
-                  Pretium eu amet tempus elit.
-                </div>
-                <button className='blog-anouncement-btn'>
-                  <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
-                </button>
-              </div>
-            </div> */}
-          </div>
-          
-          <div
-            className="blog-badge"
-            style={{
-              backgroundSize: '100%',
-              width: '100%',
-            }}
-          >
-            <div className="img-badge-holder">
-              <img className="announce-img" src={nt} alt="" />
-            </div>
-           
-            {/* <div className="blog-heading-container">
-              <div className="blog-heading-holder">
-                <div className="blog-heading-title">
-                  The Announcement is a banger.
-                </div>
-                <div className="blog-heading-text">
-                  Be the first to learn of what’s new on ArtMemoir
-                </div>
-                <button className='blog-anouncement-btn'>
-                  <Link style={{color: '#fff'}} to='/blog/announcement'>Read more</Link>
-                </button>
-              </div>
-            </div> */}
-          </div>
-
-          <div
-            className="blog-badge"
-            style={{
-              backgroundSize: '100%',
-              width: '100%',
-            }}
-          >
-            <div className="img-badge-holder">
-            <img className="announce-img" src={sg} alt="" />
-            </div>
-            
-          </div>
-
-          <div
-            className="blog-badge"
-            style={{
-              backgroundSize: '100%',
-              width: '100%',
-            }}
-          >
-            <div className="img-badge-holder">
-            <img className="announce-img" src={upd} alt="" />
-            </div>
-           
-          </div>
+          {AnnouncementDiv}
           </Carousel>
 
       </div>

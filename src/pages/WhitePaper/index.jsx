@@ -15,7 +15,7 @@ export default function WhitePaper() {
       <div className="whitepaper-badge">
         <HeadBadge name="WhitePaper" />
         <div className="white-paper-download white-paper-download-top">Thank you for your interest in Art Memoir! Please find detailed information about our company below.
-           <Link to='/files/The Seven Continent .pdf' target="_blank" rel="noopener noreferrer" download>
+           <Link to='/files/Artmemoir WP 2.pdf' target="_blank" rel="noopener noreferrer" download>
                <span> (download here) </span> 
             </Link>
           </div>
@@ -31,7 +31,7 @@ export default function WhitePaper() {
           </div>
           {/* <ButtonDirections /> */}
           <div className="white-paper-download">Thank you for your interest in Art Memoir! Please find detailed information about our company below.
-            <Link to='/files/The Seven Continent .pdf' target="_blank" rel="noopener noreferrer" download>
+            <Link to='/files/Artmemoir WP 2.pdf' target="_blank" rel="noopener noreferrer" download>
                <span> (download here) </span>
             </Link>
           </div>
