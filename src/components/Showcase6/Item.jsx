@@ -12,16 +12,17 @@ const Item = ({ id, img, header, content, link }) => {
         <p className="header">{header}</p>
         <p className="content">{content}</p>
         <div className="footer">
-          <a href={link}>
-            <div className="logo-container">
-              <img loading="lazy"className="logo" src={logo} alt="" />
-              <p>Afen group</p>
-              </div>
-            </a>
           
-          <button>
-           Buy Now 
-          </button>
+            <div className="logo-container">
+              {/* <img loading="lazy"className="logo" src={logo} alt="" /> */}
+              <p>Read More</p>
+              </div>
+            
+            <a href={link}>
+              <button>
+                Buy Now 
+              </button>
+          </a>
         </div>
       </div>
     </div>
