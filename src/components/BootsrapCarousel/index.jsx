@@ -78,6 +78,7 @@ function ControlledCarousel() {
             className="d-block w-70 h-200"
             src={pic10}
             alt="First slide"
+            loading='lazy'
           />
           <Carousel.Caption>
             <h3>First slide label</h3>
@@ -89,6 +90,7 @@ function ControlledCarousel() {
             className="d-block w-70 h-200"
             src={pic9}
             alt="Second slide"
+            loading='lazy'
           />
   
           <Carousel.Caption>
@@ -101,6 +103,7 @@ function ControlledCarousel() {
             className="d-block w-70 h-200"
             src={pic8}
             alt="Third slide"
+            loading='lazy'
           />
   
           <Carousel.Caption>

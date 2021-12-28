@@ -15,7 +15,7 @@ const Showcase2 = () => {
       <div className="right-container">
         <div className="right-container-inner">
           <div className="right-container-content">
-          <img src={road} alt="" />
+          <img src={road} alt="" loading='lazy' />
             <div className="right-text">
             {/* <h1 className="right-container-heading"></h1> */}
             <h1 style={{color: 'var(--secondary)'}}>Art</h1>
@@ -35,7 +35,7 @@ const Showcase2 = () => {
             </div>
           </div>
           <div className="right-container-content">
-          <img src={man} alt="" />
+          <img src={man} alt="" loading='lazy'/>
           <div className="right-text">
           <h1>GAMEFI</h1>
             <p>
@@ -51,7 +51,7 @@ const Showcase2 = () => {
           </div>
           </div>
           <div className="right-container-content">
-            <img src={realhome} alt="" />
+            <img src={realhome} alt="" loading='lazy'/>
             <div className="right-text">
               <h1>Real Estate</h1>
               <p>

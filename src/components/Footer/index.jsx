@@ -48,7 +48,7 @@ export default function Footer() {
       <footer>
         <div className="footer-container">
           <div className="footer-img">
-            <img src={logo} alt=" " />
+            <img loading='lazy' src={logo} alt=" " />
           </div>
           <div className="footer-title">
           Exploring the world of Art through NFTs.

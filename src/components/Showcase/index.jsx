@@ -21,51 +21,51 @@ const Showcase = () => {
     () => [
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic1} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic1} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic2} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic2} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic3} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic3} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic4} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic4} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic5} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic5} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic6} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic6} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic7} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic7} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic8} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic8} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic9} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic9} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic10} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic10} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic2} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic2} alt="" />,
       },
       {
         id: v4(),
-        content: <img className="showcase-img" src={pic6} alt="" />,
+        content: <img loading='lazy' className="showcase-img" src={pic6} alt="" />,
       },
     ],
     [],

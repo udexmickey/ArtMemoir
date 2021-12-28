@@ -87,7 +87,7 @@ const CarouselSlideItem = ({pos, idx, activeIdx}) => {
     return (
         <li className="carousel__slide-item" style={item.styles}>
             <div className="carousel__slide-item-img-link">
-                <img src={item.player.avatar} alt={''} />
+                <img src={item.player.avatar} loading='lazy' alt={''} />
             </div>
             <div className="carousel-slide-item__body">
                 <h4>{item.player.name}</h4>

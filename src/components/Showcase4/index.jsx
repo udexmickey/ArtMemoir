@@ -54,7 +54,7 @@ const Showcase4 = () => {
       <h1 className="showcase-text">NFT-Economics</h1>
       <div className="economics-container-inner">
         <div className="left-container">
-          <img src={pie} alt="" />
+          <img src={pie} alt="" loading='lazy' />
         </div>
         <div className="right-container">
           {data.map((data) => (
