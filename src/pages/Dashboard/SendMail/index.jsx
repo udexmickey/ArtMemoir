@@ -25,7 +25,7 @@ export default function SendEmail() {
     }
 
     const badgeButton = {
-        background : '#CF1D1D'
+        background : 'var(--accent)'
     }
 
     return (

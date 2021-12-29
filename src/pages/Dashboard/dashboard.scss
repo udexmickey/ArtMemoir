@@ -23,7 +23,7 @@
     textarea {
       width: 475px;
       height: 44px;
-      background: #242424;
+      background: var(--input-text);
       border: 1px solid rgba(186, 186, 186, 0.24);
       box-sizing: border-box;
       border-radius: 5px;
@@ -31,7 +31,7 @@
       z-index: 9999;
       padding: 10px;
       &:focus {
-        outline: white !important;
+        outline: var(--background) !important;
       }
     }
 

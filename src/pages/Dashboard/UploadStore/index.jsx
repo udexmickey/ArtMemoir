@@ -22,7 +22,7 @@ export default function UploadStore() {
     }
 
     const badgeButton = {
-        background : '#CF1D1D'
+        background : 'var(--accent)'
     }
 
     return (

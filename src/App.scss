@@ -4,7 +4,9 @@ html {
   --text: #606060;
   --accent: #ff0000;
   --background: #ffffff;
-  --button: #cf1d1d;
+  // --button: var(--accent);
+  --button: var(--accent);
+  --input-text: #242424;
 }
 
 html[data-theme='light-dark'] {
@@ -13,7 +15,9 @@ html[data-theme='light-dark'] {
   --text: #606060;
   --accent: #ff0000;
   --background: #ffffff;
-  --button: #cf1d1d;
+  // --button: var(--accent);
+  --button: var(--accent);
+  --input-text: #242424;
 }
 
 html[data-theme='dark'] {
@@ -22,7 +26,9 @@ html[data-theme='dark'] {
   --text: #606060;
   --accent: #ff0000;
   --background: #ffffff;
-  --button: #cf1d1d;
+  // --button: var(--accent);
+  --button: var(--accent);
+  --input-text: #242424;
 }
 
 html {

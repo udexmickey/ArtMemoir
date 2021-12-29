@@ -95,19 +95,19 @@
             display: block;
             width: 153px;
             height: 49px;
-            border: 2px solid #cf1d1d;
+            border: 2px solid var(--accent);
             box-sizing: border-box;
             border-radius: 5px;
             background: var(--primary);
             outline: none;
-            color: #cf1d1d;
+            color: var(--accent);
             margin: 10px auto;
   
             a {
               font-weight: 600;
               font-size: 18px;
               line-height: 25px;
-              color: #cf1d1d;
+              color: var(--accent);
             }
           }
         }

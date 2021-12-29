@@ -127,7 +127,7 @@ export default function Footer() {
             <div className="copy-text">© ArtMemoir. All rights reserved</div>
             {/* <div className="terms-privacy">
               <div className="terms">
-              <ImLink /> <Link to="/terms"> Powered by HarmonicStudioz </Link>
+              <ImLink /> <Link to="https://www.harmonicstudioz.com/"> Powered by HarmonicStudioz </Link>
               </div>
               <div className="privacy">
                 <Link to="/privacy">Privacy</Link>
@@ -135,7 +135,7 @@ export default function Footer() {
             </div>  */}
           </div>
           <div className="footer-dev">
-          <ImLink />  <Link to="/terms">Powered by HarmonicStudioz </Link>
+          <ImLink />  <Link to="https://www.harmonicstudioz.com/">Powered by HarmonicStudioz </Link>
             </div>
         </div>
       </footer>

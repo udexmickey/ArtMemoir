@@ -39,10 +39,10 @@
     }
 
     button {
-      color: #cf1d1d;
+      color: var(--accent);
       outline: none;
       background: none;
-      border: 2px solid #cf1d1d;
+      border: 2px solid var(--accent);
       margin-top: 2rem;
       padding: 1.2rem 2.2rem;
       font-size: 1.5rem;

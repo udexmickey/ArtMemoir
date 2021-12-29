@@ -4,7 +4,7 @@ export default function Button(props) {
     const buttonSyle = {
         width: '290px',
         height: '59px',
-        background: '#CF1D1D',
+        background: 'var(--accent)',
         borderRadius: '5px',
         color: '#fff',
         border: 'none',
