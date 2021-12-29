@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/Images/logo-xs.png';
+// import logo from '../../assets/Images/logo-xs.png';
 
 const Item = ({ id, img, header, content, link }) => {
   return (
