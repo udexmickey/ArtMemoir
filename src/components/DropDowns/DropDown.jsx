@@ -12,7 +12,7 @@ function DropDowns({ selected, setSelected }) {
     'NFTs & Games',
     'Art Memoir Services',
     'Art Memoir NFT Utilities',
-    'Art Memoir Economics',
+    // 'Art Memoir Economics',
     'The team',
     'The Disclaimer',
   ];

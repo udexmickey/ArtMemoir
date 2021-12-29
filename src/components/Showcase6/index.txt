@@ -45,3 +45,8 @@ Name. Sea Turtle #048
 Description: The Masai are a Nilotic ethnic group found in Kenya and Tanzania. The turtle in the painting is depicted with a Masai shield design on his shell, a spear and a Masai giraffe design fused with the ripples on the sea where it inhabits. He is the hunter and Warrior amongst the turtles.
 Price: 0.3bnb
 Link 🔗 https://afenmarketplace.com/art-details/15/0x78BfC475a83d8C537867C00Df3A6E621bc9688fe
+
+Name: Maasai Queen
+Description: A visual representation of the native African woman. The Maasai, a Nilotic ethnic group in Kenya & Tanzania, they play a key role in teaching culture, creating beaded Jewelry & teaching children the language of Maa.
+Price: 0.5bnb
+Link 🔗 https://afenmarketplace.com/art-details/26/0x3Dd1FcfF4889277b2C1Bcd47c6Ef4b926907E42B

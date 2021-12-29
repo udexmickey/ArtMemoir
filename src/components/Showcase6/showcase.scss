@@ -21,12 +21,12 @@
 
       .cover {
         width: 100%;
-        height: 500px;
+        height: 360px;
         border-radius: 8px 8px 0 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #dc143c;
+        background: var(--primary);
 
         img{
           width: 100%;
@@ -59,7 +59,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-top: 3rem;
+          margin: 3rem auto 1rem;
           padding-bottom:  2rem 1.5rem;
 
           .logo-container {
@@ -131,7 +131,7 @@
           // .header {
           //   font-size: 1.8rem;
           // }
-          padding: 2rem 1.5rem;
+          padding: 2rem 1.5rem .5rem;
 
           .content {
             font-size: 1.1rem;

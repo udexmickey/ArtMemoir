@@ -2,12 +2,13 @@ import React, { useEffect, useMemo, useState } from 'react';
 // import Prev from './Prev';
 // import Next from './Next';
 // import pic1 from '../../assets/Images/storepic1.png';
-import pic2 from '../../assets/Images/storepic2.png';
+// import pic2 from '../../assets/Images/storepic2.png';
 // import pic3 from '../../assets/Images/pic3.png';
 // import pic4 from '../../assets/Images/pic4.png';
 import seaturtle035 from '../../assets/Images/seaturtle035.jpg';
 import seaturtle043 from '../../assets/Images/seaturtle043.jpg';
 import seaturtle048 from '../../assets/Images/seaturtle048.jpg';
+import Queen from '../../assets/Images/queen.jpg';
 import CovidPrison from '../../assets/Images/nft-bubbles.JPG';
 import Universe from '../../assets/Images/nft--town.JPG';
 import Massai from '../../assets/Images/nft--africa.JPG';
@@ -93,11 +94,11 @@ const Showcase6 = () => {
       
       {
         id: v4(),
-        img: pic2,
-        header: 'Vision Stare',
-        link: 'https://afenmarketplace.com/art-details/3/0x3Dd1FcfF4889277b2C1Bcd47c6Ef4b926907E42B',
+        img: Queen,
+        header: 'Maasai Queen',
+        link: 'https://afenmarketplace.com/art-details/26/0x3Dd1FcfF4889277b2C1Bcd47c6Ef4b926907E42B',
         content:
-          'This artwork is a visual representation of The man stand upright to stare into the vision he had once planned',
+          'A visual representation of the native African woman. The Maasai, a Nilotic ethnic group in Kenya & Tanzania, they play a key role in teaching culture, creating beaded Jewelry & teaching children the language of Maa.',
       },
       
     ],

@@ -5,7 +5,7 @@ import './whitepaper.scss';
 // import ButtonDirections from '../../components/ButtonDirections/btn-directions';
 // import DropDown from '../../components/DropDowns/DropDown';
 import DropDowns from '../../components/DropDowns/DropDown';
-import content from './content';
+import content from './content1';
 // import {FiDownload} from 'react-icons/all'
 export default function WhitePaper() {
   const [selected, setSelected] = useState('Abstract');

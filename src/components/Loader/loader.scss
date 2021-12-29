@@ -4,13 +4,13 @@
     justify-content: center;
     margin: 0 auto;
     .loader {
-        border: 10px solid #f3f3f3;
+        border: 5px solid #f3f3f3;
         border-radius: 50%;
-        border-top: 10px solid var(--accent);
+        border-top: 5px solid var(--accent);
         // border-right: 16px solid green;
         // border-bottom: 16px solid blue;
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
         -webkit-animation: spin 2s linear infinite;
         animation: spin 2s linear infinite;
         margin: 3rem auto;
