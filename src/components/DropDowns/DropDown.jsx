@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import 'react-dropdown/style.css';
-import { FaAngleUp, FaAngleDown } from 'react-icons/fa';
-import './dropdown.scss';
+import React, { useState } from 'react'
+import 'react-dropdown/style.css'
+import { FaAngleUp, FaAngleDown } from 'react-icons/fa'
+import './dropdown.scss'
 
 function DropDowns({ selected, setSelected }) {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false)
   const options = [
     'Abstract',
     'NFTs & Art',
@@ -13,27 +13,27 @@ function DropDowns({ selected, setSelected }) {
     'Art Memoir Services',
     'Art Memoir NFT Utilities',
     // 'Art Memoir Economics',
-    'The team',
+    'The Team',
     'The Disclaimer',
-  ];
+  ]
   return (
-    <div className="dropdown">
-      <div className="dropdown-btn" onClick={(e) => setIsActive(!isActive)}>
+    <div className='dropdown'>
+      <div className='dropdown-btn' onClick={e => setIsActive(!isActive)}>
         {selected}
-        <span className="dropdowns-icons">
+        <span className='dropdowns-icons'>
           {isActive ? <FaAngleUp /> : <FaAngleDown />}
         </span>
       </div>
       {isActive && (
-        <div className="dropdown-content">
+        <div className='dropdown-content'>
           {options.map((option, i) => (
             <div
               key={i}
-              onClick={(e) => {
-                setSelected(option);
-                setIsActive(false);
+              onClick={e => {
+                setSelected(option)
+                setIsActive(false)
               }}
-              className="dropdown-item"
+              className='dropdown-item'
             >
               {option}
             </div>
@@ -41,7 +41,7 @@ function DropDowns({ selected, setSelected }) {
         </div>
       )}
     </div>
-  );
+  )
 }
 
-export default DropDowns;
+export default DropDowns
