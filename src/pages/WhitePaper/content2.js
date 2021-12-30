@@ -1,67 +1,6 @@
 const content = {
-  Abstract: [
-    `The popularity of NFTs and crypto-art is currently on the rise, opening new
-    possibilities for visual artists, musicians, and animators alike. Utilizing this
-    technology gives creators the ability to expand their networks, certify their
-    work, and create and share pieces instantaneously compared to traditional
-    formats. This new wave of technology could unlock new potentials in
-    artwork utility, movement, collaboration, and provenance for work.`,
-
-    `In today's economy, it can often be difficult to find someone or something
-    that speaks to one's own heritage- ArtMemoir ensures this experience with
-    every item we sell. Providing an opportunity for artists in all genres has been
-    proven time and again to be a way of celebrating life in its fullest sense
-    while at the same time helping spread and educate cultures across our
-    global society.`,
-
-    `Using a select criteria, ArtMemoir features artwork from a variety of both
-    rising and well established digital artists who specifically compose a limited
-    number of pieces and editions. Our website (www.artmemoir.org) offers
-    direct access to live auctions and links to the platforms selling each piece.
-    Customers also have access to the secondary market through Art Memoir's
-    personal collection. The secondary market is composed of NFTs that have
-    already dropped and sold to personal collections.`,
-
-    `Accordingly, the core mission of Art Memoir is on the Exploration of Art
-    beyond just beautification through NFTs. We are lovers of art and supporters
-    of Artists; promoting various cultures/tribes of the world through our arts, but
-    not limited to popular tribes or cultures. Developed on Binance Smart
-    Chain- one of the best blockchains for decentralized finance and DApp
-    development - all products by Art Memoir are high liquidity products: digital
-    art pieces recorded and traded throughout the art collection process are
-    executed on the blockchain via smart contract. Art Memoir is believed to
-    meet diverse users' demands thanks to the massive liquidity based on NFTs
-    and reach the highest bliss point of artists by different artworks. We provide
-    physical, tangible, immutable artwork on our platform to those looking for
-    cultural representation from around the world as well as help with auctioning
-    off some of the most popular pieces.`,
-
-    ` Our platform provides users with a set of art products. Art Memoir will
-    indulge a variety of purposes: participating in GameFi, exchanging NFT
-    artworks, staking, yield farming, and Real Estate functions.
-    Currently, our NFTs have been sectioned into single NFTs and Collection
-    NFTs, all of which have value to our investors, Partners, Community, and the
-    World of Art globally,`,
-
-    `Having various artists at heart, our Single NFTs are mainly to support the art-
-    ists while our Collection NFTs are designed to give our investors and part
-    ners value that can be used in real-time. These NFTs will be used as a
-    medium of transactions, stakes, shares, and lots more. Here, art won't just be
-    used only for beautifications and preserving the cultural heritage of the
-    people or the art they represent but will also be used in real-time situations
-    without being controlled by a centralized organization or a third party, this
-    will be achieved through the use of Blockchain Technology.`,
-
-    `Members can use NFTs to track ownership and royalties, which is useful for
-    all types of creative industries, including the real estate industry.
-    As a mix between a blockchain startup and an Art gallery_showcasing artists
-    from all corners of the globe, ArtMemoir offers the opportunity for collectors
-    to amass a diverse portfolio of artwork, while also supporting promising tal-
-    ents and enabling entrepreneurship in some of the neediest economies.
-    This paper is being worked on actively. Further information will be added on
-    an ongoing basis.`,
-
-    `'NFTs & Art': Non-fungible tokens (NFTs) are blockchain assets that distinguish them-
+  'NFTs & Art': [
+    `Non-fungible tokens (NFTs) are blockchain assets that distinguish them-
     selves from digital currencies like Bitcoin because every NFT is unique. This
     means they can represent something in the physical world, or in this case,
     art.`,
@@ -92,8 +31,10 @@ const content = {
     gas fees and also make transactions smooth and safer for its Investors and
     Partners also ArtMemoir will be listing more NFTs on various smart chain that
     qualifies its community demand.`,
+  ],
 
-    `'NFTs & Real Estate': Africa's population will grow from 1.3 billion to over 4 billion by 2100. It al-
+  'NFTs & Real Estate': [
+    `Africa's population will grow from 1.3 billion to over 4 billion by 2100. It al-
     ready has a housing shortage. "The time has come for property players to
     look into NFTs as a realistic and practical solution to circumvent the pain
     points that have been plaguing the industry for decades," said Damodharan
@@ -146,8 +87,10 @@ const content = {
     `"Buying real estate is going to move from being this massive technical un-
     dertaking that individuals don't understand. to something super easy."
     Larry Sanger, Co-founder of Wikipedia`,
+  ],
 
-    `'NFTs & Games': NFTs have been a major force in the gaming industry's development.
+  'NFTs & Games': [
+    `NFTs have been a major force in the gaming industry's development.
     Non-fungible tokens have elevated the game to an entirely new level!
     Features that GameFi differs from traditional gaming:`,
 
@@ -173,8 +116,10 @@ const content = {
     `Although Ethereum occupies the majority of the overall TVL the low transac-
     tion speed and the problem of high gas fees have become obstacles for
     ordinary users to enter the blockchain world.`,
+  ],
 
-    `'Art Memoir Services': As stated in our slogan - Exploring the world of art beyond beautification
+  'Art Memoir Services': [
+    `As stated in our slogan - Exploring the world of art beyond beautification
     through NFTs. We have been a supporter and great lover of art and we
     have ventured into the minting of nfts with over 20 individuals groups of
     artists represented from the various spaces of art. We have also decided to
@@ -215,8 +160,10 @@ const content = {
     mentees to own and sell within the blockchain. However, holders of these NFTs will be
     opportuned to buy their artworks in real-time at a discounted rate even during Auctions
     and in Gallerias they are partnered with.`,
+  ],
 
-    `'Art Memoir NFT Utilities': Just as the ArtMemoir ecosystem is huge it will include various utilities
+  'Art Memoir NFT Utilities': [
+    `Just as the ArtMemoir ecosystem is huge it will include various utilities
     ranging from different sectors as stated in the services; users will be given the
     opportunity to enjoy the benefits/utilized of its ecosystem as long as they
     are users of our product or holders of our NFTs.`,
@@ -250,8 +197,10 @@ const content = {
     and earns on-air items, points, and token rewards. Players can also up-
     grade their game props (engine, body, and weapons). High ranking players
     will enjoy many perks from our partners and sponsors.`,
+  ],
 
-    `'The Team': ArtMemoir Team is formed by elites from Al, The Internet, Art, Real Estate,
+  'The Team': [
+    `ArtMemoir Team is formed by elites from Al, The Internet, Art, Real Estate,
     Game development, and Blockchain fields.
     Art Memoir Team has a community of blockchain developers and artists who
     are interested in creating novel projects that benefit from the latest
@@ -275,8 +224,10 @@ const content = {
     revenue to artists, Real Estate Investors, Gamers, and the best content in the
     world through NFTs. Blockchain technology is a necessary tool for this
     vision to be achieved.`,
+  ],
 
-    `'The Disclaimer': We are not responsible for any actions of third parties, such as Exchanges,
+  'The Disclaimer': [
+    `We are not responsible for any actions of third parties, such as Exchanges,
     regulators, government, issuers of digital assets and securities, or other third
     parties`,
 
@@ -323,6 +274,69 @@ const content = {
     services, or related to your violation of any of these terms, your breach of
     any warranties given by you hereunder or your infringement or violation of
     any law or rights of a third party.`,
+  ],
+
+  Abstract: [
+    `The popularity of NFTs and crypto-art is currently on the rise, opening new
+    possibilities for visual artists, musicians, and animators alike. Utilizing this
+    technology gives creators the ability to expand their networks, certify their
+    work, and create and share pieces instantaneously compared to traditional
+    formats. This new wave of technology could unlock new potentials in
+    artwork utility, movement, collaboration, and provenance for work.`,
+
+    `In today's economy, it can often be difficult to find someone or something
+    that speaks to one's own heritage- ArtMemoir ensures this experience with
+    every item we sell. Providing an opportunity for artists in all genres has been
+    proven time and again to be a way of celebrating life in its fullest sense
+    while at the same time helping spread and educate cultures across our
+    global society.`,
+
+    `Using a select criteria, ArtMemoir features artwork from a variety of both
+    rising and well established digital artists who specifically compose a limited
+    number of pieces and editions. Our website (www.artmemoir.org) offers
+    direct access to live auctions and links to the platforms selling each piece.
+    Customers also have access to the secondary market through Art Memoir's
+    personal collection. The secondary market is composed of NFTs that have
+    already dropped and sold to personal collections.`,
+
+    `Accordingly, the core mission of Art Memoir is on the Exploration of Art
+    beyond just beautification through NFTs. We are lovers of art and supporters
+    of Artists; promoting various cultures/tribes of the world through our arts, but
+    not limited to popular tribes or cultures. Developed on Binance Smart
+    Chain- one of the best blockchains for decentralized finance and DApp
+    development - all products by Art Memoir are high liquidity products: digital
+    art pieces recorded and traded throughout the art collection process are
+    executed on the blockchain via smart contract. Art Memoir is believed to
+    meet diverse users' demands thanks to the massive liquidity based on NFTs
+    and reach the highest bliss point of artists by different artworks. We provide
+    physical, tangible, immutable artwork on our platform to those looking for
+    cultural representation from around the world as well as help with auctioning
+    off some of the most popular pieces.`,
+
+    `Our platform provides users with a set of art products. Art Memoir will
+    indulge a variety of purposes: participating in GameFi, exchanging NFT
+    artworks, staking, yield farming, and Real Estate functions.
+    Currently, our NFTs have been sectioned into single NFTs and Collection
+    NFTs, all of which have value to our investors, Partners, Community, and the
+    World of Art globally,`,
+
+    `Having various artists at heart, our Single NFTs are mainly to support the art-
+    ists while our Collection NFTs are designed to give our investors and part
+    ners value that can be used in real-time. These NFTs will be used as a
+    medium of transactions, stakes, shares, and lots more. Here, art won't just be
+    used only for beautifications and preserving the cultural heritage of the
+    people or the art they represent but will also be used in real-time situations
+    without being controlled by a centralized organization or a third party, this
+    will be achieved through the use of Blockchain Technology.`,
+
+    `Members can use NFTs to track ownership and royalties, which is useful for
+    all types of creative industries, including the real estate industry.
+    As a mix between a blockchain startup and an Art gallery_showcasing artists
+    from all corners of the globe, ArtMemoir offers the opportunity for collectors
+    to amass a diverse portfolio of artwork, while also supporting promising tal-
+    ents and enabling entrepreneurship in some of the neediest economies.
+    This paper is being worked on actively. Further information will be added on
+    an ongoing basis.`,
   ],
 }
 
