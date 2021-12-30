@@ -4,10 +4,11 @@ import './roadmapdesktop';
 export default function Roadmapdesktop() {
     return (
         <div className="roadmapdesktop">
-            <main>
+            <div>
+                <h2>Hello World</h2>
                 {/* <!-- learning german is hard --> */}
                 <p><span class="wave">Vergangenheitsbewältigungskultur</span></p>
-            </main>
+            </div>
         </div>
     )
 }
