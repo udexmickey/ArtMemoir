@@ -1,0 +1,25 @@
+.roadmapdesktop{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	margin: 0; padding: 0;
+
+    p {
+        font-size: 6vw;
+    }
+    
+    .wave {
+        /* escape character # with %23, duh! */
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.01 13"><polyline fill="none" stroke="%23000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" points="40.01 11.5 30.01 1.5 20.01 11.5 10.01 1.5 0.01 11.5"/></svg>');
+        width: 100%;
+        background-position: left top;
+        background-size: 2.64vw auto; // or 1rem auto;
+        background-repeat: repeat-x;
+        display: inline-block;
+        padding-bottom: 2vw;
+        padding:50px;
+        background-color:red;
+    }
+}
