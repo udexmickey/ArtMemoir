@@ -17,14 +17,21 @@ export default function Announce(props) {
             <div className="blog-heading-container">
                 <div className="blog-heading-holder">
                     <div className="blog-heading-title">
-                    {props.title}
+                        {props.title}
                     </div>
                     <div className="blog-heading-text">
-                    {props.message}
+                        {props.message}
                     </div>
-                    <button className='blog-anouncement-btn'>
-                    <Link style={{color: '#fff'}} to={props.btnlink}>{props.btn}</Link>
-                    </button>
+                    {/* <div className="blog-anouncement-link">
+                        <Link  style={{color: '#fff'}} to={props.btnlink}>{props.btn}</Link>
+                    </div> */}
+                    
+                    <Link style={{color: '#fff'}} to={props.btnlink}>
+                        <button className='blog-anouncement-btn'>
+                            {props.btn}
+                        </button>
+                    </Link>
+                    
                 </div>
             </div>
       </div>

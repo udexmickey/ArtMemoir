@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import PageLoading from '../../components/Loader';
 import Announce from '../../components/Announcer';
 import announcements from './announcementData'
+import Readmore from '../../components/Readmore';
 export default function Blog() {
 
   const { loading, error, data} = useFetch(`${URL}post`);
@@ -101,8 +102,9 @@ export default function Blog() {
      <div className="btn-blogs">
         <Link to='/blogs'>View More Blogs</Link >
      </div>
+     <Readmore />
     </div>
   );
 }
 
-<li className="listen">second</li>;
+<li className="listen">second</li>; 
