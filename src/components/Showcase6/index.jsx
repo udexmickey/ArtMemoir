@@ -114,7 +114,13 @@ const Showcase6 = () => {
   const chunkedImages = chunk(data, width <= 600 ? 1 : 3).map((set) => (
     <div className="store-container-inner">
       {set.map((d) => (
-        <Item id={d.id} content={d.content} header={d.header} img={d.img} link={d.link} />
+        <Item 
+          id={d.id} 
+          content={d.content} 
+          header={d.header} 
+          img={d.img} 
+          link={d.link} 
+        />
       ))}
     </div>
   ));

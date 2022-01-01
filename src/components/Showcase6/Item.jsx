@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from '../../assets/Images/logo-xs.png';
+import logo from '../../assets/Images/logo-xs.png';
 
 const Item = ({ id, img, header, content, link }) => {
   return (
@@ -10,12 +10,16 @@ const Item = ({ id, img, header, content, link }) => {
       
       <div className="content-container">
         <p className="header">{header}</p>
-        <p className="content">{content}</p>
+        <p className="content">
+              {content}
+          </p>
         <div className="footer">
           
             <div className="logo-container">
-              {/* <img loading="lazy"className="logo" src={logo} alt="" /> */}
-              <p>Read More</p>
+                <a href={link}>
+                  <img loading="lazy"className="logo" src={logo} alt="" />
+                  <p>Afen Group</p>
+              </a>
               </div>
             
             <a href={link}>
