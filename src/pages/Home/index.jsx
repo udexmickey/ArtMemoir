@@ -20,6 +20,17 @@ export default function Home() {
 
       </h1>
       <Showcase2 />
+      <div className="text-section-artmem">
+        <div className="">
+          <h3>What is ArtMemoir?</h3>
+          <p>
+            ArtMemoir is breaking the Art horizon through the exploration of Art and its sectors on the blockchain. 
+            However, we are buidling the first adventure play to earn game based of African methodology; 
+            focusing on gamefi and Amination utilities with the aim to explore other real life utilities such as 
+            real estate etc.
+          </p>
+        </div>
+      </div>
       <Showcase3 />
       <Showcase4 />
       {/* <Showcase5 /> */}
