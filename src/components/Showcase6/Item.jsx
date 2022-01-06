@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../assets/Images/logo-xs.png';
+import Readmore from '../../components/readmore';
 
 const Item = ({ id, img, header, content, link }) => {
   return (
@@ -11,7 +12,11 @@ const Item = ({ id, img, header, content, link }) => {
       <div className="content-container">
         <p className="header">{header}</p>
         <p className="content">
-              {content}
+              
+              <Readmore 
+                content={`${content}`}
+                length={150}
+            />
           </p>
         <div className="footer">
           

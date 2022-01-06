@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Avatar from '../Avatar';
 import './user-card.scss';
+import Readmore from '../readmore';
 
 export default function UserCard(props) {
   const acceptedLocations = ['/team'];
@@ -43,7 +44,13 @@ export default function UserCard(props) {
               <small className="role">{props.role}</small>
             </div>
             <hr />
-            <p className="message">{props.message}</p>
+            <p className="message">
+            <Readmore
+                content={`${props.message}`}
+                length={props.messageLength}
+            />
+              
+              </p>
             <button type="submit">
               {' '}
               <Link to={`/blog/${props.link}`}>{props.btn}</Link>

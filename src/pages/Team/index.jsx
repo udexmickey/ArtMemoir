@@ -16,7 +16,8 @@ export default function Team() {
                 name={person.name}
                 role={person.role}
                 className={`team-card1`}
-                message={person.message.substring(0, 200)+'...'}
+                message={person.message}
+                messageLength={150}
                 linksName={person.linksName}
                 linkIcon={person.linkIcon}
             />

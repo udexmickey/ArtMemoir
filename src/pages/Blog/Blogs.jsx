@@ -30,7 +30,8 @@ const Blogs = () => {
           key={blog.id}
           avatar={blog.image}
           name={blog.title}
-          message={blog.post.substring(0, 100)+'...'}
+          message={blog.post}
+          messageLength={100}
           btn={'Read More'}
           link={'blogs'}
         />

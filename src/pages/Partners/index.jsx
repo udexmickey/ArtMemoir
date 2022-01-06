@@ -16,6 +16,7 @@ export default function Partners() {
           name={partnership.name}
           className={"partner-card"}
           message={partnership.message}
+          messageLength={250}
         />
       )
     })

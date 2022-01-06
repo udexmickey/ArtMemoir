@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 import PageLoading from '../../components/Loader';
 import Announce from '../../components/Announcer';
 import announcements from './announcementData'
-import Readmore from '../../components/Readmore';
+// import Readmore from '../../components/Readmore';
 export default function Blog() {
 
   const { loading, error, data} = useFetch(`${URL}post`);
@@ -37,7 +37,8 @@ export default function Blog() {
           key={blog.id}
           avatar={blog.image}
           name={blog.title}
-          message={blog.post.substring(0, 70)+'...'}
+          message={blog.post}
+          messageLength={70}
           btn={'Read More'}
           link={'blogs'}
         />
@@ -102,7 +103,6 @@ export default function Blog() {
      <div className="btn-blogs">
         <Link to='/blogs'>View More Blogs</Link >
      </div>
-     <Readmore />
     </div>
   );
 }
