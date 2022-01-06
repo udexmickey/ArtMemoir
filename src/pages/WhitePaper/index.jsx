@@ -18,7 +18,7 @@ export default function WhitePaper() {
           Thank you for your interest in Art Memoir! Please find detailed
           information about our company below.
           <Link
-            to='/files/Artmemoir WP 2.pdf'
+            to='/files/ArtMem WP 2.pdf'
             target='_blank'
             rel='noopener noreferrer'
             download
@@ -51,7 +51,7 @@ export default function WhitePaper() {
             Thank you for your interest in Art Memoir! Please find detailed
             information about our company below.
             <Link
-              to='/files/Artmemoir WP 2.pdf'
+              to='/files/ArtMem WP 2.pdf'
               target='_blank'
               rel='noopener noreferrer'
               download

@@ -274,6 +274,10 @@ const content = {
     services, or related to your violation of any of these terms, your breach of
     any warranties given by you hereunder or your infringement or violation of
     any law or rights of a third party.`,
+
+    `However, In general ArtMemoir is buidling the first adventure play to earn game
+     based of African methodology; focusing on gamefi and Amination utilities with 
+     the aim to explore other real life utilities such as real estate etc.`
   ],
 
   Abstract: [

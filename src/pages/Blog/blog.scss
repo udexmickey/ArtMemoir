@@ -224,15 +224,16 @@
     .blog-badge {
       display: block;
       position: relative;
-      height: 420px;
+      height: 320px;
       justify-content: center;
       align-items: center;
       display: flex;
+      margin-top: 3rem;
       
       .img-badge-holder{
         height: auto;
         width: 100%;
-
+        // margin-bottom: 1rem;
   
         .announce-img{
           // height: 500px;
@@ -243,9 +244,9 @@
 
       .blog-heading-container {
         position: absolute;
-        top: 230px;
+        top: 160px;
         height: auto;
-        margin-bottom: 0rem;
+        z-index: 9999;
 
         .blog-card {
           width: 100%;
