@@ -26,11 +26,11 @@ export default function Announce(props) {
                         <Link  style={{color: '#fff'}} to={props.btnlink}>{props.btn}</Link>
                     </div> */}
                     
-                    <Link style={{color: '#fff'}} to={props.btnlink}>
+                    {/* <Link style={{color: '#fff'}} to={props.btnlink}> */}
                         <button className='blog-anouncement-btn'>
-                            {props.btn}
+                        <Link style={{color: '#fff'}} to={props.btnlink}>{props.btn}</Link>
                         </button>
-                    </Link>
+                    {/* </Link> */}
                     
                 </div>
             </div>
