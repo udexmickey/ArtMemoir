@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/Images/logo-xs.png';
-import Readmore from '../../components/readmore';
+import Readmore from '../../components/Readmore';
 
 const Item = ({ id, img, header, content, link }) => {
   return (

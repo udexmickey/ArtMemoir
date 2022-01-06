@@ -62,7 +62,7 @@ const Showcase2 = () => {
                 shares
                 {/* </span> */}
               </p>
-              <button>Read More</button>
+              <button>Coming Soon</button>
             </div>
           </div>
         </div>

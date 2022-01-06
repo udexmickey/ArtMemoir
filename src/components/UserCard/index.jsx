@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Avatar from '../Avatar';
 import './user-card.scss';
-import Readmore from '../readmore';
+import Readmore from '../Readmore';
 
 export default function UserCard(props) {
   const acceptedLocations = ['/team'];
