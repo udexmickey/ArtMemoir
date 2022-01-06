@@ -275,9 +275,6 @@ const content = {
     any warranties given by you hereunder or your infringement or violation of
     any law or rights of a third party.`,
 
-    `However, In general ArtMemoir is buidling the first adventure play to earn game
-     based of African methodology; focusing on gamefi and Amination utilities with 
-     the aim to explore other real life utilities such as real estate etc.`
   ],
 
   Abstract: [
@@ -341,6 +338,10 @@ const content = {
     ents and enabling entrepreneurship in some of the neediest economies.
     This paper is being worked on actively. Further information will be added on
     an ongoing basis.`,
+
+    `However, In general ArtMemoir is buidling the first adventure play to earn game
+    based of African methodology; focusing on gamefi and Amination utilities with 
+    the aim to explore other real life utilities such as real estate etc.`
   ],
 }
 

@@ -29,12 +29,12 @@ const Showcase4 = () => {
       {
         id: v4(),
         color: '#E43E54',
-        content: 'art community 10%',
+        content: 'platform / gamefi 10%',
       },
       {
         id: v4(),
         color: '#E10025',
-        content: 'artmemoir charity 8%',
+        content: 'art community  / artmemoir charity 8%',
       },
       {
         id: v4(),
