@@ -31,11 +31,11 @@ const Blogs = () => {
           avatar={blog.image}
           name={blog.title}
           message={blog.post}
-          messageLength={100}
-          readMore={"Read More ▼"}
-          readLess={"Read Less ▲"}
-          // btn={'Read More'}
-          // link={'/blog/blogs'}
+          messageLength={150}
+          readMore={" "}
+          // readLess={"Read Less ▲"}
+          btn={'Read More'}
+          link={'blog/blogs'}
         />
        </div>
       ))}

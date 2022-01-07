@@ -127,18 +127,17 @@
       }
 
       .user-img-holder{
-        height: auto;
+        height: 300px;
+        // width: 100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 11px 11px 0px 0px;
-        max-width: 320px;
 
         img {
           height: 300px;
-          width: 315px;
-          max-width: 320px;
+          // width: 315px;
           border-radius: 11px 11px 0px 0px;
           // opacity: 0.9;
           overflow: hidden;
