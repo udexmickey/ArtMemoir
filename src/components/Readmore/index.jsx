@@ -6,8 +6,11 @@ export default function Readmore(props) {
             return (
                 <ReactReadMoreReadLess
                     charLimit={`${props.length}`}
-                    readMoreText={"Read More ▼"}
-                    readLessText={"Read Less ▲"}
+                    // readMoreText={"Read More ▼"}
+                    // readLessText={"Read Less ▲"}
+
+                    readMoreText={`${props.readMore}`}
+                    readLessText={`${props.readLess}`}
                 >
                      {`${props.content}`}
                 </ReactReadMoreReadLess>

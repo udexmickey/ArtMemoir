@@ -32,8 +32,10 @@ const Blogs = () => {
           name={blog.title}
           message={blog.post}
           messageLength={100}
+          readMore={"Read More ▼"}
+          readLess={"Read Less ▲"}
           btn={'Read More'}
-          link={'blogs'}
+          link={'/blog/blogs'}
         />
        </div>
       ))}

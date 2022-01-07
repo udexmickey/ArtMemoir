@@ -39,6 +39,7 @@ export default function Blog() {
           name={blog.title}
           message={blog.post}
           messageLength={70}
+          readMore={' '}
           btn={'Read More'}
           link={'blogs'}
         />

@@ -17,6 +17,8 @@ export default function Partners() {
           className={"partner-card"}
           message={partnership.message}
           messageLength={250}
+          readMore={"Read More ▼"}
+          readLess={"Read Less ▲"}
         />
       )
     })

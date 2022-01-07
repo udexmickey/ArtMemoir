@@ -48,12 +48,14 @@ export default function UserCard(props) {
             <Readmore
                 content={`${props.message}`}
                 length={props.messageLength}
+                readMore={props.readMore}
+                readLess={props.readLess}
             />
               
               </p>
             <button type="submit">
               {' '}
-              <Link to={`/blog/${props.link}`}>{props.btn}</Link>
+              <Link to={`/${props.link}`}>{props.btn}</Link>
             </button>
               <div className="user-icons">
                 <ul>

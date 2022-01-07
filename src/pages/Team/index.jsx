@@ -18,6 +18,8 @@ export default function Team() {
                 className={`team-card1`}
                 message={person.message}
                 messageLength={150}
+                readMore={"Read More ▼"}
+                readLess={"Read Less ▲"}
                 linksName={person.linksName}
                 linkIcon={person.linkIcon}
             />
