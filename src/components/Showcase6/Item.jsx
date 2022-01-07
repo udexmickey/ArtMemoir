@@ -15,7 +15,9 @@ const Item = ({ id, img, header, content, link }) => {
               
               <Readmore 
                 content={`${content}`}
-                length={150}
+                length={120}
+                readMore={"Read More ▼"}
+                readLess={"Read Less ▲"}
             />
           </p>
         <div className="footer">
