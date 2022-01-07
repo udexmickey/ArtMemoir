@@ -45,12 +45,14 @@ export default function UserCard(props) {
             </div>
             <hr />
             <p className="message">
-            <Readmore
-                content={`${props.message}`}
-                length={props.messageLength}
-                readMore={props.readMore}
-                readLess={props.readLess}
-            />
+              <div className="">
+                <Readmore
+                  content={`${props.message}`}
+                  length={props.messageLength}
+                  readMore={props.readMore}
+                  readLess={props.readLess}
+              />
+              </div>
               
               </p>
             <button type="submit">

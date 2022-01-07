@@ -34,8 +34,8 @@ const Blogs = () => {
           messageLength={100}
           readMore={"Read More ▼"}
           readLess={"Read Less ▲"}
-          btn={'Read More'}
-          link={'/blog/blogs'}
+          // btn={'Read More'}
+          // link={'/blog/blogs'}
         />
        </div>
       ))}
