@@ -6,14 +6,52 @@ import flowerRight from '../../assets/Images/flowerRight.png';
 import HeadBadge from '../../components/HeaderBadge';
 import { useForm } from 'react-hook-form';
 import './contact.scss';
+// import axios from 'axios'
 
-export default function Contact() {
+export default  function Contact() {
   const [successcontact, setSuccesscontact] = useState('Send')
-  const { register, handleSubmit, formState } = useForm();
+  const { register, handleSubmit, formState, error } = useForm();
+  const [reset, setReset] = useState({
+    contactFName: '',
+    contactEmail: '',
+    requestMessage: ''
+  })
+
   const { isSubmitting } = formState;
-  function handlecontactSubmit(e) {
-    // e.preventDefault();
-    // console.log('Hello how may i help you.');
+  const url = 'ArtMemoir@artmemoir.org'
+
+
+  const handlecontactSubmit  = async data => {
+        // setValue(data)
+
+          // axios
+          //   .post(url, data)
+          //   .then(res => {
+          //     if (res.data.status === 'success'){
+          //       alert("Message Sent.");
+          //     } else if(res.data.status === 'fail') {
+          //       alert("Message failed to send.")
+          //     }
+          //   })
+          //   .catch(err => { 
+          //     if( (err) { 
+                if (error) console.log(`This the error ${error}`)
+            //   }
+            // })
+         
+
+         if (data) { 
+           setReset(data)
+           alert("Message Sent.");
+           console.log(data)
+           console.log(reset)
+        }else {
+          setReset()
+          alert("Message failed to send.")
+          console.log(data + '1')
+          console.log(reset)
+        }
+
           // return promise that resolves after 2 seconds
           return new Promise(resolve => {
             setTimeout(() => {
@@ -37,38 +75,44 @@ export default function Contact() {
           </div>
           <div className="contact-text">Leave us a message</div>
           <div className="contact-form">
-            <form action="" method="post" onSubmit={handleSubmit(handlecontactSubmit)}>
+            <form 
+              action={`mailto:${url}`}
+              encType={"text/plain"}
+              method='post' 
+              onSubmit={handleSubmit(handlecontactSubmit)}
+            >
+
               <div className="contact-form-title">
                 {/* Leave us a message */}
                 <div className="group-form">
                   <label htmlFor="fName">Full name</label>
                   <input
                     type="text"
-                    name="contact-fName"
+                    name="contactFName"
                     id="fName"
                     placeholder="John Doe"
-                    {...register('fName', { required: true })}
+                    {...register('contactFName', { required: true })}
                   />
                 </div>
                 <div className="group-form">
                   <label htmlFor="contact-email">Email address</label>
                   <input
                     type="email"
-                    name="contact-email"
+                    name="contactEmail"
                     id="contact-email"
                     placeholder="example@email.com"
-                    {...register('email', { required: true })}
+                    {...register('contactEmail', { required: true })}
                   />
                 </div>
                 <div className="group-form">
                   <label htmlFor="info-message">Message</label>
                   <textarea
-                    name="request-message"
-                    id="info-message"
+                    name="requestMessage"
+                    id="infoMessage"
                     placeholder="Hello Dear, How may we help you"
                     cols="30"
                     rows="10"
-                    {...register('message', { required: true })}
+                    {...register('requestMessage', { required: true })}
                   ></textarea>
                 </div>
                 <div className="group-form group-form-button">

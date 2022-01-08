@@ -20,7 +20,13 @@ export default function Footer() {
 
     axios
       .post(`${url}subscribe`, data)
-      .then(res => res)
+      .then(res =>  {
+        if (res.data.statusCode === 200){
+          alert("Email Sent for Newsletter");
+        } else if(res.data.status === 'fail') {
+          alert("Email failed to send for Newsletter. Try again later")
+        }
+      })
       .catch(err => err)
     if (error) console.log('email must be unique')
 
