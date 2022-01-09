@@ -3,8 +3,11 @@ import road from '../../assets/Images/road.png'
 import man from '../../assets/Images/man.png'
 import realhome from '../../assets/Images/houses.jpeg'
 import './showcase.scss'
+import { useHistory } from 'react-router-dom'
 
 const Showcase2 = () => {
+  const history = useHistory()
+
   return (
     <div className='showcase-container-holder'>
       <div className='left-container'>
@@ -30,7 +33,9 @@ const Showcase2 = () => {
                 NFTs minted in various nft marketplace to support various
                 artists in their journey of art and for the love of arts.
               </p>
-              <button>Read More</button>
+              <button onClick={() => history.push('/whitepaper/NFTs & Art')}>
+                Read More
+              </button>
             </div>
           </div>
           <div id='game-fi' className='right-container-content'>
@@ -47,7 +52,9 @@ const Showcase2 = () => {
                 the blockchain
                 {/* </span> */}
               </p>
-              <button>Read More</button>
+              <button onClick={() => history.push('/whitepaper/NFTs & Games')}>
+                Read More
+              </button>
             </div>
           </div>
           <div id='real-estate' className='right-container-content'>
@@ -62,7 +69,11 @@ const Showcase2 = () => {
                 shares
                 {/* </span> */}
               </p>
-              <button>Coming Soon</button>
+              <button
+                onClick={() => history.push('/whitepaper/NFTs & Real Estate')}
+              >
+                Coming Soon
+              </button>
             </div>
           </div>
         </div>

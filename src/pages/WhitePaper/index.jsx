@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import HeadBadge from '../../components/HeaderBadge'
-import { Link } from 'react-router-dom'
+import { Link, useHistory, useParams } from 'react-router-dom'
 import './whitepaper.scss'
 // import ButtonDirections from '../../components/ButtonDirections/btn-directions';
 // import DropDown from '../../components/DropDowns/DropDown';
@@ -9,6 +9,8 @@ import content from './content2'
 // import {FiDownload} from 'react-icons/all'
 export default function WhitePaper() {
   const [selected, setSelected] = useState('Abstract')
+  const { content: type } = useParams()
+  const history = useHistory()
 
   return (
     <div className='whitePaper'>
@@ -30,7 +32,10 @@ export default function WhitePaper() {
       <div className='whitepaper-holder'>
         <div className=''>
           <div className='whitepaper-title'>
-            <DropDowns selected={selected} setSelected={setSelected} />
+            <DropDowns
+              selected={type || 'Abstract'}
+              setSelected={d => history.push(`/whitepaper/${d}`)}
+            />
           </div>
 
           <div
@@ -38,7 +43,7 @@ export default function WhitePaper() {
             className='whitepaper-content-holder'
           >
             <div className='whitepaper-content'>
-              {content[selected].map((d, i) => (
+              {content[type || 'Abstract'].map((d, i) => (
                 <div key={i}>
                   <p>{d}</p>
                   <br />
