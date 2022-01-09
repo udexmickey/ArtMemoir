@@ -33,8 +33,11 @@
       font-size: 20px;
     }
     .icons{
-      height: 40px;
-      
+      height: 80px;
+      display: flex;
+        align-items: center;
+        justify-content: center;
+
       ul{
         display: flex;
         align-items: center;
@@ -44,7 +47,7 @@
         
 
         li{
-          margin-left: 10px;
+          margin-right: 10px;
         }
       }
 
