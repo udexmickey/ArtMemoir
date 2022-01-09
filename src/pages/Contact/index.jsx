@@ -13,16 +13,15 @@ export default  function Contact() {
   const [successcontact, setSuccesscontact] = useState('Send')
   const { register, handleSubmit, formState, error } = useForm();
   // const [reset, setReset] = useState({
-  //   contactFName: '',
-  //   contactEmail: '',
-  //   requestMessage: ''
+  //   Name: '',
+  //   Email: '',
+  //   Message: ''
   // })
 
   const { isSubmitting } = formState;
 
   const handlecontactSubmit  = async data => {
         // setValue(data)
-
           axios
             .post(`${url}contact`, data)
             .then(res => {

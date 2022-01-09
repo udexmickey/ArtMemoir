@@ -35,7 +35,7 @@ const Blogs = () => {
           readMore={" "}
           // readLess={"Read Less ▲"}
           btn={'Read More'}
-          link={'blog/blogs'}
+          link={`blog/${blog.id}`}
         />
        </div>
       ))}
