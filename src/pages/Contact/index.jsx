@@ -5,52 +5,48 @@ import flowerLeft from '../../assets/Images/flower-left.png';
 import flowerRight from '../../assets/Images/flowerRight.png';
 import HeadBadge from '../../components/HeaderBadge';
 import { useForm } from 'react-hook-form';
+import { url } from '../../config/config.json';
 import './contact.scss';
-// import axios from 'axios'
+import axios from 'axios';
 
 export default  function Contact() {
   const [successcontact, setSuccesscontact] = useState('Send')
   const { register, handleSubmit, formState, error } = useForm();
-  const [reset, setReset] = useState({
-    contactFName: '',
-    contactEmail: '',
-    requestMessage: ''
-  })
+  // const [reset, setReset] = useState({
+  //   contactFName: '',
+  //   contactEmail: '',
+  //   requestMessage: ''
+  // })
 
   const { isSubmitting } = formState;
-  const url = 'ArtMemoir@artmemoir.org'
-
 
   const handlecontactSubmit  = async data => {
         // setValue(data)
 
-          // axios
-          //   .post(url, data)
-          //   .then(res => {
-          //     if (res.data.status === 'success'){
-          //       alert("Message Sent.");
-          //     } else if(res.data.status === 'fail') {
-          //       alert("Message failed to send.")
-          //     }
-          //   })
-          //   .catch(err => { 
-          //     if( (err) { 
-                if (error) console.log(`This the error ${error}`)
-            //   }
-            // })
+          axios
+            .post(`${url}contact`, data)
+            .then(res => {
+              if (res.data.status === 'success'){
+                alert("Message Sent.");
+              } else if(res.data.status === 'fail') {
+                alert("Message failed to send.")
+              }
+            })
+            .catch(err => err)
+            if (error) console.log('email must be unique')
          
 
-         if (data) { 
-           setReset(data)
-           alert("Message Sent.");
-           console.log(data)
-           console.log(reset)
-        }else {
-          setReset()
-          alert("Message failed to send.")
-          console.log(data + '1')
-          console.log(reset)
-        }
+        //  if (data) { 
+        //    setReset(data)
+        //    alert("Message Sent.");
+        //    console.log(data)
+        //    console.log(reset)
+        // }else {
+        //   setReset()
+        //   alert("Message failed to send.")
+        //   console.log(data + '1')
+        //   console.log(reset)
+        // }
 
           // return promise that resolves after 2 seconds
           return new Promise(resolve => {

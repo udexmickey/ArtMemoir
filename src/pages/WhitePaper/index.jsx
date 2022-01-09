@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import HeadBadge from '../../components/HeaderBadge'
 import { Link, useHistory, useParams } from 'react-router-dom'
 import './whitepaper.scss'
@@ -8,7 +8,7 @@ import DropDowns from '../../components/DropDowns/DropDown'
 import content from './content2'
 // import {FiDownload} from 'react-icons/all'
 export default function WhitePaper() {
-  const [selected, setSelected] = useState('Abstract')
+  // const [selected, setSelected] = useState('Abstract')
   const { content: type } = useParams()
   const history = useHistory()
 
