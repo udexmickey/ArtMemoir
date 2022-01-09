@@ -72,7 +72,7 @@ export default  function Contact() {
           <div className="contact-text">Leave us a message</div>
           <div className="contact-form">
             <form 
-              action={`mailto:${url}`}
+              action={`mailto:${url}contact`}
               encType={"text/plain"}
               method='post' 
               onSubmit={handleSubmit(handlecontactSubmit)}
@@ -84,31 +84,31 @@ export default  function Contact() {
                   <label htmlFor="fName">Full name</label>
                   <input
                     type="text"
-                    name="contactFName"
+                    name="Name"
                     id="fName"
                     placeholder="John Doe"
-                    {...register('contactFName', { required: true })}
+                    {...register('Name', { required: true })}
                   />
                 </div>
                 <div className="group-form">
                   <label htmlFor="contact-email">Email address</label>
                   <input
                     type="email"
-                    name="contactEmail"
+                    name="Email"
                     id="contact-email"
                     placeholder="example@email.com"
-                    {...register('contactEmail', { required: true })}
+                    {...register('Email', { required: true })}
                   />
                 </div>
                 <div className="group-form">
                   <label htmlFor="info-message">Message</label>
                   <textarea
-                    name="requestMessage"
+                    name="Message"
                     id="infoMessage"
                     placeholder="Hello Dear, How may we help you"
                     cols="30"
                     rows="10"
-                    {...register('requestMessage', { required: true })}
+                    {...register('Message', { required: true })}
                   ></textarea>
                 </div>
                 <div className="group-form group-form-button">
