@@ -65,8 +65,9 @@
   
         .user-img-holder{
           height: 140px;
+          // height: auto;
           border-radius: 11px 11px 0px 0px;
-          
+          background: #181717;
 
           img {
             width: 100%;
@@ -75,13 +76,19 @@
             opacity: 0.9;
           }
         }
+        
         .class {
           background: rgba(#bababa, 0.1) !important;
           padding: 1rem 1rem 2rem;
+
           .user-info {
             // width: 380px;
             height: 60px;
+            display: flex;
             line-height: 1;
+            align-items: center;
+            justify-content: center;
+            
   
             .name {
               font-size: 20px;
