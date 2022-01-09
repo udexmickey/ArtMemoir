@@ -38,7 +38,7 @@ export default function Blog() {
           avatar={blog.image}
           name={blog.title}
           message={blog.post}
-          messageLength={70}
+          messageLength={100}
           readMore={' '}
           btn={'Read More'}
           link={'blogs'}
