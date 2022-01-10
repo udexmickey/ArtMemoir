@@ -2,7 +2,7 @@ import React from 'react'
 import Twitter from '../../assets/Svg/Twitter'; 
 import Instagram from '../../assets/Svg/Instagram';
 import Linkedin from '../../assets/Svg/Linkedin';
-import { MdAccountCircle, FaMediumM} from "react-icons/all";
+import { MdAccountCircle, FaMediumM, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/all";
 
 import './iconList.scss'
 export default function IconList() {
@@ -12,17 +12,17 @@ export default function IconList() {
                 <ul>
                     <li>
                         <a activeClassName="is-active" target="_blank" rel="noopener noreferrer" href='https://twitter.com/art_memoir?s=21'>
-                            <Twitter />
+                            <FaTwitter />
                         </a>
                     </li>
                     <li> 
                         <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/art_memoirnft?utm_medium=copy_link">
-                        <Instagram />
+                        <FaInstagram />
                         </a>
                     </li>
                     <li>
                         <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/">
-                        <Linkedin />
+                        <FaLinkedin />
                         </a>
                     </li>
                     <li>

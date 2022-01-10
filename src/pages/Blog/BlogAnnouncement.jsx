@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaMedium } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-// import IconList from '../../components/IconList/IconList';
+import IconList from '../../components/IconList/IconList';
 import './blog-announcement.scss';
 
 const BlogAnnouncement = () => {
@@ -55,15 +55,9 @@ const BlogAnnouncement = () => {
           team and our community at large.
           Watch out for the lunch of Art memoir’s official website to learn more 😉 🥰😘
         </p>
-        {/* <IconList /> */}
+        
         <div className="icons">
-          <ul>
-            <li>
-              <Link to='/blogs' >
-                <FaMedium />
-              </Link>
-            </li>
-          </ul>
+          <IconList />
         </div>
       </div>
     </div>
