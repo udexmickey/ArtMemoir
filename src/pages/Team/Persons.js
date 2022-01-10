@@ -7,7 +7,7 @@ import hod from '../../assets/Images/hod.jpg'
 const Persons = [
     {
         id : '1',
-        name : 'Dick-Paul Alfred',
+        name : 'Massai queen',
         role : 'Cheif Executive Officer',
         message : 'Paul is ArtMemoir’s Chief Executive Officer, leading the company as it builds a platform enabling users to explore the world of Art through NFTs. Paul defines what it means to be both artist and educator. Equipped with a BEng from the University of Anambara, Nigeria and years of dealing with the art, and practice of creating strong visual content, with over 3 years of organizational working experience. He now manages and directs the vision and the voice of ArtMemoir. He has the digital world at heart and has worked on various projects especially in the NFt, Crypto and Blockchain space.',
         avatar : ceo,
@@ -16,7 +16,7 @@ const Persons = [
     },
     {
         id : '2',
-        name : 'Jimmy Friday',
+        name : 'Massai child',
         role : 'Head of Design',
         message : "Jimmy is an experienced Graphic Designer with nearly 5 years of experience in the industry. He's honed his branding, logo design, illustration and typography skills working with clients from photography, non-profit organizations, higher education, Technology and everything in between.",
         avatar : hod,
@@ -25,7 +25,7 @@ const Persons = [
     },
     {
         id : '3',
-        name : 'Darlington Elendu',
+        name : 'Massai man',
         role : 'Head of Administration',
         message : "Darlington is a swiss army knife of production. He is a versatile asset to any team, catering to different business needs for different companies across Africa and was able to contribute greatly to the success of each. He is responsible for overseeing ArtMemoir’s product development worldwide. He is a marketing enthusiast, with 3 years of expertise in administration. He also has a BSc and an MSc in marketing with focus on supply chain and logistics management.",
         avatar : admin,
@@ -34,7 +34,7 @@ const Persons = [
     },
     {
         id : '4',
-        name : 'Victory Emmanuel',
+        name : 'Mursi queen',
         role : "Communications and Content Strategy",
         message : "Victory is An enthusiastic digital communicator vast in online platform management, content strategy, with minute expertise in blockchain relations. Victory coupled her love of writing with digital marketing and has spent more than 2 years helping a wide range of businesses enhance their marketing efforts",
         avatar : cm,
