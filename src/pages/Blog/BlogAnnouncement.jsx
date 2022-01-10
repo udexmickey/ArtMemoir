@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaMedium } from 'react-icons/fa';
+import { FaMedium } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 // import IconList from '../../components/IconList/IconList';
 import './blog-announcement.scss';
@@ -63,12 +63,6 @@ const BlogAnnouncement = () => {
                 <FaMedium />
               </Link>
             </li>
-            {/* <li>
-              <Link to='/blogs' >
-                <FaInstagram />
-              </Link>
-            
-            </li> */}
           </ul>
         </div>
       </div>
