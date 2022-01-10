@@ -25,28 +25,16 @@ export default  function Contact() {
           axios
             .post(`${url}contact`, data)
             .then(res => {
-              if (res.data.status === 'success'){
-                alert("Message Sent.");
-              } else if(res.data.status === 'fail') {
-                alert("Message failed to send.")
+              if (!res.data){
+                alert("Message failed to send.");
               }
+              return alert("Message Sent, We have received your message, we will get back to you soon!!");
+              
             })
             .catch(err => err)
             if (error) console.log('email must be unique')
-         
 
-        //  if (data) { 
-        //    setReset(data)
-        //    alert("Message Sent.");
-        //    console.log(data)
-        //    console.log(reset)
-        // }else {
-        //   setReset()
-        //   alert("Message failed to send.")
-        //   console.log(data + '1')
-        //   console.log(reset)
-        // }
-
+            data.reset()
           // return promise that resolves after 2 seconds
           return new Promise(resolve => {
             setTimeout(() => {
