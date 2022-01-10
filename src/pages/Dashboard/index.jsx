@@ -4,11 +4,11 @@ import flowerRight from '../../assets/Images/flowerRight.png';
 import './dashboard.scss';
 import DashboardCard from '../../components/DashboardCard';
 
-import { test } from '../../config/config.json';
+import { localserver } from '../../config/config.json';
 
 export default function Dashboard() {
   const params = 'users';
-  console.log(test + '/' + params);
+  console.log(localserver + '/' + params);
 
   const displayCards = DashboardName.map(function Cards(props) {
     return <DashboardCard key={props.id} className={'dashboardCard'} name={props.name} link={props.link} />;

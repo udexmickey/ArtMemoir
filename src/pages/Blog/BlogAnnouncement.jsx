@@ -19,8 +19,6 @@ const BlogAnnouncement = () => {
   //   />
   // ))))
 
-
-
   return (
     <div className="announcement-blog-container">
       <div className="blog-container-showcase">
@@ -65,12 +63,12 @@ const BlogAnnouncement = () => {
                 <FaMedium />
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to='/blogs' >
                 <FaInstagram />
               </Link>
             
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

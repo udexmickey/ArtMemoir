@@ -49,9 +49,10 @@
     grid-template-columns: auto auto auto auto;
     grid-gap: 10px;
     padding: 1px;
+    margin-top: 3rem;
 
     .blogs-card {
-        width: 25%;                       // grid and width might throw error later/*
+        // width: 25%;                       // grid and width might throw error later/*
         // margin-right: 2rem;
         border-radius: 0px 0px 11px 11px;
         border: 1px solid rgba(0, 0, 0, 0.8);
@@ -64,10 +65,13 @@
         }
   
         .user-img-holder{
-          height: 140px;
-          // height: auto;
+          height: 250px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           border-radius: 11px 11px 0px 0px;
-          background: #181717;
+          // background: rgba(0, 0, 0, 0.8);
+          background: #181818cc;
 
           img {
             width: 100%;
@@ -107,7 +111,7 @@
           }
           button {
             display: block;
-            width: 153px;
+            width: 150px;
             height: 49px;
             border: 2px solid var(--accent);
             box-sizing: border-box;
