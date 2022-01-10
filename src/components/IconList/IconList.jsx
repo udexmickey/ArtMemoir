@@ -1,7 +1,4 @@
 import React from 'react'
-import Twitter from '../../assets/Svg/Twitter'; 
-import Instagram from '../../assets/Svg/Instagram';
-import Linkedin from '../../assets/Svg/Linkedin';
 import { MdAccountCircle, FaMediumM, FaTwitter, FaInstagram, FaLinkedin} from "react-icons/all";
 
 import './iconList.scss'

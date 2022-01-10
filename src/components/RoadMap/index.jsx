@@ -4,23 +4,6 @@ import './roadmap.scss'
 const RoadMap = props => {
   return (
     <div className='roadmap'>
-      {/* <table>
-            <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-            </table> */}
       <div className='roadmap-holder'>
         <div className='round-table-top'> 2022</div>
         <div className='roadmap-stick'>
@@ -28,28 +11,28 @@ const RoadMap = props => {
             <div className='span-border-line'>
               <div className='dot-map'>
                 <div className='map-content'>
-                  <div className='map-title'> Q4 </div>
-                  <div className='map-message'> - Project Development</div>
-                  <div className='map-message'> - Single Nfts lunch</div>
-                  <div className='map-message'> - Website Development</div>
+                  <div className='map-title'> Q1 </div>
+                  <div className='map-message'> - Introducing the seven continents</div>
+                  <div className='map-message'> - Token utility Partnership ( African Continent)</div>
+                  <div className='map-message'> - On boarding the African Continent Artists</div>
                   <div className='map-message'>
                     {' '}
-                    - Cross Continent Collaboration (CNFt) Partnership
+                    - Lunch of <strong>The African Continent</strong>
                   </div>
-                  <div className='map-message'>
+                  {/* <div className='map-message'>
                     {' '}
                     - Introduction of The Seven Continents
                   </div>
                   <div className='map-message'>
                     {' '}
                     - On boarding Artist for The African Continent
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className='map-title-next'> 2022 </div>
+            {/* <div className='map-title-next'> 2022 </div> */}
 
-            <div className='span-border-line'>
+            {/* <div className='span-border-line'>
               <div className='dot-map'>
                 <div className='map-content'>
                   <div className='map-title'> Q1 </div>
@@ -64,7 +47,7 @@ const RoadMap = props => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className='span-border-line'>
               <div className='dot-map'>
                 <div className='map-content'>
@@ -74,9 +57,11 @@ const RoadMap = props => {
                     {' '}
                     - Stake and Earn Partnership
                   </div>
-                  <div className='map-message'> - Phrase II Marketing</div>
-                  <div className='map-message'> - New Nft utility unveil</div>
-                  <div className='map-message'> - Cross Community Games</div>
+                  <div className='map-message'> - 
+                    Introducing Africa’s First Game (Based on African Mythology)
+                  </div>
+                  <div className='map-message'> - Phase - One Marketing</div>
+                  {/* <div className='map-message'> - Cross Community Games</div> */}
                 </div>
               </div>
             </div>
@@ -84,13 +69,12 @@ const RoadMap = props => {
               <div className='dot-map'>
                 <div className='map-content'>
                   <div className='map-title'> Q3 </div>
-                  <div className='map-message'> - NFT utilities (Unveil)</div>
+                  <div className='map-message'> - Gamefi Development Updates</div>
                   <div className='map-message'>
                     {' '}
-                    - Introducing Africa’s First Game (Based on African
-                    Mythology) Marketing Phase 3
+                    - NFT utilities (Unveil)
                   </div>
-                  <div className='map-message'> - Gamefi Partnership</div>
+                  <div className='map-message'> - Marketing Phase 2</div>
                   <div className='map-message'>
                     {' '}
                     - Introduction of The Asia Continent

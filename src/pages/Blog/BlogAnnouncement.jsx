@@ -1,6 +1,4 @@
 import React from 'react';
-import { FaMedium } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import IconList from '../../components/IconList/IconList';
 import './blog-announcement.scss';
 
