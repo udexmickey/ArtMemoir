@@ -17,12 +17,12 @@ const BlogAnnouncement = () => {
       const {data} = await axios.get(`${url}post?id=${params.id}`)
       setResult(data.posts[0])
     },
-    [result],
+    [params.id],
   )
 
   useEffect(() => {
     fetchBlog()
-  }, [])
+  }, [fetchBlog])
 
   return (
     <div className="announcement-blog-container">
