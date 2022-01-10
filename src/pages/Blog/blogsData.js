@@ -10,8 +10,8 @@ const Blogs = [
     {
         player: {
             id : '2',
-            title : 'In Color: The 7 Greatest Color Trends of 2021',
-            post : 'Introducing Color Trends 2021 by Simplified. Met Gala, New York Fashion Week, Paris Fashion Week ...',
+            title : 'In Color: The 7 Greatest Color Trends of 2022',
+            post : 'Introducing Color Trends 2022 by Simplified. Met Gala, New York Fashion Week, Paris Fashion Week ...',
             image : '../../assets/Images/blogimage.png',
              btn: 'Read More',
             link: 'blog'
@@ -31,7 +31,7 @@ const Blogs = [
        player: {
         id : '4',
         title : '7 Tips On Creating Awesome Google Ads Headlines',
-        post : 'Introducing Color Trends 2021 by Simplified. Met Gala, New York Fashion Week, Paris Fashion Week ...',
+        post : 'Introducing Color Trends 2022 by Simplified. Met Gala, New York Fashion Week, Paris Fashion Week ...',
         image : '../../assets/Images/blogimage.png',
          btn: 'Read More',
         link: 'blog'
@@ -41,7 +41,7 @@ const Blogs = [
         player:{
             id : '5',
             title : '50 Inspiring & Fresh Social Media Quotes',
-            post : 'Introducing Color Trends 2021 by Simplified. Met Gala, New York Fashion Week, Paris Fashion Week ...',
+            post : 'Introducing Color Trends 2022 by Simplified. Met Gala, New York Fashion Week, Paris Fashion Week ...',
             image : '../../assets/Images/blogimage.png',
              btn: 'Read More',
             link: 'blog'

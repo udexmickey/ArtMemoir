@@ -22,7 +22,7 @@ const RoadMap = props => {
             </tr>
             </table> */}
       <div className='roadmap-holder'>
-        <div className='round-table-top'> 2021</div>
+        <div className='round-table-top'> 2022</div>
         <div className='roadmap-stick'>
           <div className='roadmap-stick-holder'>
             <div className='span-border-line'>
