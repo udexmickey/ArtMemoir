@@ -1,5 +1,6 @@
 import React from 'react';
 import RoadMap from '../../components/RoadMap';
+import Roadmapdesktop from '../../components/RoadMap/Roadmapdesktop';
 import Showcase from '../../components/Showcase';
 import Showcase2 from '../../components/Showcase2';
 import Showcase3 from '../../components/Showcase3';
@@ -36,6 +37,7 @@ export default function Home() {
       {/* <Showcase5 /> */}
       <div id="roadmap">
           <span className='showcase-text'>RoadMAP</span>
+          <Roadmapdesktop />
         <RoadMap />
       </div>
       <div className="divider"></div>
