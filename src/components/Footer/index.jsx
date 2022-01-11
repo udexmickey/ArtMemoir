@@ -21,14 +21,18 @@ export default function Footer() {
     axios
       .post(`${url}subscribe`, data)
       .then(res =>  {
-        if (res.data.statusCode === 200){
-          alert("Email Sent for Newsletter");
-        } else if(res.data.status === 'fail') {
-          alert("Email failed to send for Newsletter. Try again later")
+        if (!res.data){
+          alert("Oops!! Check your internet connection. Try again later")
+        } else {
+          alert("Thank you for subscribing to our Newsletter");
         }
       })
-      .catch(err => err)
-    if (error) console.log('email must be unique')
+      .catch(err => {
+        if(err){
+        alert("Subscription failed, email must be unique. Try again later")
+      }}
+        )
+    if (error) alert("Oops!! Check your internet connection. Try again later")
 
     // return promise that resolves after 2 seconds
     return new Promise(resolve => {
