@@ -1,5 +1,10 @@
 .roadmapdesktop{
-    
+  .roadmapdesktop-img{
+    width: 100%;
+  }
+   .roadmapdesktop-container{
+     display: none;
+   } 
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;

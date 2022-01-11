@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form';
 import { url } from '../../config/config.json';
 import './contact.scss';
 import axios from 'axios';
+import TextEditor from '../../components/TextEditor';
 
 export default  function Contact() {
   const [successcontact, setSuccesscontact] = useState('Send')
@@ -28,13 +29,13 @@ export default  function Contact() {
               if (!res.data){
                 alert("Message failed to send.");
               }
-              return alert("Message Sent, We have received your message, we will get back to you soon!!");
-              
+              // return alert("Message Sent, We have received your message, we will get back to you soon!!");
+              console.log(data.Message);
             })
             .catch(err => err)
             if (error) console.log('email must be unique')
 
-            data.reset()
+            // reset()
           // return promise that resolves after 2 seconds
           return new Promise(resolve => {
             setTimeout(() => {
@@ -107,6 +108,8 @@ export default  function Contact() {
               </div>
             </form>
           </div>
+
+          <TextEditor />
 
           <div className="contact-icons">
             <IconList />
