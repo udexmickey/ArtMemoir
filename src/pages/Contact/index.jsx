@@ -8,16 +8,11 @@ import { useForm } from 'react-hook-form';
 import { url } from '../../config/config.json';
 import './contact.scss';
 import axios from 'axios';
-import TextEditor from '../../components/TextEditor';
+// import TextEditor from '../../components/TextEditor';
 
 export default  function Contact() {
   const [successcontact, setSuccesscontact] = useState('Send')
   const { reset, register, handleSubmit, formState, error } = useForm();
-  // const [reset, setReset] = useState({
-  //   Name: '',
-  //   Email: '',
-  //   Message: ''
-  // })
 
   const { isSubmitting } = formState;
 
@@ -35,7 +30,6 @@ export default  function Contact() {
             .catch(err => err)
             if (error) console.log('email must be unique')
 
-            // reset()
           // return promise that resolves after 2 seconds
           return new Promise(resolve => {
             setTimeout(() => {
@@ -74,7 +68,6 @@ export default  function Contact() {
                     type="text"
                     name="Name"
                     id="fName"
-                    // value={reset}
                     placeholder="John Doe"
                     {...register('Name', { required: true })}
                   />
@@ -84,7 +77,6 @@ export default  function Contact() {
                   <input
                     type="email"
                     name="Email"
-                    // value={reset}
                     id="contact-email"
                     placeholder="example@email.com"
                     {...register('Email', { required: true })}
@@ -98,7 +90,6 @@ export default  function Contact() {
                     placeholder="Hello Dear, How may we help you"
                     cols="30"
                     rows="10"
-                    // value={reset}
                     {...register('Message', { required: true })}
                   ></textarea>
                 </div>

@@ -12,11 +12,7 @@
         margin: 0rem 0rem 0rem 0rem;
       }
     
-     .tox .tox-toolbar__primary {
-        display: none;
-    }
-    
-    .tox .tox-statusbar{
+     .tox .tox-toolbar__primary, .tox .tox-menubar, .tox .tox-statusbar{
         display: none;
     }
 }
