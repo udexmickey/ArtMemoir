@@ -7,7 +7,7 @@ import { useForm }  from 'react-hook-form'
 
 export default function BlogPost() {
 
-    const { register, handleSubmit } = useForm()
+    const { reset, register, handleSubmit } = useForm()
 
     const controlSubmit = (data) => {
         //  data.preventDefault();
@@ -19,6 +19,7 @@ export default function BlogPost() {
         for(var pair of formData.entries()) {
             console.log(pair[0]+ ', '+ pair[1]);
          }
+         reset();
     }
 
     const badgeButton = {

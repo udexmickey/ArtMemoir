@@ -11,7 +11,7 @@ import { url } from '../../../config/config.json'
 import useFetch from '../../../hooks/useFetch';
 
 export default function BlogPost() {
-  const { register, handleSubmit, setValue } = useForm();
+  const { reset, register, handleSubmit, setValue } = useForm();
   const { postRequest, error } = useFetch(
     `${url}post`,
   );
@@ -30,6 +30,7 @@ export default function BlogPost() {
     if (error) console.log('An Error request');
     await postRequest(formData);  
     console.log(res);
+    reset();
   };
 
   

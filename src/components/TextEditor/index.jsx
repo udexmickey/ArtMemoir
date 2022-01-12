@@ -6,10 +6,14 @@ import { Editor } from '@tinymce/tinymce-react'
 const TextEditor = (props)=> {
 
     const [content, setContent] = useState(props.data)
+    const handleSubmit = ()=> {
+        return
+    }
+
 
     return (
         <div className="text-editor">
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <h2>Message</h2>
                 <div>{content}</div>
                 

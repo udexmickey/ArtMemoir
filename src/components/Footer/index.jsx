@@ -12,7 +12,7 @@ import axios from 'axios'
 
 export default function Footer() {
   const [signletter, setSignLetter] = useState('Signup')
-  const { register, handleSubmit, formState, setValue, error } = useForm()
+  const {reset, register, handleSubmit, formState, setValue, error } = useForm()
   const { isSubmitting } = formState
   const handleneswletterSubmit = async data => {
     // e.preventDefault();
@@ -25,6 +25,7 @@ export default function Footer() {
           alert("Oops!! Check your internet connection. Try again later")
         } else {
           alert("Thank you for subscribing to our Newsletter");
+          reset()
         }
       })
       .catch(err => {

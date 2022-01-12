@@ -11,7 +11,7 @@ import '../dashboard.scss';
 import {url} from '../../../config/config.json'
 import useFetch from '../../../hooks/useFetch';
 export default function Announcement() {
-  const { register, handleSubmit } = useForm();
+  const {reset, register, handleSubmit } = useForm();
   const { postRequest } = useFetch(
     `${url}announcement`
   );
@@ -27,7 +27,7 @@ export default function Announcement() {
       console.log(pair[0] + ', ' + pair[1]);
       await postRequest(formData);
     }
-
+    reset();
     // await postRequest(formData);
   };
 

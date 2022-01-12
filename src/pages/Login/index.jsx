@@ -8,12 +8,13 @@ import './login.scss';
 import useLogin from '../../hooks/loginPost';
 
 export const Login = () => {
-  const { register, handleSubmit } = useForm();
+  const { reset, register, handleSubmit } = useForm();
 const {login} = useLogin()
   
   const onSubmit = async (arg) => {
    login(arg).then(data => {
     console.log(data)
+    reset();
    }).catch(error => console.log(error)) 
   };
 

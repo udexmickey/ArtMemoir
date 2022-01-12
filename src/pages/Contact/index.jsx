@@ -12,7 +12,7 @@ import TextEditor from '../../components/TextEditor';
 
 export default  function Contact() {
   const [successcontact, setSuccesscontact] = useState('Send')
-  const { register, handleSubmit, formState, error } = useForm();
+  const { reset, register, handleSubmit, formState, error } = useForm();
   // const [reset, setReset] = useState({
   //   Name: '',
   //   Email: '',
@@ -29,8 +29,8 @@ export default  function Contact() {
               if (!res.data){
                 alert("Message failed to send.");
               }
-              // return alert("Message Sent, We have received your message, we will get back to you soon!!");
-              console.log(data.Message);
+              alert("Message Sent, We have received your message, we will get back to you soon!!");
+              reset();
             })
             .catch(err => err)
             if (error) console.log('email must be unique')
@@ -74,6 +74,7 @@ export default  function Contact() {
                     type="text"
                     name="Name"
                     id="fName"
+                    // value={reset}
                     placeholder="John Doe"
                     {...register('Name', { required: true })}
                   />
@@ -83,6 +84,7 @@ export default  function Contact() {
                   <input
                     type="email"
                     name="Email"
+                    // value={reset}
                     id="contact-email"
                     placeholder="example@email.com"
                     {...register('Email', { required: true })}
@@ -96,6 +98,7 @@ export default  function Contact() {
                     placeholder="Hello Dear, How may we help you"
                     cols="30"
                     rows="10"
+                    // value={reset}
                     {...register('Message', { required: true })}
                   ></textarea>
                 </div>
@@ -109,7 +112,7 @@ export default  function Contact() {
             </form>
           </div>
 
-          <TextEditor />
+          {/* <TextEditor /> */}
 
           <div className="contact-icons">
             <IconList />
