@@ -7,11 +7,6 @@ const TextEditor = (props)=> {
 
     const [content, setContent] = useState('test')
 
-    // const handleChange = (contents, editor) => {
-    //     setContent(content);
-    //     // console.log(content);
-    //   }
-
     const handleSubmit = (e)=> {
         e.preventDefault();
         setContent(content)
