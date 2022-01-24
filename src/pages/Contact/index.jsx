@@ -8,7 +8,7 @@ import { useForm } from 'react-hook-form';
 import { url } from '../../config/config.json';
 import './contact.scss';
 import axios from 'axios';
-import TextEditor from '../../components/TextEditor';
+// import TextEditor from '../../components/TextEditor';
 
 export default  function Contact() {
   const [successcontact, setSuccesscontact] = useState('Send')
@@ -102,7 +102,7 @@ export default  function Contact() {
             </form>
           </div>
 
-          <TextEditor />
+          {/* <TextEditor /> */}
 
           <div className="contact-icons">
             <IconList />
